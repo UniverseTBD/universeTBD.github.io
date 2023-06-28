@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="hero is-fullheight custom-background">
-      <NavBar></NavBar>
+    <NavBar></NavBar>
     <div class="hero-body">
       <div class="container container-background">
         <h1 class="title">Welcome to <strong class="fancy-title">UniverseTBD</strong></h1>
@@ -40,8 +40,8 @@ export default {
 
 .hero {
   background-color: #000;
+  display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
 }
 
 
@@ -100,7 +100,6 @@ export default {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
 }
 
 .align-right{

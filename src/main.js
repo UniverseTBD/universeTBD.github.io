@@ -5,6 +5,7 @@ import HomePage from '@/pages/home.vue';
 import ParticipantsPage from '@/pages/peoples/participants.vue';
 import JoinusPage from '@/pages/peoples/joinus.vue';
 
+import ProductOverviewPage from '@/pages/products/overview.vue'
 import DailyArXivPage from '@/pages/products/dailyarxiv.vue';
 import HypothesisPage from '@/pages/products/hypothesis.vue';
 import EmbeddingPage from '@/pages/products/embedding.vue';
@@ -42,6 +43,11 @@ const routes = [
     component: JoinusPage
   },
 
+  {
+    path: '/home/product_overview',
+    name: 'product_overview',
+    component: ProductOverviewPage
+  },
   {
     path: '/home/dailyarxiv',
     name: 'dailyarxiv',

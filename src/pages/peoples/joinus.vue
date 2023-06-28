@@ -5,9 +5,8 @@
       <div class="hero-body">
         <div class="container container-background">
           <h1 class="title">Welcome to <strong class="fancy-title">UniverseTBD</strong></h1>
-          <h4 class="subtitle">We choose to go to the moon not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too.</h4>
-          <h4 class="subtitle align-right">-John F. Kennedy, "We Choose to Go to the Moon", Sep 12, 1962</h4>
-          <b-button to="/about" class="custom-button" type="is-rounded" outlined>
+          <h4 class="subtitle">May need to leave some information of how to join us here!</h4>
+          <b-button to="/home/about_overview" class="custom-button" type="is-rounded" outlined>
           <strong>Learn more about UniverseTBD</strong>
           </b-button>
           <!-- Content of the home page -->
@@ -41,7 +40,6 @@
   .hero {
     background-color: #000;
     justify-content: flex-start;
-    align-items: flex-start;
   }
   
   

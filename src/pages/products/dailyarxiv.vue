@@ -41,7 +41,6 @@
   .hero {
     background-color: #000;
     justify-content: flex-start;
-    align-items: flex-start;
   }
   
   
