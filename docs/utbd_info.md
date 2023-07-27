@@ -1,12 +1,12 @@
-#UniverseTBD Come to Life
+# UniverseTBD Come to Life
 
-##Mission statement ideas:
+## Mission statement ideas:
 
 UniverseTBD: AI for Astronomy, Expanding Access and Discovery for All.
 
 Democratizing Astronomy for all.
 
-##General Description:
+## General Description:
 
 At UniverseTBD, we envision a future where the boundless realm of Astronomy is accessible to all – researchers, enthusiasts, and curious minds alike. In pursuit of this vision, we have assembled a diverse, global team of astronomers, machine learning enthusiasts, engineers, and many other passionate individuals dedicated to the democratization of Astronomy.
 
@@ -21,7 +21,7 @@ At UniverseTBD, we are fueled by the power of "what if?" – a question that emb
 Stay tuned with UniverseTBD as we take on this exciting endeavour and embark on our very own space odyssey.
 -Your UniverseTBD Team
 
-##Quotes we can use:
+## Quotes we can use:
 
 "Keep questioning. Keep exploring. The vastness of the universe is mirrored by the vastness of human potential, and with AI, we are expanding both." (edited) 
 
