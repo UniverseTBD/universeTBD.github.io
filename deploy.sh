@@ -9,6 +9,7 @@ npm run build
 # cd 到构建输出的目录下
 cd dist
 cp index.html 404.html
+echo "universetbd.org" >> CNAME
 
 git init
 git add -A
