@@ -1,0 +1,114 @@
+[
+    {
+      "id": 1,
+      "name": "Yuan-Sen Ting",
+      "affiliation": "Australia National University",
+      "imageUrl": "yuansen.jpeg",
+      "websiteUrl": "https://www.mso.anu.edu.au/~yting/",
+      "bio": "As an astrophysicist and computer scientist, Yuan-Sen fuses astronomy and machine learning. He is an Associate Professor at Australian National University and Ohio State University. Originally from Malaysia, he earned his PhD at Harvard in 2017 before prestigious fellowships at Princeton, NASA, and others. Now in Australia, he co-chairs NASA's Cosmic Programs Stars group, leads spectroscopic surveys, and prolifically publishes research pushing scientific boundaries applying machine learning to astrophysics."
+    },
+    {
+      "id": 2,
+      "name": "Jo Ciucă",
+      "affiliation": "Australia National University",
+      "imageUrl": "jo.jpeg",
+      "websiteUrl": "https://researchers.anu.edu.au/researchers/ciuca-i",
+      "bio": "I am a Jubilee Joint Fellow at the Australian National University, working at the intersection of Astronomy, Machine Learning and Big Data. I care deeply about education and leveraging high-quality learning resources and mentorship opportunities for students from underrepresented backgrounds. My aim is to champion fearless minds to pursue excellence in service to the world around them."
+    },
+    {
+      "id": 3,
+      "name": "Sandor Kruk",
+      "affiliation": "European Space Astronomy Centre",
+      "imageUrl": "sandor.jpg",
+      "websiteUrl": "https://www.sandorkruk.com/",
+      "bio": "Space data scientist, keen on people-powered research and passionate about science education"
+    },
+    {
+      "id": 1,
+      "name": "Alberto Accomazzi",
+      "affiliation": "SAO/NASA Astrophysics Data System",
+      "imageUrl": "accomazzi.jpg",
+      "websiteUrl": "https://www.mso.anu.edu.au/~yting/",
+      "bio": "As an astrophysicist and computer scientist, Yuan-Sen fuses astronomy and machine learning. He is an Associate Professor at Australian National University and Ohio State University. Originally from Malaysia, he earned his PhD at Harvard in 2017 before prestigious fellowships at Princeton, NASA, and others. Now in Australia, he co-chairs NASA's Cosmic Programs Stars group, leads spectroscopic surveys, and prolifically publishes research pushing scientific boundaries applying machine learning to astrophysics."
+    },
+    {
+      "id": 1,
+      "name": "Alyssa Goodman",
+      "affiliation": "Harvard University",
+      "imageUrl": "alyssa.jpg",
+      "websiteUrl": "https://astronomy.fas.harvard.edu/people/goodman-alyssa",
+      "bio": "Tech(nicall)y astronomy professor. Many extracurricular interests, including data, its manipulation, curation, communication and visualization. Also, prediction, and kayaking. And people."
+    },
+    {
+      "id": 2,
+      "name": "Josh Peek",
+      "affiliation": "Space Telescope Science Institute",
+      "imageUrl": "joshua.jpg",
+      "websiteUrl": "Space Telescope Science Institute",
+      "bio": "As the head of STScI's data science mission office, Dr. Josh Peek is responsible for defining the institute’s strategy for data management and data science. He also serves as the principal investigator of the Barbara A. Mikulski Archive for Space Telescopes (MAST), our multi-mission, multi-petabyte archive, and as an associate astronomer with tenure."
+    },
+    {
+      "id": 2,
+      "name": "Kartheik Iyer",
+      "affiliation": "Columbia University",
+      "imageUrl": "kartheik.jpeg",
+      "websiteUrl": "https://kartheikiyer.github.io/",
+      "bio": "As the head of STScI's data science mission office, Dr. Josh Peek is responsible for defining the institute’s strategy for data management and data science. He also serves as the principal investigator of the Barbara A. Mikulski Archive for Space Telescopes (MAST), our multi-mission, multi-petabyte archive, and as an associate astronomer with tenure."
+    },
+    {
+      "id": 2,
+      "name": "David Brodrick",
+      "affiliation": "Australia National University",
+      "imageUrl": "david.jpeg",
+      "websiteUrl": "https://rsaa.anu.edu.au/people/professional-staff/mr-david-brodrick",
+      "bio": "David is a Senior Systems Engineer and former Senior Software Engineer from the Australian National University, with rich experience architecting and developing complex software systems and platforms. He has a passion for tackling intricate technical problems and finding innovative yet elegant solutions. With his thoughtful approach and strong technical acumen, David excels at designing robust, scalable backend infrastructure and deliverable software products. "
+    },
+    {
+      "id": 4,
+      "name": "Sergio José Rodríguez Méndez",
+      "affiliation": "Australia National University",
+      "imageUrl": "sergio.jpeg",
+      "websiteUrl": "https://about.me/srodriguez142857",
+      "bio": "Ernest Perkowski is a second-year master's student in Data Science, currently based in Madrid. He is working on LLM projects at the European Space Agency. With interests at the cross-section of computer vision and NLP, his ambition is to harness the power of large language and vision open-source models."
+    },
+    {
+      "id": 3,
+      "name": "Ernest Perkowski",
+      "affiliation": "European Space Agency",
+      "imageUrl": "ernest.jpeg",
+      "websiteUrl": "https://www.linkedin.com/in/ernest-perkowski/?originalSubdomain=se",
+      "bio": "Ernest Perkowski is a second-year master's student in Data Science, currently based in Madrid. He is working on LLM projects at the European Space Agency. With interests at the cross-section of computer vision and NLP, his ambition is to harness the power of large language and vision open-source models."
+    },
+    {
+      "id": 5,
+      "name": "Charlie O' Neill",
+      "affiliation": "Australia National University",
+      "imageUrl": "charlie.jpeg",
+      "websiteUrl": "www.baidu.com",
+      "bio": "I am an undergraduate honours student at the Australian National University (ANU) studying mathematics, computer science and economics. My journey so far has allowed me to explore a broad range of applied AI systems, delving into industries from healthcare to climate change, in both an industry and academic setting. I hold a particular interest in the intersectionality of different subfields within machine learning, viewing it as a catalyst for enhancing the capabilities of generative AI."
+    },
+    {
+      "id": 5,
+      "name": "Josh Nguyen",
+      "affiliation": "The University of Pennsylvania",
+      "imageUrl": "josh.jpeg",
+      "websiteUrl": "https://joshnguyen.net/",
+      "bio": "Josh Nguyen is a Ph.D. student at the Department of Computer and Information Science, the University of Pennsylvania. His work aims to uncover large-scale patterns of human behavior from social media using advances in computer science, a field called computational social science. He previously pursued a B.S. at the University of Melbourne and an M.Phil. at the Australian National University, both in computer science."
+    },
+    {
+      "id": 6,
+      "name": "Pranav Khetarpal",
+      "affiliation": "Indian Institute of Technology Delhi",
+      "imageUrl": "pranav.jpg",
+      "websiteUrl": "https://www.linkedin.com/in/pranavkhetarpal/",
+      "bio": "I'm Pranav Khetarpal, an undergrad who is passionate about computer science and F1. Proudly contributing to universeTBD group, I dive into fascinating projects and astronomy-specific downstream tasks to help fine-tune the LLMs."
+    },
+    {
+      "id": 6,
+      "name": "Ze-Chang Sun",
+      "affiliation": "Tsinghua University",
+      "imageUrl": "zechang.jpg",
+      "websiteUrl": "https://zechangsun.github.io",
+      "bio": "https://zechangsun.github.io"
+    }
+  ]
