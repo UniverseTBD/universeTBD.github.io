@@ -10,18 +10,12 @@ npm run build
 cd dist
 cp index.html 404.html
 
-# 部署到自定义域域名
-# echo 'www.example.com' > CNAME
-
 git init
 git add -A
 git commit -m 'deploy'
-git branch -m main
+git branch -m gh-pages
 
 # 部署到 https://<USERNAME>.github.io
-git push -f git@github.com:universeTBD/universeTBD.github.io.git main
-
-# 部署到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:universeTBD/universeTBD.github.io.git main:gh-pages
+git push -f git@github.com:universeTBD/universeTBD.github.io.git gh-pages:gh-pages
 
 cd -
