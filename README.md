@@ -34,7 +34,7 @@ git checkout my-new-branch-name
 # make sure everything looks good locally:
 npm run serve
 
-# generate dist files and add them to git:
+# generate `docs/` files and add them to git:
 ./build.sh
 
 # push to github:

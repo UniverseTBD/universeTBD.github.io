@@ -8,9 +8,10 @@ npm install
 
 # build
 npm run build
+mv dist docs
 
-# cd into dist directory to tidy for deployment
-cd dist
+# cd into docs directory to tidy for deployment
+cd docs
 cp index.html 404.html
 echo "universetbd.org" >> CNAME
 git add ./*
