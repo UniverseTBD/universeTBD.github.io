@@ -37,6 +37,12 @@ npm run serve
 # generate `docs/` files and add them to git:
 ./build.sh
 
+# add new/modofied/removed files
+git add modified-filename.example
+
+# commit changes locally
+git commit -m "made some important changes"
+
 # push to github:
 git push --set-upstream origin my-new-branch-name
 ```
