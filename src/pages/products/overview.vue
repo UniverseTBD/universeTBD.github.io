@@ -1,53 +1,43 @@
 <template>
-    <section>
-    <div class="page hero is-fullheight custom-background">
-    <NavBar/>
-    <div class="product-intro">
-      <div class="panel panel1" v-for="product in products" :key="product.id">
-        <ProductPane :product="product"/>
+  <section>
+    <div class="hero is-fullheight custom-background">
+    <NavBar />
+    <h1 class="page-title">Product Overview</h1>
+      <div class="page-content page">
+        <ProductPane :products="products"></ProductPane>
       </div>
     </div>
-    </div>
-    <BottomPane/>
-    <Back2Top/>
-    </section>
+    <BottomPane />
+    <Back2Top />
+  </section>
 </template>
+
   
 <script>
 import NavBar from '@/components/NavBar.vue';
 import BottomPane from '@/components/BottomPane.vue';
 import Back2Top from '@/components/Back2Top.vue';
 import ProductPane from '@/components/ProductPane.vue';
+import productData from '@/data/products.json';
 
 export default {
     name: "ProductOverviewPage",
     components: {
-        NavBar,
-        BottomPane,
-        ProductPane,
-        Back2Top
-    },
-    data() {
-      return {
-        products: [
-          {
-            id: 1,
-            title: "Product 1",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          },
-          {
-            id: 2,
-            title: "Product 2",
-            description: "Nulla facilisi. Donec euismod tortor sit amet diam congue varius.",
-          },
-          {
-            id: 3,
-            title: "Product 3",
-            description: "Suspendisse vel mauris a ante fermentum dapibus eu ac mi.",
-          },
-        ],
-      };
-    },
+    NavBar,
+    BottomPane,
+    ProductPane,
+    Back2Top
+},
+data() {
+        const productWithAbsoluteUrls = productData.map((figure) => ({
+                                        ...figure,
+                                        imageUrl: require(`@/assets/product/${figure.imageUrl}`)
+        }));
+
+        return {
+          products: productWithAbsoluteUrls
+        };
+      }
   };
   </script>
   
@@ -81,5 +71,24 @@ export default {
     width: 100%!important;
   }
 }
+
+.page-content {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.page-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #f5f5f5; /* Change title color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin: 20px 0; /* Adjust the top and bottom margin as needed */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
   </style>
   

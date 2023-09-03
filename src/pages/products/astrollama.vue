@@ -4,12 +4,13 @@
         <NavBar></NavBar>
       <div class="hero-body">
         <div class="container container-background">
-          <h1 class="title">Welcome to <strong class="fancy-title">UniverseTBD</strong></h1>
-          <h4 class="subtitle">We choose to go to the moon not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too.</h4>
-          <h4 class="subtitle align-right">-John F. Kennedy, "We Choose to Go to the Moon", Sep 12, 1962</h4>
-          <b-button to="/about" class="custom-button" type="is-rounded" outlined>
-          <strong>Learn more about UniverseTBD</strong>
+          <h1 class="title"><strong class="fancy-title">AstroLLaMA</strong> - LLM for Astronomers!</h1>
+          <h4 class="subtitle">AstroLLaMA, a 7 billion parameter model specialized for astronomy by fine-tuning the LLaMA-2 architecture on a dataset of over 300,000 arXiv astronomy abstracts. AstroLLaMA achieves a holdout perplexity 1.5 times lower than LLaMA-2, indicating robust alignment with astronomy literature. This astronomy focus enables promising applications like summarization of papers and conversational agents. By open sourcing AstroLLaMA, we hope to enable astronomy-specific NLP research. Overall, AstroLLaMA represents a step towards more capable AI systems tailored for academic disciplines like astronomy. Its performance on an astronomy benchmark highlights the potential of specialized large models.</h4>
+          <a href="https://huggingface.co/universeTBD/astrollama">
+          <b-button class="custom-button" type="is-rounded" outlined>
+          <strong>Wanna play with AstroLLaMA?</strong>
           </b-button>
+          </a>
           <!-- Content of the home page -->
         </div>
       </div>

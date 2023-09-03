@@ -15,7 +15,7 @@
           <h2>Product</h2>
           <ul>
             <li><router-link to="/home/product_overview" class="custom-li">Overview</router-link></li>
-            <li><router-link to="/home/dailyarxiv" class="custom-li">Daily ArXiv</router-link></li>
+            <li><router-link to="/home/astrollama" class="custom-li">AstroLLaMA</router-link></li>
             <li><router-link to="/home/hypothesis" class="custom-li">Hypothesis Generation</router-link></li>
             <li><router-link to="/home/embedding" class="custom-li">ArXiv Embedding</router-link></li>
           </ul>

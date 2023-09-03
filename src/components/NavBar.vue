@@ -13,14 +13,23 @@ Navigation Bar Component
 
 
       <template #start>
+        <b-navbar-dropdown label="About" class="custom-dropdown" transparent=true hoverable=true>
+            <b-navbar-item class="navbar-element" tag="router-link" :to="{ name: 'about_overview' }">
+                Overview
+            </b-navbar-item>
+            <b-navbar-item class="navbar-element" tag="router-link" :to="{ name: 'about_sponsor' }">
+                Sponsor
+            </b-navbar-item>
+        </b-navbar-dropdown>
+        
         <b-navbar-dropdown label="Product" class="custom-dropdown" transparent=true hoverable=true>
             <div>
             <b-navbar-item class="navbar-element" tag="router-link" :to="{ name: 'product_overview' }">
                 Overview
             </b-navbar-item>
             <hr class="navbar-divider">
-            <b-navbar-item class="navbar-element" tag="router-link" :to="{ name: 'dailyarxiv' }">
-                Daily ArXiv
+            <b-navbar-item class="navbar-element" tag="router-link" :to="{ name: 'astrollama' }">
+                AstroLLaMA
             </b-navbar-item>
             <b-navbar-item class="navbar-element" tag="router-link" :to="{ name: 'hypothesis' }">
                 Hypothesis Generation
@@ -46,15 +55,6 @@ Navigation Bar Component
             </b-navbar-item>
             <b-navbar-item class="navbar-element" tag="router-link" :to="{ name: 'joinus' }">
                 Join Us
-            </b-navbar-item>
-        </b-navbar-dropdown>
-
-        <b-navbar-dropdown label="About" class="custom-dropdown" transparent=true hoverable=true>
-            <b-navbar-item class="navbar-element" tag="router-link" :to="{ name: 'about_overview' }">
-                Overview
-            </b-navbar-item>
-            <b-navbar-item class="navbar-element" tag="router-link" :to="{ name: 'about_sponsor' }">
-                Sponsor
             </b-navbar-item>
         </b-navbar-dropdown>
       </template>

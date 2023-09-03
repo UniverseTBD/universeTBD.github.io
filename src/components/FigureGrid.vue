@@ -5,7 +5,7 @@ Figure Grid Component
 <template>
   <div class="figure-grid">
     <a v-for="figure in figures" :key="figure.id" :href="figure.websiteUrl" class="figure" target="_blank" rel="noopener noreferrer">
-      <div  @mouseover="showBio()" @mouseleave="hideBio()">
+      <div>
       <img :src="figure.imageUrl" :alt="figure.name" class="figure-image">
       <h3>
         {{ figure.name }}
@@ -13,10 +13,6 @@ Figure Grid Component
       <p>
         {{ figure.affiliation }}
       </p>
-      <!-- Add a side window for the bio -->
-      <div v-if="showingBio" class="bio-window">
-        <p>{{ figure.bio }}</p>
-      </div>
       </div>
     </a>
   </div>
@@ -24,20 +20,7 @@ Figure Grid Component
 
 <script>
 export default {
-  props: ['figures'],
-  data() {
-    return {
-      showingBio: false,
-    };
-  },
-  methods: {
-    showBio() {
-      this.showingBio = false;
-    },
-    hideBio() {
-      this.showingBio = false;
-    },
-  },
+  props: ['figures']
 };
 </script>
   

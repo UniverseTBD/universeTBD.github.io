@@ -6,9 +6,11 @@
         <div class="container container-background">
           <h1 class="title">About Our <strong class="fancy-title">Sponsor</strong></h1>
           <h4 class="subtitle">We are extremely grateful to the Microsoft Accelerate Foundation Models Academic Research Initiative for providing our astronomy research group with 10,000 USD in Azure OpenAI credits. Access to advanced AI capabilities has greatly accelerated our work applying language models to automate analysis of astronomical literature.</h4>
-          <b-button to="/home/about_overview" class="custom-button" type="is-rounded" outlined>
+          
+          <b-button class="custom-button" type="is-rounded" outlined>
           <strong>We are happy to discuss further funding opportunities.</strong>
           </b-button>
+          
           <!-- Content of the home page -->
         </div>
       </div>

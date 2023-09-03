@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "AstroLLaMA",
+        "imageUrl": "astrollama.jpeg",
+        "paperLink": "https://huggingface.co/universeTBD/astrollama",
+        "blogLink": "https://huggingface.co/universeTBD/astrollama",
+        "productLink": "https://huggingface.co/universeTBD/astrollama"
+    },
+    {
+        "id": 2,
+        "name": "Hypothesis Generation",
+        "imageUrl": "hypo.jpeg",
+        "paperLink": "https://arxiv.org/abs/2306.11648",
+        "blogLink": "https://arxiv.org/abs/2306.11648",
+        "productLink": "https://arxiv.org/abs/2306.11648"
+    },
+    {
+        "id": 3,
+        "name": "Arxiv Embedding",
+        "imageUrl": "embed.jpeg",
+        "paperLink": "https://huggingface.co/universeTBD/astrollama",
+        "blogLink": "https://huggingface.co/universeTBD/astrollama",
+        "productLink": "https://huggingface.co/universeTBD/astrollama"
+    }
+]

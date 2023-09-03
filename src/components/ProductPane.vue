@@ -1,84 +1,88 @@
 <template>
-  <div
-    class="panel"
-    :class="{ 'panel-expanded': isExpanded }"
-    @mouseover="expandPanel"
-    @mouseleave="collapsePanel"
-  >
-    <div class="panel-header">
-      <h3>{{ product.title }}</h3>
-    </div>
-    <div class="panel-content">
-      <p>{{ product.description }}</p>
+  <div class="product-row">
+    <div v-for="(product, index) in products" :key="index" class="product">
+      <div class="product-content">
+        <img :src="product.imageUrl" alt="Product Image" class="product-image" />
+        <h2 class="product-name">{{ product.name }}</h2>
+        <div class="links">
+          <a :href="product.paperLink" target="_blank" class="link">Paper</a>
+          <a :href="product.productLink" target="_blank" class="link">Product</a>
+          <a :href="product.blogLink" target="_blank" class="link">Blog</a>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['product'],
-  data() {
-    return {
-      isExpanded: false,
-    };
-  },
-  methods: {
-    expandPanel() {
-      this.isExpanded = true;
-    },
-    collapsePanel() {
-      this.isExpanded = false;
-    },
+  props: {
+    products: Array, // An array of product objects with name, imageUrl, paperLink, productLink, and blogLink properties
   },
 };
 </script>
 
 <style scoped>
-.panel {
-  width: 30%;
-  background-color: #f5f5f5;
-  border-radius: 4px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+.product-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px; /* Reduced the gap between panels */
+  padding: 10px; /* Reduced the padding */
+  background-color: #f7f7f7;
 }
 
-.panel:hover {
-  transform: scale(1.1);
+.product {
+  flex: 1;
+  width: calc(50% - 10px); /* Adjusted the width to fit two items per row on mobile */
+  max-width: calc(33.33% - 10px); /* Adjusted the width to fit three items per row on larger screens */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
 }
 
-.panel-expanded {
-  width: 40%;
+.product:hover {
+  transform: translateY(-5px);
 }
 
-.panel-header {
+.product-content {
+  padding: 10px; /* Reduced the padding */
   text-align: center;
 }
 
-.panel-content {
-  margin-top: 10px;
+.product-image {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
-h3 {
+.product-name {
   font-size: 20px;
-  font-weight: bold;
+  margin: 10px 0;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center; /* Center-align text on mobile */
 }
 
-p {
-  color: #555;
+.links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Add some spacing between the name and links on mobile */
 }
-@media screen and (max-width: 1200px) {
-  .panel {
-    width: 50%!important;
-    border-radius: 4px!important;
-    padding: 20px!important;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)!important;
-  }
-  h3 {
-    font-size: 18px;
-  }
-  .panel-content p{
-    font-size: 14px;
-  }
+
+.link {
+  text-decoration: none;
+  color: #007bff;
+  margin: 0 10px;
+  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #0056b3;
 }
 </style>

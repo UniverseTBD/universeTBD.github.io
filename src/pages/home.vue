@@ -14,6 +14,7 @@
       </div>
     </div>
     </div>
+    <ProductPane :products="products"></ProductPane>
     <BottomPane></BottomPane>
     <Back2Top></Back2Top>
 </section>
@@ -24,13 +25,26 @@
 import NavBar from "@/components/NavBar.vue";
 import Back2Top from "@/components/Back2Top.vue";
 import BottomPane from "@/components/BottomPane.vue";
+import ProductPane from "@/components/ProductPane.vue";
+import productData from "@/data/products.json"
 
 export default {
   name: 'HomePage',
   components: {
     Back2Top,
     NavBar,
-    BottomPane
+    BottomPane,
+    ProductPane
+  },
+  data(){
+    const productWithAbsoluteUrls = productData.map((figure) => ({
+                                        ...figure,
+                                        imageUrl: require(`@/assets/product/${figure.imageUrl}`)
+        }));
+
+        return {
+          products: productWithAbsoluteUrls
+        };
   }
 };
 </script>
