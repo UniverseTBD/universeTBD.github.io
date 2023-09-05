@@ -1,13 +1,6 @@
-[    {
-  "id": 1,
-  "name": "Yuan-Sen Ting",
-  "affiliation": "The Australian National University",
-  "imageUrl": "yuansen.jpeg",
-  "websiteUrl": "https://www.mso.anu.edu.au/~yting/",
-  "bio": "As an astrophysicist and computer scientist, Yuan-Sen fuses astronomy and machine learning. He is an Associate Professor at Australian National University and Ohio State University. Originally from Malaysia, he earned his PhD at Harvard in 2017 before prestigious fellowships at Princeton, NASA, and others. Now in Australia, he co-chairs NASA's Cosmic Programs Stars group, leads spectroscopic surveys, and prolifically publishes research pushing scientific boundaries applying machine learning to astrophysics."
-},
+[    
 {
-  "id": 2,
+  "id": 1,
   "name": "Jo Ciucă",
   "affiliation": "The Australian National University",
   "imageUrl": "jo.jpeg",
@@ -15,9 +8,17 @@
   "bio": "I am a Jubilee Joint Fellow at the Australian National University, working at the intersection of Astronomy, Machine Learning and Big Data. I care deeply about education and leveraging high-quality learning resources and mentorship opportunities for students from underrepresented backgrounds. My aim is to champion fearless minds to pursue excellence in service to the world around them."
 },
 {
+  "id": 2,
+  "name": "Yuan-Sen Ting",
+  "affiliation": "The Australian National University",
+  "imageUrl": "yuansen.jpeg",
+  "websiteUrl": "https://www.mso.anu.edu.au/~yting/",
+  "bio": "As an astrophysicist and computer scientist, Yuan-Sen fuses astronomy and machine learning. He is an Associate Professor at Australian National University and Ohio State University. Originally from Malaysia, he earned his PhD at Harvard in 2017 before prestigious fellowships at Princeton, NASA, and others. Now in Australia, he co-chairs NASA's Cosmic Programs Stars group, leads spectroscopic surveys, and prolifically publishes research pushing scientific boundaries applying machine learning to astrophysics."
+},
+{
   "id": 3,
   "name": "Sandor Kruk",
-  "affiliation": "European Space Astronomy Centre",
+  "affiliation": "The European Space Astronomy Centre",
   "imageUrl": "sandor.jpg",
   "websiteUrl": "https://www.sandorkruk.com/",
   "bio": "Space data scientist, keen on people-powered research and passionate about science education"
@@ -49,8 +50,16 @@
     },
     {
       "id": 5,
+      "name": "Maja Jabłońska",
+      "affiliation": "The Australian National University",
+      "imageUrl": "maya.png",
+      "websiteUrl": "https://www.linkedin.com/in/maja-jablonska/?originalSubdomain=pl",
+      "bio": "Superstar AstroML and UTBD-er."
+    },
+    {
+      "id": 5,
       "name": "Charlie O' Neill",
-      "affiliation": "Australia National University",
+      "affiliation": "The Australian National University",
       "imageUrl": "charlie.jpeg",
       "websiteUrl": "www.baidu.com",
       "bio": "I am an undergraduate honours student at the Australian National University (ANU) studying mathematics, computer science and economics. My journey so far has allowed me to explore a broad range of applied AI systems, delving into industries from healthcare to climate change, in both an industry and academic setting. I hold a particular interest in the intersectionality of different subfields within machine learning, viewing it as a catalyst for enhancing the capabilities of generative AI."
@@ -66,10 +75,18 @@
     {
       "id": 3,
       "name": "Ernest Perkowski",
-      "affiliation": "European Space Agency",
+      "affiliation": "The European Space Agency",
       "imageUrl": "ernest.jpeg",
       "websiteUrl": "https://www.linkedin.com/in/ernest-perkowski/?originalSubdomain=se",
       "bio": "Ernest Perkowski is a second-year master's student in Data Science, currently based in Madrid. He is working on LLM projects at the European Space Agency. With interests at the cross-section of computer vision and NLP, his ambition is to harness the power of large language and vision open-source models."
+    },
+    {
+      "id": 3,
+      "name": "Tomasz Różański",
+      "affiliation": "The Australian National University",
+      "imageUrl": "tomasz.png",
+      "websiteUrl": "https://rozanskit.com/",
+      "bio": "Superstar AstroML and UTBD-er."
     },
     {
       "id": 1,
@@ -110,5 +127,29 @@
       "imageUrl": "sergio.jpeg",
       "websiteUrl": "https://about.me/srodriguez142857",
       "bio": "Ernest Perkowski is a second-year master's student in Data Science, currently based in Madrid. He is working on LLM projects at the European Space Agency. With interests at the cross-section of computer vision and NLP, his ambition is to harness the power of large language and vision open-source models."
+    },
+    {
+      "id": 4,
+      "name": "Roberta Răileanu",
+      "affiliation": "FAIR (Meta)",
+      "imageUrl": "roberta.png",
+      "websiteUrl": "https://rraileanu.github.io/",
+      "bio": "Roberta is a Research Scientist at FAIR (Meta) based in London, working on building generally capable autonomous agents. In 2021, Roberta obtained my PhD in Computer Science from NYU, advised by Rob Fergus. Her focus was on deep reinforcement learning. During her PhD, Roberta interned at DeepMind, Microsoft Research, and Facebook AI Research."
+    },
+    {
+      "id": 4,
+      "name": "Jesse Cranney",
+      "affiliation": "The Australian National University",
+      "imageUrl": "jesse.png",
+      "websiteUrl": "https://rsaa.anu.edu.au/people/academics/dr-jesse-cranney",
+      "bio": "Superstar."
+    },
+    {
+      "id": 4,
+      "name": "Thang Bui",
+      "affiliation": "The Australian National University",
+      "imageUrl": "thang.png",
+      "websiteUrl": "https://researchers.anu.edu.au/researchers/bui-t",
+      "bio": "Thang Bui is a lecturer (equivalent to tenure-track Assistant Professor) in Machine Learning at the School of Computing, Australian National University since July 2022. Before that, he was a lecturer at the University of Sydney from 2018 to 2022 and spent two years (2019-2020) at Uber AI. He completed his doctoral training at the Cambridge Machine Learning group, supervised by Richard Turner and advised by Carl Rasmussen."
     }
   ]
