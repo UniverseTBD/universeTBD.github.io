@@ -8,6 +8,7 @@ npm install
 
 # build
 npm run build
+rm -rf docs
 mv dist docs
 
 # cd into docs directory to tidy for deployment
