@@ -89,6 +89,14 @@
       "bio": "Superstar AstroML and UTBD-er."
     },
     {
+      "id": 5,
+      "name": "Rui Pan",
+      "affiliation": "Hong Kong University of Science and Technology",
+      "imageUrl": "rui.png",
+      "websiteUrl": "",
+      "bio": "Rui Pan, who also goes by Mike, is a fourth-year PhD student supervised by Prof. Tong Zhang. His research interests lie in the area of optimization and large language models. Previously, he worked on a project called LMFlow, which aims to make it easy for everyone to train their own LLMs."
+    },
+    {
       "id": 1,
       "name": "Alyssa Goodman",
       "affiliation": "Harvard University",
