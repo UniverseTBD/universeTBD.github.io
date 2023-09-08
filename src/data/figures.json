@@ -112,6 +112,7 @@
       "websiteUrl": "https://www.mso.anu.edu.au/~yting/",
       "bio": "As an astrophysicist and computer scientist, Yuan-Sen fuses astronomy and machine learning. He is an Associate Professor at Australian National University and Ohio State University. Originally from Malaysia, he earned his PhD at Harvard in 2017 before prestigious fellowships at Princeton, NASA, and others. Now in Australia, he co-chairs NASA's Cosmic Programs Stars group, leads spectroscopic surveys, and prolifically publishes research pushing scientific boundaries applying machine learning to astrophysics."
     },
+    
     {
       "id": 2,
       "name": "Josh Peek",
@@ -119,6 +120,14 @@
       "imageUrl": "joshua.jpg",
       "websiteUrl": "Space Telescope Science Institute",
       "bio": "As the head of STScI's data science mission office, Dr. Josh Peek is responsible for defining the institute’s strategy for data management and data science. He also serves as the principal investigator of the Barbara A. Mikulski Archive for Space Telescopes (MAST), our multi-mission, multi-petabyte archive, and as an associate astronomer with tenure."
+    },
+      {
+      "id": 2,
+      "name": "Jill Naiman",
+      "affiliation": "University of Illinois, Urbana-Champaign",
+      "imageUrl": "jill.png",
+      "websiteUrl": "https://www.astronaiman.com/",
+      "bio": ""
     },
     {
       "id": 2,
@@ -130,19 +139,19 @@
     },
     {
       "id": 4,
-      "name": "Sergio José Rodríguez Méndez",
-      "affiliation": "The Australian National University",
-      "imageUrl": "sergio.jpeg",
-      "websiteUrl": "https://about.me/srodriguez142857",
-      "bio": "Ernest Perkowski is a second-year master's student in Data Science, currently based in Madrid. He is working on LLM projects at the European Space Agency. With interests at the cross-section of computer vision and NLP, his ambition is to harness the power of large language and vision open-source models."
-    },
-    {
-      "id": 4,
       "name": "Roberta Răileanu",
       "affiliation": "FAIR (Meta)",
       "imageUrl": "roberta.png",
       "websiteUrl": "https://rraileanu.github.io/",
       "bio": "Roberta is a Research Scientist at FAIR (Meta) based in London, working on building generally capable autonomous agents. In 2021, Roberta obtained my PhD in Computer Science from NYU, advised by Rob Fergus. Her focus was on deep reinforcement learning. During her PhD, Roberta interned at DeepMind, Microsoft Research, and Facebook AI Research."
+    },
+    {
+      "id": 4,
+      "name": "Sergio José Rodríguez Méndez",
+      "affiliation": "The Australian National University",
+      "imageUrl": "sergio.jpeg",
+      "websiteUrl": "https://about.me/srodriguez142857",
+      "bio": "Ernest Perkowski is a second-year master's student in Data Science, currently based in Madrid. He is working on LLM projects at the European Space Agency. With interests at the cross-section of computer vision and NLP, his ambition is to harness the power of large language and vision open-source models."
     },
     {
       "id": 4,
