@@ -8,7 +8,7 @@
           <h4 class="subtitle">
             Join the top minds in AI and astronomy as we build the future of space exploration. UniverseTBD is an international collaboration creating powerful large language models designed to accelerate discoveries for the astronomy research community. Our goal is to enhance how researchers use AI to unlock the mysteries of the universe. We need your unique talents on this inspiring mission. At UniverseTBD, you can collaborate with experts across fields to create AI that furthers space science and benefits all humanity. Let's reach for the MOON together!
           </h4>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdFsfzfO4CuecDrlmz069o4tcbqTB_MffHgxY7Ncf_eFaeBlA/viewform?usp=sf_link">
+          <a href="https://forms.gle/1g4AJXtT3wyHgbmAA">
           <b-button class="custom-button" type="is-rounded" outlined>
           <strong>Join Us!</strong>
           </b-button>
