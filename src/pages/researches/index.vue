@@ -90,7 +90,7 @@ export default {
 
 .custom-background {
   background-image: url("@/assets/background.png");
-  background-size: auto;
+  background-size: cover;
   background-attachment: fixed;  /* 使背景图像固定 */
   background-position: center;
   background-repeat: no-repeat;
