@@ -1,32 +1,60 @@
 <template>
-    <div class="card-content">
-        <div class="media">
-            <div class="media-content">
-                <p class="title is-4">{{ blog.title }}</p>
-                <p class="subtitle is-6">{{ blog.date }}</p>
-            </div>
-        </div>
+  <div class="card-content">
+      <div class="media">
+          <div class="media-content">
+              <p class="title">{{ blog.title }}</p>
+              <p class="subtitle">{{ blog.authors }}</p>
+              <p class="date">{{ blog.date }}</p>
+          </div>
+      </div>
 
-        <div class="content">
-              <p>{{ blog.content }}</p>
-        </div>
-    </div>
+      <div class="content">
+          <p>{{ blog.content }}</p>
+          <a @click="goToArxiv" class="arxiv-button">View on arXiv</a>
+      </div>
+  </div>
 </template>
 
 <script>
 export default {
     name: "BlogCard",
-    props: ['blog']
+    props: ['blog'],
+    methods: {
+        goToArxiv() {
+            if (this.blog.arxivId) {
+                window.open(`https://arxiv.org/abs/${this.blog.arxivId}`, '_blank');
+            }
+        }
+    }
 };
 </script>
 
 <style scoped>
-.title {
-  margin-bottom: 0.3rem;
+.card-content {
+  width: 80%;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;  
 }
 
-.subtitle {
-  margin-top: 0;
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.subtitle, .arxiv-id, .date {
+  margin-top: 0.1rem;
+  color: #666;
 }
 
 .content {
@@ -34,56 +62,17 @@ export default {
   color: #555;
 }
 
-.custom-background {
-  background-image: url("../assets/background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: flex-start;
+.arxiv-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: white;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-
-@media screen and (min-width: 768px) {
-  .card {
-    display: flex;
-    align-items: center;
-  }
-
-  .media-content {
-    flex: 1;
-  }
-
-  .title.is-4 {
-    font-size: 24px;
-  }
-
-  .subtitle.is-6 {
-    font-size: 14px;
-  }
+.arxiv-button:hover {
+  background-color: #0056b3;
 }
-@media screen and (max-width: 1200px) {
-  .title.is-4 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-
-  .subtitle.is-6, .content {
-    font-size: 14px;
-  }
-  .title {
-    margin-bottom: 10px;
-  }
-
-  .subtitle {
-    margin-top: 0;
-  }
-
-  .content {
-    margin-top: 10px;
-  }
-  .media-content {
-    overflow-y: hidden;
-  }
-}
-</style>
