@@ -22,7 +22,7 @@ export default {
 
 <style scoped>
 .title {
-  margin-bottom: 0.3rem;
+  margin-bottom: 10px;
 }
 
 .subtitle {
@@ -30,7 +30,7 @@ export default {
 }
 
 .content {
-  margin-top: 1rem;
+  margin-top: 10px;
   color: #555;
 }
 
@@ -42,48 +42,24 @@ export default {
   display: flex;
   justify-content: flex-start;
 }
-
-
-@media screen and (min-width: 768px) {
-  .card {
-    display: flex;
-    align-items: center;
-  }
-
-  .media-content {
-    flex: 1;
-  }
-
-  .title.is-4 {
-    font-size: 24px;
-  }
-
-  .subtitle.is-6 {
-    font-size: 14px;
-  }
+.media-content {
+  overflow-y: hidden;
 }
-@media screen and (max-width: 1200px) {
-  .title.is-4 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
 
-  .subtitle.is-6, .content {
-    font-size: 14px;
-  }
-  .title {
-    margin-bottom: 10px;
-  }
-
-  .subtitle {
-    margin-top: 0;
-  }
-
-  .content {
-    margin-top: 10px;
-  }
-  .media-content {
-    overflow-y: hidden;
-  }
+.card {
+  display: flex;
+  align-items: center;
 }
+.media-content {
+  flex: 1;
+}
+
+.title.is-4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.subtitle.is-6 {
+  font-size: 14px;
+}
+
 </style>

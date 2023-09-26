@@ -25,7 +25,6 @@
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
-    "postcss-px-to-viewport": "^1.1.1",
     "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {
@@ -46,15 +45,5 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ],
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {},
-      "postcss-px-to-viewport": {
-        "viewportWidth": 1920,
-        "unitPrecision": 5,
-        "minPixelValue": 1
-      }
-    }
-  }
+  ]
 }

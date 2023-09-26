@@ -77,12 +77,12 @@ Navigation Bar Component
 }
 
 .logo {
-  height: 90px;
+  height: 50px;
   width: auto;
 }
 
 .logo-text {
-  font-size: 40px;
+  font-size: 25px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: bold;
   color: #fff;
@@ -91,21 +91,24 @@ Navigation Bar Component
 
 .custom-dropdown {
   background: none;
-  font-size: 36px;
+  font-size: 16px;
   font-weight: bold;
 }
 
 .custom-dropdown .navbar-link {
+  padding: 0px 0px;
   background: transparent; /* Set background to transparent for dropdown label */
 }
 
 .custom-dropdown .navbar-dropdown {
+  padding: 0px 0px;
   background: none; /* Set background to transparent for dropdown items */
 }
 
 .navbar-element {
-    font-size: 28px;
+    font-size: 14px;
     font-weight: normal;
+    padding: 0px;
     color: #333;
 }
 
@@ -113,45 +116,4 @@ Navigation Bar Component
   text-decoration: underline;
 }
 
-.custom-button {
-  background: none;
-  font-size: 30px;
-  color: #fff;
-  font-weight: bold;
-  text-align: right;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.buttons {
-  display: flex;
-  justify-content: flex-start;
-}
-
-@media screen and (max-width: 1200px) {
-  .logo {
-    height: 50px;
-  }
-  .logo-text {
-    font-size: 30px;
-  }
-  ::v-deep .navbar-burger{
-    width:40px!important;
-    height:40px!important;
-    margin-right: 15px;
-    span{
-      width:20px!important;
-      height:2px!important;
-    }
-    span:nth-child(2){
-      top: calc(50% - 6px);
-    }
-    span:nth-child(3) {
-      top: calc(50% + 6px);
-    }
-  }
-  ::v-deep .navbar-burger.is-active span:nth-child(1){
-    transform: translateY(6px) rotate(45deg);
-  }
-}
 </style>

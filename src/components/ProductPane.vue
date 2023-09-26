@@ -27,15 +27,15 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 10px; /* Reduced the gap between panels */
-  padding: 10px; /* Reduced the padding */
+  gap: 5px; /* Reduced the gap between panels */
+  padding: 5px; /* Reduced the padding */
   background-color: #f7f7f7;
 }
 
 .product {
   flex: 1;
-  width: calc(50% - 10px); /* Adjusted the width to fit two items per row on mobile */
-  max-width: calc(33.33% - 10px); /* Adjusted the width to fit three items per row on larger screens */
+  width: calc(50% - 5px); /* Adjusted the width to fit two items per row on mobile */
+  max-width: calc(33.33% - 5px); /* Adjusted the width to fit three items per row on larger screens */
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -48,7 +48,7 @@ export default {
 }
 
 .product-content {
-  padding: 10px; /* Reduced the padding */
+  padding: 5px; /* Reduced the padding */
   text-align: center;
 }
 
@@ -56,12 +56,11 @@ export default {
   max-width: 100%;
   max-height: 200px;
   border-radius: 8px;
-  margin-bottom: 10px;
 }
 
 .product-name {
-  font-size: 20px;
-  margin: 10px 0;
+  font-size: 14px;
+  margin: 0px 0;
   font-weight: bolder;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center; /* Center-align text on mobile */
@@ -70,13 +69,14 @@ export default {
 .links {
   display: flex;
   justify-content: center;
-  margin-top: 10px; /* Add some spacing between the name and links on mobile */
+  margin-top: 0px; /* Add some spacing between the name and links on mobile */
 }
 
 .link {
   text-decoration: none;
+  font-size: 12px;
   color: #007bff;
-  margin: 0 10px;
+  margin: 0 2px;
   font-weight: bolder;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

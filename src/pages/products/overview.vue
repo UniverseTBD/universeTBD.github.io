@@ -43,7 +43,7 @@ data() {
   
   <style scoped>
   .product-intro {
-    display: flex;
+    display: block;
     justify-content: space-between;
   }
   
@@ -63,22 +63,12 @@ data() {
   display: flex;
   justify-content: flex-start;
 }
-@media screen and (max-width: 1200px) {
-  .product-intro{
-    display: block;
-  }
-  .panel1 {
-    width: 100%!important;
-  }
-}
-
 .page-content {
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
-
 .page-title {
   font-size: 36px;
   font-weight: bold;
@@ -89,6 +79,5 @@ data() {
   align-items: center;
   text-align: center;
 }
-
-  </style>
+</style>
   

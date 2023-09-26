@@ -73,20 +73,7 @@ export default {
   display: flex;
   justify-content: flex-start;
 }
-@media screen and (max-width: 1200px) {
-  .card {
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
-    margin-bottom: 1.5rem;
-  }
-
-  .card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transform: scale(1.05);
-  }
   .container{
     width: 95%;
   }
-}
 </style>

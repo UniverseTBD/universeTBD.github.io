@@ -48,7 +48,7 @@
       background-color: #000;
       padding: 20px;
       border-radius: 10px;
-      text-align: center;
+      text-align: left!important;
       background-size: cover;
       background-position: center;
     }
@@ -56,8 +56,9 @@
     .page h1 {
       color: #fff;
       font-weight: bolder;
-      font-size: 72px;
+      font-size: 40px;
       margin-bottom: 20px;
+      text-align: center!important;
     }
   
     .logo {
@@ -80,16 +81,6 @@
       font-size: 36px;
       font-weight: bold;
       color: #fff
-  }
-  @media screen and (max-width: 1200px) {
-    .page {
-        text-align: left!important;
-      }
-    .page h1 {
-      text-align: center!important;
-      font-size: 40px;
-      margin-bottom: 20px;
-    }  
   }
   </style>
     

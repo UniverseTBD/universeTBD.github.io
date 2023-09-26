@@ -55,16 +55,15 @@
   .custom-button {
     background: none;
     color: #fff;
-    font-size: 32px;
-    padding: 10px 20px;
     border-color: #fff;
-  
+    font-size: 20px;
+    padding: 10px 20px;
     animation: fadeIn;
     animation-duration: 2s;
   }
   
   .title {
-    font-size: 81px; /* Increase the font size */
+    font-size: 30px;
     color: #fff;
   
     animation: fadeIn;
@@ -72,7 +71,7 @@
   }
   
   .subtitle {
-    font-size: 32px; /* Increase the font size */
+    font-size: 16px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #fff;
   
@@ -81,57 +80,27 @@
   }
   
   .navbar-element {
-      font-size: 36px;
-      font-weight: bold;
-      color: #fff
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff
   }
   
   .fancy-title {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 900;
-    font-size: 120px;
+    font-size: 50px;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   
   .container-background{
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 20px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   
   }
   
   .align-right{
       text-align: right;
   }
- @media screen and (max-width: 1200px) {
-  .custom-button {
-    font-size: 20px;
-    padding: 10px 20px;
-  }
-
-  .title {
-    font-size: 30px;
-  }
-
-  .subtitle {
-    font-size: 16px;
-  }
-
-  .navbar-element {
-    font-size: 20px;
-  }
-
-  .fancy-title {
-    font-weight: 900;
-    font-size: 50px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-
-  .container-background{
-      padding: 10px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-
-}
   </style>

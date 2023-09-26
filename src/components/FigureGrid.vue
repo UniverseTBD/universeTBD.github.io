@@ -27,8 +27,8 @@ export default {
 <style scoped>
   .figure-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
   }
   
   .figure {
@@ -81,11 +81,6 @@ export default {
   max-width: 100%;
   height: auto;
   max-height: 200px; /* Set a fixed height for the images */
-}
-@media screen and (max-width: 1200px) {
-  .figure-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 </style>
   

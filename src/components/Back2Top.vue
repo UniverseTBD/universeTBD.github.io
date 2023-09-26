@@ -23,15 +23,15 @@ export default {
 <style scoped>
 .back-to-top {
   position: fixed;
-  bottom: 20px;
+  bottom: 10px;
   right: 10px;
-  padding: 15px 30px;
+  padding: 10px 15px;
   background-color: #f5f5f5;
   color: #000;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 900;
   transition: background-color 0.3s ease;

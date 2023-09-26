@@ -54,7 +54,7 @@
   .custom-button {
     background: none;
     color: #fff;
-    font-size: 32px;
+    font-size: 20px;
     padding: 10px 20px;
     border-color: #fff;
   
@@ -65,13 +65,13 @@
   .title {
     font-size: 81px; /* Increase the font size */
     color: #fff;
-  
+    font-size: 40px;
     animation: fadeIn;
     animation-duration: 2s;
   }
   
   .subtitle {
-    font-size: 32px; /* Increase the font size */
+    font-size: 25px;
     font-family: fantasy;
     font-weight: bolder;
     font-style: oblique;
@@ -82,7 +82,7 @@
   }
   
   .navbar-element {
-      font-size: 36px;
+      font-size: 20px;
       font-weight: bold;
       color: #fff
   }
@@ -90,49 +90,18 @@
   .fancy-title {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 900;
-    font-size: 120px;
+    font-size: 60px;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   
   .container-background{
       background-color: rgba(0, 0, 0, 0.5);
-      padding: 20px;
+      padding: 10px;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  
   }
   
   .align-right{
       text-align: right;
   }
-  @media screen and (max-width: 1200px) {
-  .custom-button {
-    font-size: 20px;
-    padding: 10px 20px;
-  }
-
-  .title {
-    font-size: 40px;
-  }
-
-  .subtitle {
-    font-size: 25px;
-  }
-
-  .navbar-element {
-    font-size: 20px;
-  }
-
-  .fancy-title {
-    font-weight: 900;
-    font-size: 60px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-
-  .container-background{
-      padding: 10px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-
-}
   </style>

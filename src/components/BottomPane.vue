@@ -55,31 +55,34 @@ export default {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: 900;
   color: #333;
-  font-size: 64px;
+  font-size: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .custom-columns {
-  display: flex;
+  display: block;
   justify-content: space-evenly;
   align-items: flex-start;
   margin-top: 0px;
+  padding: 0 10px;
 }
 
 .columns-container {
   background-color: none;
   border-radius: 10px;
+  width: 25%;
+  float:left
 }
 
 .column-item {
-  margin: 0 10px;
+  margin: 0px 0px;
 }
 
 .column-item h2 {
-  font-size: 36px;
+  font-size: 16px;
   font-weight: bold;
   color: #000;
-  margin-bottom: 10px;
 }
 
 .column-item ul {
@@ -89,8 +92,7 @@ export default {
 }
 
 .column-item ul li {
-  margin-bottom: 5px;
-  font-size: 24px;
+  font-size: 14px;
 }
 
 .custom-li {
@@ -100,27 +102,5 @@ export default {
 .column-item ul li:hover {
     text-decoration: underline;
 }
-@media screen and (max-width: 1200px) {
-  .custom-columns{
-    padding: 0 10px;
-    display: block;
-    .column-title{
-      width: 100%;
-    }
-    .columns-container{
-      width: 50%;
-      float:left
-    }
-  }
-  .column-title {
-    font-size: 30px;
-  }
-  .column-item h2 {
-    font-size: 25px;
-  }
-  .column-item ul li {
-    margin-bottom: 5px;
-    font-size: 18px;
-  }
-}
+
 </style>
