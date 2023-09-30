@@ -11,4 +11,9 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
+  build: {
+    assetsInlineLimit: 0,
+    assetsDir: 'assets',
+    cssCodeSplit: true,
+  },
 });
