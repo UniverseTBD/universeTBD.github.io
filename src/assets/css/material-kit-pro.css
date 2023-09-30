@@ -32803,7 +32803,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 /* Default icon URLs */
 .leaflet-default-icon-path {
-  background-image: url(images/marker-icon.png);
+  background-image: url(images/marker-icon.jpg);
 }
 
 /* attribution and scale controls */

@@ -13,7 +13,7 @@ import embed from "@/assets/img/product/embed.jpeg";
     <div class="container">
       <div class="row">
         <div class="col-lg-6 mx-auto text-center">
-          <h3 class="mb-5">Our latest achievements</h3>
+          <h3 class="mb-5">Our Latest Achievements</h3>
         </div>
       </div>
       <div class="row">

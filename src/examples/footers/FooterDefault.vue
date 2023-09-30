@@ -1,5 +1,5 @@
-<script setup>
-import logoDark from "@/assets/img/logo-ct-dark.png";
+<!-- <script setup>
+import logo from "@/assets/img/logo-ct-dark.png";
 defineProps({
   brand: {
     type: Object,
@@ -8,7 +8,7 @@ defineProps({
     route: "",
     default: () => ({
       name: "UniverseTBD",
-      logo: logoDark,
+      logo: logo,
       route: "/"
     })
   },
@@ -181,4 +181,4 @@ defineProps({
       </div>
     </div>
   </footer>
-</template>
+</template> -->

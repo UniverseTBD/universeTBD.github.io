@@ -16,6 +16,7 @@ import AboutTeam from "./Sections/AboutTeam.vue";
 import AboutTeam2 from "./Sections/AboutTeam2.vue";
 
 const body = document.getElementsByTagName("body")[0];
+
 //hooks
 onMounted(() => {
   body.classList.add("about-us");
@@ -49,14 +50,13 @@ onMounted(() => {
       
       <div class="container">
         
-        <!-- Section 1: Header Text and Icons -->
         <div 
           class="row justify-content-center"
           :style="{ 
           backgroundPosition: 'center', 
           }"
         >
-          <div class="col-lg-9 text-center mx-auto my-9">
+          <div class="col-lg-9 text-center mx-auto my-12">
             <h1 class="text-white">
               Work with an amazing <span class="text-white" id="typed"></span>
             </h1>
@@ -90,12 +90,12 @@ onMounted(() => {
 
         <div class="row justify-content-center">
           <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6" >
-            <AboutTeam />
+            <AboutTeam2 />
           </div>
         </div> 
 
-      </div> <!-- End of .container -->
-    </div> <!-- End of .page-header -->
+      </div>
+    </div>
     
   </header>
   <DefaultFooter />
