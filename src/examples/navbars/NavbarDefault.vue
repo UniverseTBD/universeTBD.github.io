@@ -197,14 +197,7 @@ watch(
                       <div
                         class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-3"
                       >
-                        Sponcer
                       </div>
-                      <RouterLink
-                        :to="{ name: 'about-sponsor' }"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Sponcer</span>
-                      </RouterLink>
                     </div>
                   </div>
                 </div>
@@ -227,17 +220,6 @@ watch(
                 >
                   <span>Sponcer</span>
                 </RouterLink>
-                <div
-                  class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-3"
-                >
-                  Sponcer
-                </div>
-                <RouterLink
-                  :to="{ name: 'about-sponsor' }"
-                  class="dropdown-item border-radius-md"
-                >
-                  <span>Sponcer</span>
-                </RouterLink>
               </div>
             </div>
           </li>
@@ -246,7 +228,7 @@ watch(
           <li class="nav-item dropdown dropdown-hover mx-2">
             <a
               role="button"
-              class="nav-link ps-2 d-flex cursor-pointer align-items-center"
+              class="nav-link ps-0 d-flex cursor-pointer align-items-center"
               :class="getTextColor()"
               id="dropdownMenuPages"
               data-bs-toggle="dropdown"
@@ -277,7 +259,7 @@ watch(
                 <div class="col-12 px-4 py-2">
                   <div class="row">
                     <div
-                      class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-3"
+                      class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-0"
                     >
                       Product
                     </div>

@@ -1,14 +1,14 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 import PresentationView from "../views/Presentation/PresentationView.vue";
-import About from "../views/abouts/index.vue";
+import About from "../views/abouts/about.vue";
 import Sponsor from "../views/abouts/sponsor.vue";
-import Product from "../views/products/index.vue";
+import Product from "../views/products/product.vue";
 import AstroLLaMA from "../views/products/astrollama.vue";
 import Hypothesis from "../views/products/hypothesis.vue";
 import Embedding from "../views/products/embedding.vue";
 import Research from "../views/researches/research.vue";
-import People from "../views/peoples/index.vue";
+import People from "../views/peoples/people.vue";
 import People2 from "../views/peoples/people2.vue";
 import Joinus from "../views/peoples/joinus.vue";
 
