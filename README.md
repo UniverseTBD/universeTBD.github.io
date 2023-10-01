@@ -37,6 +37,7 @@ git checkout my-new-branch-name
 npm run dev
 
 # generate `docs/` files and add them to git:
+# ./build.sh
 npm run build
 
 # add new/modofied/removed files
