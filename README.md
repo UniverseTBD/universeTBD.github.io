@@ -34,10 +34,10 @@ git checkout my-new-branch-name
 # ...
 
 # make sure everything looks good locally:
-npm run serve
+npm run dev
 
 # generate `docs/` files and add them to git:
-./build.sh
+npm run build
 
 # add new/modofied/removed files
 git add modified-filename.example
