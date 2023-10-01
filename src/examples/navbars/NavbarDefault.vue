@@ -194,32 +194,9 @@ watch(
                       >
                         <span>Sponcer</span>
                       </RouterLink>
-                      <div
-                        class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-3"
-                      >
-                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="d-lg-none">
-                <div
-                  class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0"
-                >
-                  About
-                </div>
-                <RouterLink
-                  :to="{ name: 'about' }"
-                  class="dropdown-item border-radius-md"
-                >
-                  <span>About Us</span>
-                </RouterLink>
-                <RouterLink
-                  :to="{ name: 'about-sponsor' }"
-                  class="dropdown-item border-radius-md"
-                >
-                  <span>Sponcer</span>
-                </RouterLink>
               </div>
             </div>
           </li>
