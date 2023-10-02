@@ -1,4 +1,6 @@
-# tbd
+# UniverseTBD
+
+Vue Template: [vue-material-kit-master](https://www.creative-tim.com/product/vue-material-kit)
 
 ## Project setup
 ```bash
@@ -7,17 +9,17 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```bash
-npm run serve
+npm run dev
 ```
 
 ### Compiles and minifies for production
 ```bash
-./build.sh
+npm run build
 ```
 
-### Lints and fixes files
+### Check if the production build looks OK in your local environment.
 ```bash
-npm run lint
+npm run preview
 ```
 
 ## Typical scenario
@@ -32,10 +34,11 @@ git checkout my-new-branch-name
 # ...
 
 # make sure everything looks good locally:
-npm run serve
+npm run dev
 
 # generate `docs/` files and add them to git:
-./build.sh
+# ./build.sh
+npm run build
 
 # add new/modofied/removed files
 git add modified-filename.example
