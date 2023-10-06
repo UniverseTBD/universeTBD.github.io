@@ -10,6 +10,8 @@ npm install
 ### Compiles and hot-reloads for development
 ```bash
 npm run dev
+# If you want to do testing in LAN, eg your mobile phone
+npm run dev -- --host 0.0.0.0
 ```
 
 ### Compiles and minifies for production
@@ -35,6 +37,7 @@ git checkout my-new-branch-name
 
 # make sure everything looks good locally:
 npm run dev
+npm run dev -- --host 0.0.0.0
 
 # generate `docs/` files and add them to git:
 # ./build.sh

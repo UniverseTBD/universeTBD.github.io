@@ -51,7 +51,6 @@ onMounted(() => {
       class="page-header min-vh-100"
       :style="{ 
         backgroundImage: `url(${background})`, 
-        backgroundAttachment: 'fixed', 
         backgroundPosition: 'center', 
         backgroundSize: 'cover' }"
     >
