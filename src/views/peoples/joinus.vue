@@ -11,10 +11,6 @@ import background from "@/assets/img/background.png";
 //dep
 import Typed from "typed.js";
 
-//sections
-import AboutTeam from "@/views/peoples/Sections/AboutTeam.vue";
-import AboutTeam2 from "@/views/peoples/Sections/AboutTeam2.vue";
-
 const body = document.getElementsByTagName("body")[0];
 //hooks
 onMounted(() => {
@@ -40,21 +36,26 @@ onMounted(() => {
   <header class="bg-gradient-dark">
     <div
       class="page-header min-vh-100"
-      :style="{ backgroundImage: `url(${background})` }"
+      :style="{ 
+        backgroundImage: `url(${background})`, 
+        backgroundPosition: 'center', 
+        backgroundSize: 'cover' }"
     >
       <span class="mask bg-gradient-dark opacity-3"></span>
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-9 text-center mx-auto my-auto">
+          <div class="col-lg-10 text-center mx-auto my-auto">
             <h1 class="text-white">
               Work with an amazing <span class="text-white" id="typed"></span>
             </h1>
             <div id="typed-strings">
               <h1>team</h1>
-              <!-- <h1>astrophysics</h1> -->
               <h1>AI</h1>
             </div>
-            <p class="lead mb-4 text-white opacity-8">
+            <p 
+              class="lead text-white px-5 mt-3" 
+              :style="{ fontWeight: '500', textShadow: '2px 2px 2px black' }"
+            >
               We are a group of astronomers, machine learning enthusiasts, engineers, and enthusiasts, eminently human from all over the world, united to achieve our shared vision!
             </p>
             <a href="https://forms.gle/1g4AJXtT3wyHgbmAA" class="btn bg-white text-dark" role="button">

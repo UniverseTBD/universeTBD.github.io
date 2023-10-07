@@ -29,7 +29,7 @@ import embed from "@/assets/img/product/embed.jpeg";
           <TransparentBlogCard
             :image="hypo"
             title="Hypothesis Generation"
-            description="We enhance astronomy research by leveraging GPT-4 and advanced prompting, utilizing 1000 NASA papers."
+            description="We show that through adversarial prompting, foundation model can benefit from longer context, leading to more robust scientific hypothesis generation."
             :action="{route: 'https://arxiv.org/abs/2306.11648', label: 'View on arXiv', color: 'success'}"
           />
         </div>

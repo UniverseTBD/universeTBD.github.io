@@ -38,7 +38,6 @@ onMounted(() => {
       class="page-header min-vh-100"
       :style="{ 
         backgroundImage: `url(${background})`, 
-        backgroundAttachment: 'fixed', 
         backgroundPosition: 'center', 
         backgroundSize: 'cover' }"
     >
@@ -52,35 +51,16 @@ onMounted(() => {
             <div id="typed-strings">
               <h1>About Our Sponsor</h1>
             </div>
-            <p class="lead mb-4 text-white opacity-8">
-                We are extremely grateful to the Microsoft Accelerate Foundation Models Academic Research Initiative for providing our astronomy research group with 10,000 USD in Azure OpenAI credits. Access to advanced AI capabilities has greatly accelerated our work applying language models to automate analysis of astronomical literature.
+            <p 
+              class="lead text-white px-5 mt-3" 
+              :style="{ fontWeight: '500', textShadow: '2px 2px 2px black' }"
+            >
+                We are extremely grateful to the Microsoft Accelerate Foundation Models Academic Research Initiative for providing our astronomy research group with 30,000 USD in Azure OpenAI credits. Access to advanced AI capabilities has greatly accelerated our work applying language models to automate analysis of astronomical literature.
             </p>
           </div>
         </div>
       </div>
     </div>
   </header>
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-12 col-md-12 offset-md-0">
-        <h2 class="mb-4">What is UniverseTBD</h2>
-        <p class="mb-1">
-          We are extremely grateful to the Microsoft Accelerate Foundation Models Academic Research Initiative for providing our astronomy research group with 10,000 USD in Azure OpenAI credits. Access to advanced AI capabilities has greatly accelerated our work applying language models to automate analysis of astronomical literature.
-        </p>
-        <p class="mb-0">
-          We are a group of astronomers, machine learning enthusiasts,
-          engineers, and enthusiasts, eminently human, coming from all over
-          the world to make it happen. Our goal is to use foundation models to
-          democratize Astronomy for everyone and expand our horizons on what's
-          possible for the field moving forward.
-        </p>
-        <p class="mb-3">
-          One of the big questions we want to answer is: can large language
-          models come up with unique scientific insights and hypotheses? Stay
-          fine-tuned.
-        </p>
-      </div>
-    </div>
-  </div>
   <DefaultFooter />
 </template>

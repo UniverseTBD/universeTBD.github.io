@@ -8,8 +8,7 @@ import AstroLLaMA from "../views/products/astrollama.vue";
 import Hypothesis from "../views/products/hypothesis.vue";
 import Embedding from "../views/products/embedding.vue";
 import Research from "../views/researches/research.vue";
-import People from "../views/peoples/people.vue";
-import People2 from "../views/peoples/people2.vue";
+import Participants from "../views/peoples/participants.vue";
 import Joinus from "../views/peoples/joinus.vue";
 
 const router = createRouter({
@@ -60,14 +59,9 @@ const router = createRouter({
     },
 
     {
-      path: "/people2",
-      name: "people2",
-      component: People2,
-    },
-    {
-      path: "/people",
-      name: "people",
-      component: People,
+      path: "/people/participants",
+      name: "participants",
+      component: Participants,
     },
     {
       path: "/people/joinus",

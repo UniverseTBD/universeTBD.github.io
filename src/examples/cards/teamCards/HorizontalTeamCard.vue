@@ -22,10 +22,12 @@ defineProps({
   },
 });
 </script>
+
+
 <template>
   <div class="card card-profile">
     <div class="row">
-      <div class="col-lg-4 col-md-6 col-12 mt-n5">
+      <div class="col-lg-3 col-md-6 col-12 mt-n5">
         <a :href="profile.link">
           <div class="p-3 pe-md-0">
             <img
@@ -36,7 +38,7 @@ defineProps({
           </div>
         </a>
       </div>
-      <div class="col-lg-8 col-md-6 col-12 my-auto">
+      <div class="col-lg-9 col-md-6 col-12 my-auto">
         <div class="card-body ps-lg-0">
           <h5 class="mb-0">{{ profile.name }}</h5>
           <h6 :class="`text-${position.color}`">{{ position.label }}</h6>
