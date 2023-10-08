@@ -24,6 +24,15 @@ npm run build
 npm run preview
 ```
 
+### Fork and Changes
+---bash
+git remote add upstream https://github.com/universeTBD/universeTBD.github.io.git
+git fetch upstream
+git checkout main
+git merge upstream/main
+git push origin main
+---
+
 ## Typical scenario
 ```bash
 git pull

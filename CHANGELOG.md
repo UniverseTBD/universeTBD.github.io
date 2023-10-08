@@ -9,6 +9,7 @@
     - Maja Jabłońska
     - Sergio José Rodríguez Méndez
     - Huiling Liu
+    - Zechang Sun
 - Fixed some typo
 - Implemented a delicate dark text shadow for improved readability against backgrounds.
 - Optimized some of mobile background fig display issues.
