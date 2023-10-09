@@ -1,6 +1,6 @@
 # Change Logs
 
-## [0.2.0] 2023-10-7
+## [0.2.3] 2023-10-9
 
 - Introduced Footer: Displaying our sponsor's logo prominently.
 - Enhanced participant page.
@@ -9,6 +9,7 @@
     - Maja Jabłońska
     - Sergio José Rodríguez Méndez
     - Huiling Liu
+    - Zechang Sun
 - Fixed some typo
 - Implemented a delicate dark text shadow for improved readability against backgrounds.
 - Optimized some of mobile background fig display issues.

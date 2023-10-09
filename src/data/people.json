@@ -29,7 +29,7 @@
     "affiliation": "Tsinghua University",
     "imageUrl": "/people/zechang.jpg",
     "websiteUrl": "https://zechangsun.github.io",
-    "bio": "https://zechangsun.github.io"
+    "bio": "Hello, I'm Zechang, a second-year PhD student at Tsinghua University exploring the intersection of astrophysics and data science. I am passionate about leveraging statistical methods to unravel the mysteries of our universe. The emergence of large language models holds promise for catalyzing a paradigm shift in astronomical research. I feel privileged to investigate the vast potential of LLMs in astronomy alongside the esteemed team at UniverseTBD. Ensuring the safe and ethical development of large language models is of great interest to me, as is using them to foster openness and transparency in academia. I really look forward to this journey of discovery."
   },
   {
     "id": 2,
@@ -54,6 +54,14 @@
     "imageUrl": "/people/maya.png",
     "websiteUrl": "https://www.linkedin.com/in/maja-jablonska/?originalSubdomain=pl",
     "bio": "I am a Ph.D. student at the Research School of Astronomy and Astrophysics at the Australian National University. I dream of leveraging the newest advances in machine learning to supercharge research in astronomy. I believe that the synergy between the latest technologies and human expertise is the way to go!"
+  },
+  {
+    "id": 4,
+    "name": "Huiling Liu",
+    "affiliation": "University of Science and Technology of China",
+    "imageUrl": "/people/huiling.jpg",
+    "websiteUrl": "http://home.ustc.edu.cn/~lhl2718281/",
+    "bio": "Hello! I am Huiling Liu(刘会凌), a fourth year undergraduate student majoring in Theoretical Physics at USTC. Currently, I am engaged in work related to galaxy evolution in the Prof. Huiyuan Wang (王慧元)'s group. The fusion of nature's beauty with the sophistication of form theory is profoundly inspiring. I am more than happy to share these feelings to people through LLM. Furthermore, I am one of the contributors to this website. "
   },
   {
     "id": 5,
@@ -167,13 +175,5 @@
     "imageUrl": "/people/thang.png",
     "websiteUrl": "https://researchers.anu.edu.au/researchers/bui-t",
     "bio": "Thang Bui is a lecturer (equivalent to tenure-track Assistant Professor) in Machine Learning at the School of Computing, Australian National University since July 2022. Before that, he was a lecturer at the University of Sydney from 2018 to 2022 and spent two years (2019-2020) at Uber AI. He completed his doctoral training at the Cambridge Machine Learning group, supervised by Richard Turner and advised by Carl Rasmussen."
-  },
-  {
-    "id": 4,
-    "name": "Huiling Liu",
-    "affiliation": "University of Science and Technology of China",
-    "imageUrl": "/people/huiling.jpg",
-    "websiteUrl": "http://home.ustc.edu.cn/~lhl2718281/",
-    "bio": "Hello! My name is Huiling Liu(刘会凌). I'm a fourth year undergraduate student majoring in Theoretical Physics at USTC. Currently, I am engaged in work related to galaxy evolution in the Prof. Huiyuan Wang (王慧元)'s group. Beyond astrophysics, I am also interesting in robot and LLM."
   }
 ]
