@@ -1,6 +1,10 @@
 # Change Logs
 
+<<<<<<< HEAD
 ## [0.2.3] 2023-10-9
+=======
+## [0.2.4] 2023-10-9
+>>>>>>> 4a9c65b5bc79f06b5718c1bee70c1ace2751a83f
 
 - Introduced Footer: Displaying our sponsor's logo prominently.
 - Enhanced participant page.
