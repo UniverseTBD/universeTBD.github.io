@@ -47,7 +47,7 @@ npm run build
 git add modified-filename.example
 
 # commit changes locally
-git commit -m "made some important changes"
+git commit -m "version"
 
 # push to github:
 git push --set-upstream origin my-new-branch-name
