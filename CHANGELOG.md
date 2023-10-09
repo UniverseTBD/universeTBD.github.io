@@ -1,6 +1,6 @@
 # Change Logs
 
-## [0.2.3] 2023-10-7
+## [0.2.4] 2023-10-9
 
 - Introduced Footer: Displaying our sponsor's logo prominently.
 - Enhanced participant page.
