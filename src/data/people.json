@@ -117,7 +117,7 @@
     "affiliation": "SAO/NASA Astrophysics Data System",
     "imageUrl": "/people/accomazzi.jpg",
     "websiteUrl": "https://www.mso.anu.edu.au/~yting/",
-    "bio": "As an astrophysicist and computer scientist, Yuan-Sen fuses astronomy and machine learning. He is an Associate Professor at Australian National University and Ohio State University. Originally from Malaysia, he earned his PhD at Harvard in 2017 before prestigious fellowships at Princeton, NASA, and others. Now in Australia, he co-chairs NASA's Cosmic Programs Stars group, leads spectroscopic surveys, and prolifically publishes research pushing scientific boundaries applying machine learning to astrophysics."
+    "bio": "After receiving a Doctorate in Physics from the University of Milan in 1988, Alberto worked on image processing and analysis projects at the Center for Astrophysics, applying computer vision techniques to astronomical image classification problems. In 1994 he joined the ADS project as a developer and focused on the implementation of the ADS Search Engine and Article archive. In 2007 he became program manager of the ADS and in 2015 took the additional role of Principal Investigator. He currently serves on the scientific advisory board of the high-energy INSPIRE information system, on the Next Generation IT advisory board for arXiv, and as current vice-chair of the International Virtual Astronomy Alliance (IVOA) Working group on Semantics. He referees for various scholarly publications and is an editor of the journal Astronomy & Computing."
   },
   
   {
@@ -158,7 +158,7 @@
     "affiliation": "The Australian National University",
     "imageUrl": "/people/sergio.jpeg",
     "websiteUrl": "https://w3id.org/people/sergio",
-    "bio": "Sergio is a Research Fellow and Lecturer at the Australian National University (School of Computing).  His research interests lie at the intersection of Knowledge Graphs, Ontology Engineering, Link Data, Semantic Web, Data Science, Information Retrieval, and Natural Language Processing.  Sergio is an interdisciplinary scholar and professional Software Engineer and Architect with 24+ years of working experience (13+ in industry and 10+ in academia).  He has vast experience as a Full-Stack System Developer, Data Specialist, Project Manager, and IT Consultant using various platforms and tools.  Sergio obtained his PhD in Computer Science from 'The Electrical Engineering and Computer Science International Graduate Program' of the *National Chiao Tung University* in Taiwan (2018).  He sees himself as a Knowledge Graph geek passionate about the Universe and its computational models.  'I see data structures and patterns everywhere; everything is connected and linked in a big graph' -- Sergio."
+    "bio": "Sergio is a Research Fellow and Lecturer at the Australian National University (School of Computing).  His research interests lie at the intersection of Knowledge Graphs, Ontology Engineering, Link Data, Semantic Web, Data Science, Information Retrieval, and Natural Language Processing.  Sergio is an interdisciplinary scholar and professional Software Engineer and Architect with 24+ years of working experience (13+ in industry and 10+ in academia).  He has vast experience as a Full-Stack System Developer, Data Specialist, Project Manager, and IT Consultant using various platforms and tools.  Sergio obtained his PhD in Computer Science from \"The Electrical Engineering and Computer Science International Graduate Program\" of the *National Chiao Tung University* in Taiwan (2018).  He sees himself as a Knowledge Graph geek passionate about the Universe and its computational models.  'I see data structures and patterns everywhere; everything is connected and linked in a big graph' -- Sergio."
   },
   {
     "id": 4,
@@ -175,5 +175,13 @@
     "imageUrl": "/people/thang.png",
     "websiteUrl": "https://researchers.anu.edu.au/researchers/bui-t",
     "bio": "Thang Bui is a lecturer (equivalent to tenure-track Assistant Professor) in Machine Learning at the School of Computing, Australian National University since July 2022. Before that, he was a lecturer at the University of Sydney from 2018 to 2022 and spent two years (2019-2020) at Uber AI. He completed his doctoral training at the Cambridge Machine Learning group, supervised by Richard Turner and advised by Carl Rasmussen."
+  },
+  {
+    "id": 4,
+    "name": "Kevin Schawinski",
+    "affiliation": "Eidgenössische Technische Hochschule Zürich",
+    "imageUrl": "/people/kevin.png",
+    "websiteUrl": "https://en.wikipedia.org/wiki/Kevin_Schawinski",
+    "bio": "Co-Founder and CEO at Modulos. Working on the tools for building trustworthy and responsible AI aligned with the EU AI Act and other upcoming laws and regulations." 
   }
 ]

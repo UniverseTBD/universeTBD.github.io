@@ -1,5 +1,11 @@
 # Change Logs
 
+## [0.2.6] 2023-10-16
+
+- Profile changes for:
+    - Kevin Schawinski
+    - Alberto Accomazzi
+
 ## [0.2.5] 2023-10-9
 
 - Introduced Footer: Displaying our sponsor's logo prominently.
