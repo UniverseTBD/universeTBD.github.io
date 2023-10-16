@@ -49,8 +49,7 @@ npm run dev
 npm run dev -- --host 0.0.0.0
 
 # generate `docs/` files and add them to git:
-# ./build.sh
-npm run build
+./build.sh
 
 # add new/modofied/removed files
 git add modified-filename.example
