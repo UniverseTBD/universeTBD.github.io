@@ -1,6 +1,6 @@
 # Change Logs
 
-## [0.2.6] 2023-10-16
+## [0.2.7] 2023-10-16
 
 - Profile changes for:
     - Kevin Schawinski
