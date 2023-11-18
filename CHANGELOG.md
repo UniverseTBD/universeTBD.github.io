@@ -1,5 +1,18 @@
 # Change Logs
 
+## [0.2.9] 2023-11-18
+
+- Profile changes for:
+    - Wassim Tenachi
+    - Mike Smith
+    - Michele Ginolfi
+
+## [0.2.8] 2023-11-11
+
+- Profile changes for:
+    - Sandor Kruk
+- Add OpenAI as sponsor at Sponsor page and footers
+
 ## [0.2.7] 2023-10-16
 
 - Profile changes for:

@@ -111,15 +111,18 @@ defineProps({
   <footer class="footer pt-1 mt-1">
     <div class="py-5">
       <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-lg-5 text-left">
+        <div class="row"> <!-- 添加一个包裹所有列的行 -->
+          <div class="col-lg-6 ms-lg-5 text-center">
             <h4 class="mb-1">Thank you for your support</h4>
             <p class="lead mb-0">We choose to go to the moon!</p>
           </div>
-          <div class="col-lg-5 text-right">
-            <div class="col-lg-6 col-md-4 col-6 ms-lg-0 ms-md-auto ms-auto">
-              <img class="w-100" src="@/assets/img/logo/Microsoft.svg" alt="Logo" />
-            </div>
+
+          <div class="col-lg-3 ms-lg-n6 mt-2 text-center"> <!-- 修改列宽以适应布局 -->
+            <img class="w-80" src="@/assets/img/logo/Microsoft.svg" alt="Logo" />
+          </div>
+
+          <div class="col-lg-3 ms-lg-n5 mt-2 text-center"> <!-- 修改列宽以适应布局 -->
+            <img class="w-60" src="@/assets/img/logo/OpenAI.svg" alt="Logo" />
           </div>
         </div>
       </div>
