@@ -123,7 +123,7 @@
     "id": 15,
     "name": "Wassim Tenachi",
     "affiliation": "Observatoire Astronomique de Strasbourg",
-    "imageUrl": "/people/wassim.png",
+    "imageUrl": "/people/wassim.jpg",
     "websiteUrl": "https://twitter.com/WassimTenachi",
     "bio": "Wassim is a PhD student at the Observatoire Astronomique de Strasbourg in France. His research centers on developing an intelligible machine learning paradigm that intelligently manipulates mathematical symbols in an unsupervised manner. This innovative approach is geared towards generating physical models as symbolic analytical laws directly from data. Wassim also has a keen interest in constraining dark matter properties from galactic dynamics."
   },
@@ -207,5 +207,5 @@
     "imageUrl": "/people/kevin.jpg",
     "websiteUrl": "https://en.wikipedia.org/wiki/Kevin_Schawinski",
     "bio": "Kevin Schawinski is a former astrophysicist who used to work on citizen science and brining machine learning to astrophysics. He founded Modulos to bring the tools and guidance to help people build responsible AI aligned with new regulations such as the EU AI Act." 
-  },
+  }
 ]
