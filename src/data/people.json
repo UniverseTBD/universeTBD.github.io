@@ -104,6 +104,14 @@
     "bio": "Rui Pan, who also goes by Mike, is a fourth-year PhD student supervised by Prof. Tong Zhang. His research interests lie in the area of optimization and large language models. Previously, he worked on a project called LMFlow, which aims to make it easy for everyone to train their own LLMs."
   },
   {
+    "id": 26,
+    "name": "Michele Ginolfi",
+    "affiliation": "University of Florence",
+    "imageUrl": "/people/michele.jpeg",
+    "websiteUrl": "https://en.wikipedia.org/wiki/Kevin_Schawinski",
+    "bio": "I am an astrophysicist based at the University of Florence, where I study galaxies through a blend of observational data, numerical simulations, and machine learning. Driven by curiosity, I like to explore different areas too, and I’m involved in developing computer vision pipelines for diverse applications, like medical imaging, cultural heritage, and (my favorite project) motion sensing image-sonification tools to enhance inclusion and accessibility in astronomy." 
+  },
+  {
     "id": 14,
     "name": "Mike Smith",
     "affiliation": "Aspia Space",
@@ -199,13 +207,5 @@
     "imageUrl": "/people/kevin.jpg",
     "websiteUrl": "https://en.wikipedia.org/wiki/Kevin_Schawinski",
     "bio": "Kevin Schawinski is a former astrophysicist who used to work on citizen science and brining machine learning to astrophysics. He founded Modulos to bring the tools and guidance to help people build responsible AI aligned with new regulations such as the EU AI Act." 
-  },
-  {
-    "id": 26,
-    "name": "Michele Ginolfi",
-    "affiliation": "University of Florence",
-    "imageUrl": "/people/michele.jpeg",
-    "websiteUrl": "https://en.wikipedia.org/wiki/Kevin_Schawinski",
-    "bio": "I am an astrophysicist based at the University of Florence, where I study galaxies through a blend of observational data, numerical simulations, and machine learning. Driven by curiosity, I like to explore different areas too, and I’m involved in developing computer vision pipelines for diverse applications, like medical imaging, cultural heritage, and (my favorite project) motion sensing image-sonification tools to enhance inclusion and accessibility in astronomy." 
   }
 ]
