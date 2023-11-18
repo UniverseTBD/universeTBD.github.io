@@ -1,6 +1,6 @@
 # Change Logs
 
-## [0.2.9] 2023-11-18
+## [0.2.9] 2023-11-17
 
 - Profile changes for:
     - Wassim Tenachi
