@@ -24,7 +24,7 @@
     "bio": "I am an astronomer and data scientist based at the European Space Agency, ESAC in Spain. My goal is to create innovative tools that empower users to delve into the richness of astronomical data within the extensive space science archives. I have a deep enthusiasm for data exploration and visualization, citizen science initiatives, and a strong commitement to improve the accessibility of science education for the next generation."
   },
   {
-    "id": 6,
+    "id": 4,
     "name": "Ze-Chang Sun",
     "affiliation": "Tsinghua University",
     "imageUrl": "/people/zechang.jpg",
@@ -32,7 +32,7 @@
     "bio": "Hello, I'm Zechang, a second-year PhD student at Tsinghua University exploring the intersection of astrophysics and data science. I am passionate about leveraging statistical methods to unravel the mysteries of our universe. The emergence of large language models holds promise for catalyzing a paradigm shift in astronomical research. I feel privileged to investigate the vast potential of LLMs in astronomy alongside the esteemed team at UniverseTBD. Ensuring the safe and ethical development of large language models is of great interest to me, as is using them to foster openness and transparency in academia. I really look forward to this journey of discovery."
   },
   {
-    "id": 2,
+    "id": 5,
     "name": "Kartheik Iyer",
     "affiliation": "Columbia University",
     "imageUrl": "/people/kartheik.jpeg",
@@ -40,7 +40,7 @@
     "bio": "Hallo. I'm a NHFP Hubble Fellow at Columbia University. I'm obsessed with understanding how galaxies form stars over time, and work with both observations from telescopes (on the ground and in space) and cosmological simulations to understand the rich diversity of galactic star formation histories. I am also interested in all sorts of astrostatistical problems, and the synergy of machine learning techniques with everything from inference problems to better literature searches and knowledge discovery. In my non-work hours you'll often find me holed up in a bookstore, tinkering with things, or planning homebrew TTRPG campaigns."
   },
   {
-    "id": 5,
+    "id": 6,
     "name": "Josh Nguyen",
     "affiliation": "The University of Pennsylvania",
     "imageUrl": "/people/josh.jpeg",
@@ -48,7 +48,7 @@
     "bio": "Josh Nguyen is a Ph.D. student at the Department of Computer and Information Science, the University of Pennsylvania. His work aims to uncover large-scale patterns of human behavior from social media using advances in computer science, a field called computational social science. He previously pursued a B.S. at the University of Melbourne and an M.Phil. at the Australian National University, both in computer science."
   },
   {
-    "id": 5,
+    "id": 7,
     "name": "Maja Jabłońska",
     "affiliation": "The Australian National University",
     "imageUrl": "/people/maya.png",
@@ -56,15 +56,15 @@
     "bio": "I am a Ph.D. student at the Research School of Astronomy and Astrophysics at the Australian National University. I dream of leveraging the newest advances in machine learning to supercharge research in astronomy. I believe that the synergy between the latest technologies and human expertise is the way to go!"
   },
   {
-    "id": 4,
+    "id": 8,
     "name": "Huiling Liu",
     "affiliation": "University of Science and Technology of China",
     "imageUrl": "/people/huiling.jpg",
-    "websiteUrl": "http://home.ustc.edu.cn/~lhl2718281/",
+    "websiteUrl": "https://Mebius2718.github.io",
     "bio": "Hello! I am Huiling Liu(刘会凌), a fourth year undergraduate student majoring in Theoretical Physics at USTC. Currently, I am engaged in work related to galaxy evolution in the Prof. Huiyuan Wang (王慧元)'s group. The fusion of nature's beauty with the sophistication of form theory is profoundly inspiring. I am more than happy to share these feelings to people through LLM. Furthermore, I am one of the contributors to this website. "
   },
   {
-    "id": 5,
+    "id": 9,
     "name": "Charlie O' Neill",
     "affiliation": "The Australian National University",
     "imageUrl": "/people/charlie.jpeg",
@@ -72,7 +72,7 @@
     "bio": "I am an undergraduate honours student at the Australian National University (ANU) studying mathematics, computer science and economics. My journey so far has allowed me to explore a broad range of applied AI systems, delving into industries from healthcare to climate change, in both an industry and academic setting. I hold a particular interest in the intersectionality of different subfields within machine learning, viewing it as a catalyst for enhancing the capabilities of generative AI."
   },
   {
-    "id": 6,
+    "id": 10,
     "name": "Pranav Khetarpal",
     "affiliation": "Indian Institute of Technology Delhi",
     "imageUrl": "/people/pranav.jpg",
@@ -80,7 +80,7 @@
     "bio": "I'm Pranav Khetarpal, an undergrad who is passionate about computer science and F1. Proudly contributing to universeTBD group, I dive into fascinating projects and astronomy-specific downstream tasks to help fine-tune the LLMs."
   },
   {
-    "id": 3,
+    "id": 11,
     "name": "Ernest Perkowski",
     "affiliation": "The European Space Agency",
     "imageUrl": "/people/ernest.jpeg",
@@ -88,7 +88,7 @@
     "bio": "Ernest Perkowski is a second-year master's student in Data Science, currently based in Madrid. He is working on LLM projects at the European Space Agency. With interests at the cross-section of computer vision and NLP, his ambition is to harness the power of large language and vision open-source models."
   },
   {
-    "id": 3,
+    "id": 12,
     "name": "Tomasz Różański",
     "affiliation": "The Australian National University",
     "imageUrl": "/people/tomasz.png",
@@ -96,7 +96,7 @@
     "bio": "Superstar AstroML and UTBD-er."
   },
   {
-    "id": 5,
+    "id": 13,
     "name": "Rui Pan",
     "affiliation": "Hong Kong University of Science and Technology",
     "imageUrl": "/people/rui.png",
@@ -104,7 +104,23 @@
     "bio": "Rui Pan, who also goes by Mike, is a fourth-year PhD student supervised by Prof. Tong Zhang. His research interests lie in the area of optimization and large language models. Previously, he worked on a project called LMFlow, which aims to make it easy for everyone to train their own LLMs."
   },
   {
-    "id": 1,
+    "id": 14,
+    "name": "Mike Smith",
+    "affiliation": "Aspia Space",
+    "imageUrl": "/people/mike.jpg",
+    "websiteUrl": "",
+    "bio": "Mike is a data scientist and semi-lapsed astronomer who cofounded and is currently working at Aspia Space. He likes applying cool deep learning techniques (in particular foundational, self-supervised, and unsupervised learning methods) to problems in astrophysics, earth observation, medical diagnosis and imagery, and anything in-between. He especially enjoys applying these methods to 'out-of-domain' problems where deep learning 'shouldn't work'!"
+  },
+  {
+    "id": 15,
+    "name": "Wassim Tenachi",
+    "affiliation": "Observatoire Astronomique de Strasbourg",
+    "imageUrl": "/people/wassim.png",
+    "websiteUrl": "https://twitter.com/WassimTenachi",
+    "bio": "Wassim is a PhD student at the Observatoire Astronomique de Strasbourg in France. His research centers on developing an intelligible machine learning paradigm that intelligently manipulates mathematical symbols in an unsupervised manner. This innovative approach is geared towards generating physical models as symbolic analytical laws directly from data. Wassim also has a keen interest in constraining dark matter properties from galactic dynamics."
+  },
+  {
+    "id": 16,
     "name": "Alyssa Goodman",
     "affiliation": "Harvard University",
     "imageUrl": "/people/alyssa.jpg",
@@ -112,7 +128,7 @@
     "bio": "Tech(nicall)y astronomy professor. Many extracurricular interests, including data, its manipulation, curation, communication and visualization. Also, prediction, and kayaking. And people."
   },
   {
-    "id": 1,
+    "id": 17,
     "name": "Alberto Accomazzi",
     "affiliation": "SAO/NASA Astrophysics Data System",
     "imageUrl": "/people/accomazzi.jpg",
@@ -121,7 +137,7 @@
   },
   
   {
-    "id": 2,
+    "id": 18,
     "name": "Josh Peek",
     "affiliation": "Space Telescope Science Institute",
     "imageUrl": "/people/joshua.jpg",
@@ -129,7 +145,7 @@
     "bio": "As the head of STScI's data science mission office, Dr. Josh Peek is responsible for defining the institute’s strategy for data management and data science. He also serves as the principal investigator of the Barbara A. Mikulski Archive for Space Telescopes (MAST), our multi-mission, multi-petabyte archive, and as an associate astronomer with tenure."
   },
     {
-    "id": 2,
+    "id": 19,
     "name": "Jill Naiman",
     "affiliation": "University of Illinois, Urbana-Champaign",
     "imageUrl": "/people/jill.png",
@@ -137,7 +153,7 @@
     "bio": ""
   },
   {
-    "id": 2,
+    "id": 20,
     "name": "David Brodrick",
     "affiliation": "The Australian National University",
     "imageUrl": "/people/david.jpeg",
@@ -145,7 +161,7 @@
     "bio": "David is a Senior Systems Engineer and former Senior Software Engineer from the Australian National University, with rich experience architecting and developing complex software systems and platforms. He has a passion for tackling intricate technical problems and finding innovative yet elegant solutions. With his thoughtful approach and strong technical acumen, David excels at designing robust, scalable backend infrastructure and deliverable software products."
   },
   {
-    "id": 4,
+    "id": 21,
     "name": "Roberta Răileanu",
     "affiliation": "FAIR (Meta)",
     "imageUrl": "/people/roberta.png",
@@ -153,7 +169,7 @@
     "bio": "Roberta is a Research Scientist at FAIR (Meta) based in London, working on building generally capable autonomous agents. In 2021, Roberta obtained my PhD in Computer Science from NYU, advised by Rob Fergus. Her focus was on deep reinforcement learning. During her PhD, Roberta interned at DeepMind, Microsoft Research, and Facebook AI Research. "
   },
   {
-    "id": 4,
+    "id": 22,
     "name": "Sergio José Rodríguez Méndez",
     "affiliation": "The Australian National University",
     "imageUrl": "/people/sergio.jpeg",
@@ -161,7 +177,7 @@
     "bio": "Sergio is a Research Fellow and Lecturer at the Australian National University (School of Computing).  His research interests lie at the intersection of Knowledge Graphs, Ontology Engineering, Link Data, Semantic Web, Data Science, Information Retrieval, and Natural Language Processing.  Sergio is an interdisciplinary scholar and professional Software Engineer and Architect with 24+ years of working experience (13+ in industry and 10+ in academia).  He has vast experience as a Full-Stack System Developer, Data Specialist, Project Manager, and IT Consultant using various platforms and tools.  Sergio obtained his PhD in Computer Science from \"The Electrical Engineering and Computer Science International Graduate Program\" of the *National Chiao Tung University* in Taiwan (2018).  He sees himself as a Knowledge Graph geek passionate about the Universe and its computational models.  'I see data structures and patterns everywhere; everything is connected and linked in a big graph' -- Sergio."
   },
   {
-    "id": 4,
+    "id": 23,
     "name": "Jesse Cranney",
     "affiliation": "The Australian National University",
     "imageUrl": "/people/jesse.png",
@@ -169,7 +185,7 @@
     "bio": "Superstar."
   },
   {
-    "id": 4,
+    "id": 24,
     "name": "Thang Bui",
     "affiliation": "The Australian National University",
     "imageUrl": "/people/thang.png",
@@ -177,11 +193,19 @@
     "bio": "Thang Bui is a lecturer (equivalent to tenure-track Assistant Professor) in Machine Learning at the School of Computing, Australian National University since July 2022. Before that, he was a lecturer at the University of Sydney from 2018 to 2022 and spent two years (2019-2020) at Uber AI. He completed his doctoral training at the Cambridge Machine Learning group, supervised by Richard Turner and advised by Carl Rasmussen."
   },
   {
-    "id": 4,
+    "id": 25,
     "name": "Kevin Schawinski",
     "affiliation": "Modulos",
     "imageUrl": "/people/kevin.jpg",
     "websiteUrl": "https://en.wikipedia.org/wiki/Kevin_Schawinski",
     "bio": "Kevin Schawinski is a former astrophysicist who used to work on citizen science and brining machine learning to astrophysics. He founded Modulos to bring the tools and guidance to help people build responsible AI aligned with new regulations such as the EU AI Act." 
+  },
+  {
+    "id": 26,
+    "name": "Michele Ginolfi",
+    "affiliation": "University of Florence",
+    "imageUrl": "/people/michele.jpeg",
+    "websiteUrl": "https://en.wikipedia.org/wiki/Kevin_Schawinski",
+    "bio": "I am an astrophysicist based at the University of Florence, where I study galaxies through a blend of observational data, numerical simulations, and machine learning. Driven by curiosity, I like to explore different areas too, and I’m involved in developing computer vision pipelines for diverse applications, like medical imaging, cultural heritage, and (my favorite project) motion sensing image-sonification tools to enhance inclusion and accessibility in astronomy." 
   }
 ]
