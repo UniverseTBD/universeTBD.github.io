@@ -83,7 +83,7 @@ if (isDesktop.value) {
 
   <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
     <div class="row">
-      <div class="col-12 col-md-10 offset-md-1">
+      <div class="col-12 col-md-8 offset-md-2">
         <h2 class="mb-4 mt-4">What is UniverseTBD</h2>
           <p class="mb-1">
             Every great story starts with a "what if?". For UniverseTBD, "What

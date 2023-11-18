@@ -55,7 +55,7 @@ onMounted(() => {
               class="lead text-white px-5 mt-3" 
               :style="{ fontWeight: '500', textShadow: '2px 2px 2px black' }"
             >
-                We are extremely grateful to the Microsoft Accelerate Foundation Models Academic Research Initiative for providing our astronomy research group with 30,000 USD in Azure OpenAI credits. Access to advanced AI capabilities has greatly accelerated our work applying language models to automate analysis of astronomical literature.
+                We are extremely grateful to the Microsoft Accelerate Foundation Models Academic Research Initiative and OpenAI API Researcherv Access Program for providing amout of  OpenAI credits. Access to advanced AI capabilities has greatly accelerated our work applying language models to automate analysis of astronomical literature.
             </p>
           </div>
         </div>
