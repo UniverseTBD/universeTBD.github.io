@@ -18,25 +18,21 @@ defineProps({
     link: String,
     default: () => [
       {
-        icon: '<i class="fab fa-facebook text-lg opacity-8"></i>',
-        link: "https://twitter.com/universe_tbd"
+        icon: '<i class="fa fa-smile-o text-lg opacity-8"></i>',
+        link: "https://huggingface.co/universeTBD"
+      },
+      {
+        icon: '<i class="fab fa-linkedin text-lg opacity-8"></i>',
+        link: "https://www.linkedin.com/company/universetbd/"
       },
       {
         icon: '<i class="fab fa-twitter text-lg opacity-8"></i>',
         link: "https://twitter.com/universe_tbd"
       },
       {
-        icon: '<i class="fab fa-dribbble text-lg opacity-8"></i>',
-        link: "https://twitter.com/universe_tbd"
-      },
-      {
         icon: '<i class="fab fa-github text-lg opacity-8"></i>',
         link: "https://github.com/universeTBD/universeTBD.github.io"
       },
-      {
-        icon: '<i class="fab fa-youtube text-lg opacity-8"></i>',
-        link: "https://github.com/universeTBD/universeTBD.github.io"
-      }
     ]
   },
   menus: {

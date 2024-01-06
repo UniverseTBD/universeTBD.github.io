@@ -1,5 +1,9 @@
 # Change Logs
 
+## [0.2.9] 2024-1-6
+
+- Modify icons and links in footer
+
 ## [0.2.9] 2023-11-17
 
 - Profile changes for:
