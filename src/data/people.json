@@ -207,5 +207,13 @@
     "imageUrl": "/people/kevin.jpg",
     "websiteUrl": "https://en.wikipedia.org/wiki/Kevin_Schawinski",
     "bio": "Kevin Schawinski is a former astrophysicist who used to work on citizen science and brining machine learning to astrophysics. He founded Modulos to bring the tools and guidance to help people build responsible AI aligned with new regulations such as the EU AI Act." 
+  },
+  {
+    "id": 25,
+    "name": "David Hendriks",
+    "affiliation": "University of Surrey",
+    "imageUrl": "/people/thumbnail.jpg",
+    "websiteUrl": "https://davidhendriks.com/",
+    "bio": "Meet David Hendriks, a physics and astrophysics enthusiast hailing from the flat, windmill-dotted, and water-rich part of the Netherlands. Recently awarded a Ph.D., David specializes in stellar binary physics, gravitational wave mergers, accretion disks and population-synthesis. Passionate about sharing knowledge, David actively contributes on a machine learning knowledge platform at devise-flf.notion.site. He's also a curator of astrophysics talks at dhendriks.gitlab.io/astrotalks. Excitingly, this platform will soon integrate with language models from universeTBD, offering users a natural and flexible interface. Currently applying for postdocs, David's journey includes roles as a society treasurer, entrepreneurship ventures, medical researching, software development and server management. Explore more about his diverse interests and experiences at davidhendriks.com."  
   }
 ]

@@ -1,6 +1,11 @@
 # Change Logs
 
-## [0.2.9] 2024-1-6
+## [0.2.11] 2024-1-28
+
+- Profile adds for:
+    - David Hendriks
+
+## [0.2.10] 2024-1-6
 
 - Modify icons and links in footer
 
