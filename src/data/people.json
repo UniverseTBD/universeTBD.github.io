@@ -8,14 +8,6 @@
     "bio": "I am a Jubilee Joint Fellow at the Australian National University, working at the intersection of Astronomy, Machine Learning and Big Data. I care deeply about education and leveraging high-quality learning resources and mentorship opportunities for students from underrepresented backgrounds. My aim is to champion fearless minds to pursue excellence in service to the world around them."
   },
   {
-    "id": 2,
-    "name": "Yuan-Sen Ting",
-    "affiliation": "The Australian National University",
-    "imageUrl": "/people/yuansen.jpeg",
-    "websiteUrl": "https://www.mso.anu.edu.au/~yting/",
-    "bio": "As an astrophysicist and computer scientist, Yuan-Sen fuses astronomy and machine learning. He is an Associate Professor at Australian National University and Ohio State University. Originally from Malaysia, he earned his PhD at Harvard in 2017 before prestigious fellowships at Princeton, NASA, and others. Now in Australia, he co-chairs NASA's Cosmic Programs Stars group, leads spectroscopic surveys, and prolifically publishes research pushing scientific boundaries applying machine learning to astrophysics."
-  },
-  {
     "id": 3,
     "name": "Sandor Kruk",
     "affiliation": "European Space Agency",
@@ -190,7 +182,7 @@
     "affiliation": "The Australian National University",
     "imageUrl": "/people/jesse.png",
     "websiteUrl": "https://rsaa.anu.edu.au/people/academics/dr-jesse-cranney",
-    "bio": "Superstar."
+    "bio": "Jesse is a Post-doc Instrument Scientist from the Australian National University (Research School of Astronomy and Astrophysics). His background is in control theory and adaptive optics for astronomy. Beyond the rigid world of control theory, Jesse enjoys tinkering with AI, novicing in web-development, experimenting with electronics and automation, and spending quality time with great humans and remarkable dogs."
   },
   {
     "id": 24,
@@ -209,7 +201,7 @@
     "bio": "Kevin Schawinski is a former astrophysicist who used to work on citizen science and brining machine learning to astrophysics. He founded Modulos to bring the tools and guidance to help people build responsible AI aligned with new regulations such as the EU AI Act." 
   },
   {
-    "id": 25,
+    "id": 2,
     "name": "David Hendriks",
     "affiliation": "University of Surrey",
     "imageUrl": "/people/thumbnail.jpg",
