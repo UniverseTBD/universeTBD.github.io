@@ -56,7 +56,7 @@ onMounted(() => {
               class="lead text-white px-5 mt-3" 
               :style="{ fontWeight: '500', textShadow: '2px 2px 2px black' }"
             >
-              We are a group of astronomers, machine learning enthusiasts, engineers, and enthusiasts, eminently human from all over the world, united to achieve our shared vision!
+              We are a group of scientists, machine learning enthusiasts, engineers, and enthusiasts, eminently human from all over the world, united to achieve our shared vision.
             </p>
             <a href="https://forms.gle/1g4AJXtT3wyHgbmAA" class="btn bg-white text-dark" role="button">
                Join us
