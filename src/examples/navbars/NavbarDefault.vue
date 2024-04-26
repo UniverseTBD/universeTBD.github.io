@@ -206,7 +206,7 @@ watch(
                         :to="{ name: 'about-sponsor' }"
                         class="dropdown-item border-radius-md"
                       >
-                        <span>sponsor</span>
+                        <span>Sponsors</span>
                       </RouterLink>
                     </div>
                   </div>
@@ -230,7 +230,7 @@ watch(
                 :class="getTextColor()"
                 >extension</i
               >
-              Product
+              Products
               <img
                 :src="getArrowColor()"
                 alt="down-arrow"
@@ -252,13 +252,13 @@ watch(
                     <div
                       class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-0"
                     >
-                      Product
+                      Products
                     </div>
                     <RouterLink
                       :to="{ name: 'product' }"
                       class="dropdown-item border-radius-md"
                     >
-                      <span>Product</span>
+                      <span>Products</span>
                     </RouterLink>
                     <RouterLink
                       :to="{ name: 'product-AstroLLaMA' }"

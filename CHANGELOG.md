@@ -1,5 +1,12 @@
 # Change Logs
 
+## [0.2.12] 2024-4-26
+
+- Profile adds for:
+    - Change Product -> Products
+    - Change sponsor -> Sponsors
+    - Clean up the About
+
 ## [0.2.11] 2024-1-28
 
 - Profile adds for:

@@ -84,7 +84,43 @@ if (isDesktop.value) {
   <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
     <div class="row">
       <div class="col-12 col-md-8 offset-md-2">
-        <h2 class="mb-4 mt-4">What is UniverseTBD</h2>
+
+        <h2 class="mb-4 mt-4">Mission, Vision and Values</h2>
+        <h4>Mission</h4>
+        <p class="mb-1">UniverseTBD is a diverse community of scientists, AI researchers, 
+          and enthusiasts united by our mission to democratise science for everyone.
+        </p>
+
+        <h4>Vision</h4>
+        <p class="mb-1">Our vision is to revolutionize the way science is done, 
+          making the universe of knowledge accessible to all. We aim to be the 
+          go-to platform for science benchmarks, data, and reproducible research 
+          while fostering a global community of curious minds engaged in groundbreaking 
+          research and outreach..
+        </p>
+        
+        <h4>Values</h4>
+        <ul class="mb-1">
+          <li>Openness</li>
+          <li>Excellence with Purpose</li>
+          <li>Fearless Experimentation</li>
+          <li>Junior Leadership</li>
+          <li>Transparency, Integrity, Grit, Empowerment, Rigour (TIGER)</li>
+        </ul>
+        
+        <!-- <p class="mb-1">
+          UniverseTBD is still in its early stages but has already built a 
+          growing community of scientists and AI researchers interested in using 
+          AI to advance science.
+        </p>
+        <p class="mb-1">
+          UniverseTBD is committed to open science and open access. All of its 
+          tools and methodologies are freely available to the public. The 
+          organisation also publishes its research in open-access journals and 
+          presents its work at open conferences.
+        </p> -->
+
+        <!-- <h2 class="mb-4 mt-4">What is UniverseTBD</h2>
         <p class="mb-1">
           Every great story starts with a "what if?". For UniverseTBD, "What 
           if we bridge Science and Foundation Models such as Large Language 
@@ -102,42 +138,7 @@ if (isDesktop.value) {
         <p class="mb-1">
           One of the big questions we want to answer is: Can these models come
           up with novel scientific insights and hypotheses?
-        </p>
-
-        <h2 class="mb-4 mt-4">We start with Astronomy</h2>
-        <p class="mb-1">
-          Large language models (LLMs) powered by artificial intelligence are 
-          emerging as promising tools to accelerate astronomical research. 
-          Recent advances in natural language processing have produced LLMs 
-          capable of comprehending scientific texts, summarising findings, and
-          even formulating novel hypotheses.
-        </p>
-        <p class="mb-1">
-          This research explores the potential of modern LLMs like GPT-4+ to 
-          enhance astronomers' workflows through automating tedious tasks. We 
-          investigate applying LLMs for literature reviews, surfacing insights
-          from data, recognizing patterns in images, and generating 
-          hypotheses.
-        </p>
-        <p class="mb-1">
-          Early experiments suggest LLMs can extract key information from 
-          papers, analyse data to reveal new findings, and propose directions 
-          to explore. However, challenges remain in effectively prompting the 
-          models and validating their outputs.
-        </p>
-        <p class="mb-1">
-          Our research aims to develop best practices for integrating LLMs 
-          into scientists’ toolkits to increase productivity and spur new 
-          discoveries. Rather than replacing human experts, LLMs can remove 
-          drudgery from tasks like reading papers and data analysis.
-        </p>
-        <p class="mb-1">
-          This allows astronomers to focus their skills on higher-level 
-          recognition and ideation to advance the frontiers of knowledge. With
-          refined techniques for prompting and evaluating LLMs, these AI 
-          systems show promise as collaborators in the astronomical research 
-          process.
-        </p>
+        </p> -->
 
         <h2 class="mb-4 mt-4">How it started</h2>
         <p class="mb-1">
@@ -195,36 +196,39 @@ if (isDesktop.value) {
           projects. Stay fine-tuned for what's to come.
         </p>
 
-        <h2 class="mb-4 mt-4">Mission, Vision and Values</h2>
-        <h4>Mission</h4>
-        <p class="mb-1">Democratise Science for Everyone.</p>
-
-        <h4>Vision</h4>
-        <p class="mb-1">The vision of UniverseTBD is to revolutionise the way we 
-          do science by empowering human beings to learn, explore, and 
-          synthesise knowledge beyond what they are capable of, assisted and 
-          augmented by AI.
-        </p>
-        
-        <h4>Values</h4>
-        <ul class="mb-1">
-          <li>Open science and open access</li>
-          <li>Excellence with purpose</li>
-          <li>Junior empowerment and leadership</li>
-          <li>Collaboration and diversity</li>
-          <li>Transparency and accountability</li>
-        </ul>
-        
+        <h2 class="mb-4 mt-4">We start with Astronomy</h2>
         <p class="mb-1">
-          UniverseTBD is still in its early stages but has already built a 
-          growing community of scientists and AI researchers interested in using 
-          AI to advance science.
+          Large language models (LLMs) powered by artificial intelligence are 
+          emerging as promising tools to accelerate astronomical research. 
+          Recent advances in natural language processing have produced LLMs 
+          capable of comprehending scientific texts, summarising findings, and
+          even formulating novel hypotheses.
         </p>
         <p class="mb-1">
-          UniverseTBD is committed to open science and open access. All of its 
-          tools and methodologies are freely available to the public. The 
-          organisation also publishes its research in open-access journals and 
-          presents its work at open conferences.
+          This research explores the potential of modern LLMs like GPT-4+ to 
+          enhance astronomers' workflows through automating tedious tasks. We 
+          investigate applying LLMs for literature reviews, surfacing insights
+          from data, recognizing patterns in images, and generating 
+          hypotheses.
+        </p>
+        <p class="mb-1">
+          Early experiments suggest LLMs can extract key information from 
+          papers, analyse data to reveal new findings, and propose directions 
+          to explore. However, challenges remain in effectively prompting the 
+          models and validating their outputs.
+        </p>
+        <p class="mb-1">
+          Our research aims to develop best practices for integrating LLMs 
+          into scientists’ toolkits to increase productivity and spur new 
+          discoveries. Rather than replacing human experts, LLMs can remove 
+          drudgery from tasks like reading papers and data analysis.
+        </p>
+        <p class="mb-1">
+          This allows astronomers to focus their skills on higher-level 
+          recognition and ideation to advance the frontiers of knowledge. With
+          refined techniques for prompting and evaluating LLMs, these AI 
+          systems show promise as collaborators in the astronomical research 
+          process.
         </p>
       </div>
     </div>
