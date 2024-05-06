@@ -1,0 +1,11 @@
+version: '3.8' # docker compose version
+
+services:
+  universetbd:
+    build:
+      context: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/home/node/app/src
+      - ./vite.config.js:/home/node/app/vite.config.js

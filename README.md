@@ -14,6 +14,12 @@ npm run dev
 npm run dev -- --host 0.0.0.0
 ```
 
+### Spins up a docker container with hot reloading
+```bash
+docker-compose up
+# must have docker and docker-compose installed
+```
+
 ### Compiles and minifies for production
 ```bash
 npm run build
