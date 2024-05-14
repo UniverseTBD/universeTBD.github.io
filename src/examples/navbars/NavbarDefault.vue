@@ -184,7 +184,7 @@ watch(
               />
             </a>
             <div
-              class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3"
+              class="dropdown-menu ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3"
               aria-labelledby="dropdownMenuAbout"
             >
               <div class="row d-none d-lg-block">
@@ -260,7 +260,7 @@ watch(
               />
             </a>
             <div
-              class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3"
+              class="dropdown-menu ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3"
               aria-labelledby="dropdownMenuProducts"
             >
               <div class="row d-none d-lg-block">
@@ -360,7 +360,7 @@ watch(
               />
             </a>
             <div
-              class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3"
+              class="dropdown-menu ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3"
               aria-labelledby="dropdownMenuResearch"
             >
               <div class="row d-none d-lg-block">
@@ -424,7 +424,7 @@ watch(
               />
             </a>
             <div
-              class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3"
+              class="dropdown-menu ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3"
               aria-labelledby="dropdownMenuResearch"
             >
               <div class="row d-none d-lg-block">
