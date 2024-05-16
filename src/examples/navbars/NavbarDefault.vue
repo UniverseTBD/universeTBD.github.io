@@ -7,6 +7,8 @@ import { useWindowsWidth } from "../../assets/js/useWindowsWidth";
 import ArrDark from "@/assets/img/down-arrow-dark.svg";
 import DownArrWhite from "@/assets/img/down-arrow-white.svg";
 
+import 'bootstrap' //Fix mobile navbar. Not sure why we need to include this, something is missing from the material-kit demo forked for this website.
+
 const props = defineProps({
   action: {
     type: Object,
@@ -130,7 +132,7 @@ watch(
         "
         to="/"
         rel="tooltip"
-        title="Designed and Coded by Creative Tim"
+        title="UniverseTBD"
         data-placement="bottom"
       >
         UniverseTBD
@@ -155,14 +157,12 @@ watch(
         id="navigation"
       >
         <ul class="navbar-nav navbar-nav-hover ms-auto">
-
-          
           <li class="nav-item dropdown dropdown-hover mx-2">
             <a
               role="button"
               class="nav-link ps-2 d-flex cursor-pointer align-items-center"
               :class="getTextColor()"
-              id="dropdownMenuPages"
+              id="dropdownMenuAbout"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
@@ -184,8 +184,8 @@ watch(
               />
             </a>
             <div
-              class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3"
-              aria-labelledby="dropdownMenuPages"
+              class="dropdown-menu ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3"
+              aria-labelledby="dropdownMenuAbout"
             >
               <div class="row d-none d-lg-block">
                 <div class="col-12 px-4 py-2">
@@ -212,16 +212,33 @@ watch(
                   </div>
                 </div>
               </div>
+              <div class="d-lg-none">
+                <div
+                  class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0"
+                >
+                  About
+                </div>
+                <RouterLink
+                  :to="{ name: 'about' }"
+                  class="dropdown-item border-radius-md"
+                >
+                  <span>About Us</span>
+                </RouterLink>
+                <RouterLink
+                  :to="{ name: 'about-sponsor' }"
+                  class="dropdown-item border-radius-md"
+                >
+                  <span>Sponsors</span>
+                </RouterLink>
+              </div>
             </div>
           </li>
-
-
           <li class="nav-item dropdown dropdown-hover mx-2">
             <a
               role="button"
-              class="nav-link ps-0 d-flex cursor-pointer align-items-center"
+              class="nav-link ps-2 d-flex cursor-pointer align-items-center"
               :class="getTextColor()"
-              id="dropdownMenuPages"
+              id="dropdownMenuProducts"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
@@ -243,54 +260,85 @@ watch(
               />
             </a>
             <div
-              class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3"
-              aria-labelledby="dropdownMenuPages"
+              class="dropdown-menu ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3"
+              aria-labelledby="dropdownMenuProducts"
             >
               <div class="row d-none d-lg-block">
                 <div class="col-12 px-4 py-2">
                   <div class="row">
-                    <div
-                      class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-0"
-                    >
-                      Products
+                    <div class="position-relative">
+                      <div
+                        class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1"
+                      >
+                        Products
+                      </div>
+                      <RouterLink
+                        :to="{ name: 'product' }"
+                        class="dropdown-item border-radius-md"
+                      >
+                        <span>Products</span>
+                      </RouterLink>
+                      <RouterLink
+                        :to="{ name: 'product-AstroLLaMA' }"
+                        class="dropdown-item border-radius-md"
+                      >
+                        <span>AstroLLaMA</span>
+                      </RouterLink>
+                      <RouterLink
+                        :to="{ name: 'product-HypothesisGeneration' }"
+                        class="dropdown-item border-radius-md"
+                      >
+                        <span>Hypothesis Generation</span>
+                      </RouterLink>
+                      <RouterLink
+                        :to="{ name: 'product-ArxivEmbedding' }"
+                        class="dropdown-item border-radius-md"
+                      >
+                        <span>arXiv Embedding</span>
+                      </RouterLink>
                     </div>
-                    <RouterLink
-                      :to="{ name: 'product' }"
-                      class="dropdown-item border-radius-md"
-                    >
-                      <span>Products</span>
-                    </RouterLink>
-                    <RouterLink
-                      :to="{ name: 'product-AstroLLaMA' }"
-                      class="dropdown-item border-radius-md"
-                    >
-                      <span>AstroLLaMA</span>
-                    </RouterLink>
-                    <RouterLink
-                      :to="{ name: 'product-HypothesisGeneration' }"
-                      class="dropdown-item border-radius-md"
-                    >
-                      <span>Hypothesis Generation</span>
-                    </RouterLink>
-                    <RouterLink
-                      :to="{ name: 'product-ArxivEmbedding' }"
-                      class="dropdown-item border-radius-md"
-                    >
-                      <span>arXiv Embedding</span>
-                    </RouterLink>
                   </div>
                 </div>
               </div>
+              <div class="d-lg-none">
+                <div
+                  class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0"
+                >
+                  Products
+                </div>
+                <RouterLink
+                  :to="{ name: 'product' }"
+                  class="dropdown-item border-radius-md"
+                >
+                  <span>Products</span>
+                </RouterLink>
+                <RouterLink
+                  :to="{ name: 'product-AstroLLaMA' }"
+                  class="dropdown-item border-radius-md"
+                >
+                  <span>AstroLLaMA</span>
+                </RouterLink>
+                <RouterLink
+                  :to="{ name: 'product-HypothesisGeneration' }"
+                  class="dropdown-item border-radius-md"
+                >
+                  <span>Hypothesis Generation</span>
+                </RouterLink>
+                <RouterLink
+                  :to="{ name: 'product-ArxivEmbedding' }"
+                  class="dropdown-item border-radius-md"
+                >
+                  <span>arXiv Embedding</span>
+                </RouterLink>
+              </div>
             </div>
           </li>
-
-
           <li class="nav-item dropdown dropdown-hover mx-2">
             <a
               role="button"
               class="nav-link ps-2 d-flex cursor-pointer align-items-center"
               :class="getTextColor()"
-              id="dropdownMenuPages"
+              id="dropdownMenuResearch"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
@@ -312,8 +360,8 @@ watch(
               />
             </a>
             <div
-              class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3"
-              aria-labelledby="dropdownMenuPages"
+              class="dropdown-menu ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3"
+              aria-labelledby="dropdownMenuResearch"
             >
               <div class="row d-none d-lg-block">
                 <div class="col-12 px-4 py-2">
@@ -334,15 +382,27 @@ watch(
                   </div>
                 </div>
               </div>
+              <div class="d-lg-none">
+                <div
+                  class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0"
+                >
+                  Research
+                </div>
+                <RouterLink
+                  :to="{ name: 'research' }"
+                  class="dropdown-item border-radius-md"
+                >
+                  <span>Research</span>
+                </RouterLink>
+              </div>
             </div>
           </li>
-
           <li class="nav-item dropdown dropdown-hover mx-2">
             <a
               role="button"
               class="nav-link ps-2 d-flex cursor-pointer align-items-center"
               :class="getTextColor()"
-              id="dropdownMenuPages"
+              id="dropdownMenuResearch"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
@@ -364,8 +424,8 @@ watch(
               />
             </a>
             <div
-              class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3"
-              aria-labelledby="dropdownMenuPages"
+              class="dropdown-menu ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3"
+              aria-labelledby="dropdownMenuResearch"
             >
               <div class="row d-none d-lg-block">
                 <div class="col-12 px-4 py-2">
@@ -392,10 +452,27 @@ watch(
                   </div>
                 </div>
               </div>
+              <div class="d-lg-none">
+                <div
+                  class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0"
+                >
+                  People
+                </div>
+                <RouterLink
+                  :to="{ name: 'participants' }"
+                  class="dropdown-item border-radius-md"
+                >
+                  <span>Participants</span>
+                </RouterLink>
+                <RouterLink
+                  :to="{ name: 'people-joinus' }"
+                  class="dropdown-item border-radius-md"
+                >
+                  <span>Join us</span>
+                </RouterLink>
+              </div>
             </div>
           </li>
-          
-          
           <li class="nav-item dropdown dropdown-hover mx-2">
             <a
               href="https://github.com/universeTBD/universeTBD.github.io"
@@ -421,4 +498,5 @@ watch(
       </div>
     </div>
   </nav>
+  <!-- End Navbar -->
 </template>
