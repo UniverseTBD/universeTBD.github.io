@@ -3,6 +3,19 @@
 import HorizontalTeamCard from "@/examples/cards/teamCards/HorizontalTeamCard.vue";
 import participants from "@/data/people.json";
 
+function shuffle(sourceArray) {
+    for (var i = 0; i < sourceArray.length - 1; i++) {
+        var j = i + Math.floor(Math.random() * (sourceArray.length - i));
+
+        var temp = sourceArray[j];
+        sourceArray[j] = sourceArray[i];
+        sourceArray[i] = temp;
+    }
+    return sourceArray;
+}
+
+let participants_shuf = shuffle(participants);
+
 </script>
 
 
@@ -22,7 +35,7 @@ import participants from "@/data/people.json";
       </div>
 
 
-      <div v-for="(participant, index) in participants">
+      <div v-for="(participant, index) in participants_shuf">
         <div class="row mt-4">
           <div class="col-lg-12 col-12">
             <HorizontalTeamCard
