@@ -20,5 +20,7 @@ export default defineConfig({
     assetsInlineLimit: 0,
     assetsDir: 'assets',
     cssCodeSplit: true,
+    outDir: './docs',
+    emptyOutDir: true,
   },
 });
