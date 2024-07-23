@@ -195,5 +195,12 @@
     "imageUrl": "/people/joiden.png",
     "websiteUrl": "https://jaydenurch.com/",
     "bio": "Jayden is a Software Engineer with a focus for all things Web Development. Graduating from the University of Newcastle, he has followed his passion as a Full-Stack developer. Specialising in Python, Flask, SQL, and NodeJS, he now does freelance work building new products and improving existing applications."
+  },
+  {
+    "name": "John Wu",
+    "affiliation": "Space Telescope Science Institute (STScI)",
+    "imageUrl": "/people/john.jpg",
+    "websiteUrl": "https://www.stsci.edu/stsci-research/research-directory/john-f-wu",
+    "bio": "John Wu is an Assistant Astronomer at Space Telescope Science Institute (STScI) who primarily studies galaxies with wide-area imaging surveys and machine learning methods like convolutional neural networks and graph neural networks. At STScI, he has advanced strategic initiatives in artificial intelligence and supported the upcoming Roman Space Telescope mission."
   }
 ]
