@@ -9,3 +9,4 @@ services:
     volumes:
       - ./src:/home/node/app/src
       - ./vite.config.js:/home/node/app/vite.config.js
+      - ./public:/home/node/app/public
