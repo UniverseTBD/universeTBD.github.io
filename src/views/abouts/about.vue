@@ -108,38 +108,6 @@ if (isDesktop.value) {
           <li>Transparency, Integrity, Grit, Empowerment, Rigour (TIGER)</li>
         </ul>
         
-        <!-- <p class="mb-1">
-          UniverseTBD is still in its early stages but has already built a 
-          growing community of scientists and AI researchers interested in using 
-          AI to advance science.
-        </p>
-        <p class="mb-1">
-          UniverseTBD is committed to open science and open access. All of its 
-          tools and methodologies are freely available to the public. The 
-          organisation also publishes its research in open-access journals and 
-          presents its work at open conferences.
-        </p> -->
-
-        <!-- <h2 class="mb-4 mt-4">What is UniverseTBD</h2>
-        <p class="mb-1">
-          Every great story starts with a "what if?". For UniverseTBD, "What 
-          if we bridge Science and Foundation Models such as Large Language 
-          Models (LLMs) to build something truly unique that helps researchers
-          and enthusiasts think deeper about the great beyond?". Our very own 
-          "one small step for LLM, a giant leap for Science."
-        </p>
-        <p class="mb-1">
-          We are a group of scientists, machine learning enthusiasts, 
-          engineers, and enthusiasts, eminently human, coming from all over 
-          the world to make it happen. Our goal is to use Foundation & 
-          Frontier Models to democratise Science for Everyone and expand our 
-          horizons on what's possible for knowledge moving forward.
-        </p>
-        <p class="mb-1">
-          One of the big questions we want to answer is: Can these models come
-          up with novel scientific insights and hypotheses?
-        </p> -->
-
         <h2 class="mb-4 mt-4">How it started</h2>
         <p class="mb-1">
           A fateful conference on data-driven astronomy at the Kavli Institute 
@@ -230,6 +198,10 @@ if (isDesktop.value) {
           systems show promise as collaborators in the astronomical research 
           process.
         </p>
+        <h6 class="mb-4 mt-4">The UniverseTBD team would like to thank Ze-chang
+          Sun, Tsinghua University, who is the original creator and designer of
+          this website.
+        </h6>
       </div>
     </div>
   </div>
