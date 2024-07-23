@@ -114,8 +114,8 @@ export default {
             <p class="lead mb-4 text-white opacity-8">
               We are a group of scientists, machine learning enthusiasts, engineers, and enthusiasts, eminently human from all over the world, united to achieve our shared vision.
             </p>
-            <a href="https://forms.gle/1g4AJXtT3wyHgbmAA" class="btn bg-white text-dark" role="button">
-               Join us
+            <a href="https://discord.gg/PUR2FbFRZ4" class="btn bg-white text-dark" role="button">
+               Join our Discord
             </a>
             <h6 class="text-white mb-2 mt-5">Find us on</h6>
             <div class="d-flex justify-content-center">
