@@ -94,7 +94,7 @@ defineProps({
             route: "/people/participants"
           },
           {
-            name: "Join Us",
+            name: "Contact Us",
             route: "/people/joinus"
           },
         ]

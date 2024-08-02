@@ -53,29 +53,34 @@ onMounted(() => {
               <h1>AI</h1>
             </div>
             <p 
-              class="lead text-white px-5 mt-3" 
+              class="lead text-white px-3 mt-3" 
               :style="{ fontWeight: '500', textShadow: '2px 2px 2px black' }"
             >
-              We are a group of scientists, machine learning enthusiasts, engineers, and enthusiasts, eminently human from all over the world, united to achieve our shared vision.
+              We are a group of scientists, machine learning researchers, engineers, and enthusiasts, eminently human from all over the world, united to achieve our shared vision.
             </p>
-            <a href="https://discord.gg/PUR2FbFRZ4" class="btn bg-white text-dark" role="button">
-               Join our Discord
-            </a>
-            <h6 class="text-white mb-2 mt-5">Find us on</h6>
-            <div class="d-flex justify-content-center">
-              <a href="https://twitter.com/universe_tbd"
-                ><i class="fab fa-facebook text-lg text-white me-4"></i
-              ></a>
-              <a href="https://twitter.com/universe_tbd"
-                ><i class="fab fa-instagram text-lg text-white me-4"></i
-              ></a>
-              <a href="https://twitter.com/universe_tbd"
-                ><i class="fab fa-twitter text-lg text-white me-4"></i
-              ></a>
-              <a href="https://twitter.com/universe_tbd"
-                ><i class="fab fa-google-plus text-lg text-white"></i
-              ></a>
+            <div class="card bg-gray-300 mx-3 pb-3 pt-3">
+            <div class="card-body lead">
+              <h5>Join us</h5>
+              <a href="https://discord.gg/PUR2FbFRZ4">
+                <font-awesome-icon :icon="['fab', 'discord']" size="2xl" />
+                discord.gg/PUR2FbFRZ4
+              </a>
             </div>
+            <div class="card-body lead">
+              <h5>Follow us</h5>
+              <a href="https://twitter.com/universe_tbd">
+                <font-awesome-icon :icon="['fab', 'twitter']" size="2xl" />
+                @universe_tbd
+              </a>
+            </div>
+            <div class="card-body lead">
+              <h5>Contact us</h5>
+              <a href="mailto:exec@universetbd.org">
+                <font-awesome-icon :icon="['fas','envelope']" size="2xl" />
+                exec@universetbd.org
+              </a>
+            </div>
+          </div>
           </div>
         </div>
       </div>

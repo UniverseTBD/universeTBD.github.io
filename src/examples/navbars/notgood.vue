@@ -386,7 +386,7 @@ watch(
                         :to="{ name: 'people-joinus' }"
                         class="dropdown-item border-radius-md"
                       >
-                        <span>Join us</span>
+                        <span>Contact Us</span>
                       </RouterLink>
                     </div>
                   </div>
