@@ -42,8 +42,7 @@ defineProps({
         <div class="card-body ps-lg-0">
           <h5 class="mb-0">{{ profile.name }}</h5>
           <h6 :class="`text-${position.color}`">{{ position.label }}</h6>
-          <p class="mb-0">
-            {{ description }}
+          <p v-html="description" class="mb-0">
           </p>
         </div>
       </div>
