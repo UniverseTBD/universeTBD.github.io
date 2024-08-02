@@ -8,25 +8,11 @@ import DefaultFooter from "@/examples/footers/FooterDefault.vue";
 //image
 import background from "@/assets/img/background.png";
 
-//dep
-import Typed from "typed.js";
-
 const body = document.getElementsByTagName("body")[0];
 //hooks
 onMounted(() => {
   body.classList.add("about-us");
   body.classList.add("bg-gray-200");
-
-  if (document.getElementById("typed")) {
-    var typed = new Typed("#typed", {
-      stringsElement: "#typed-strings",
-      typeSpeed: 90,
-      backSpeed: 90,
-      backDelay: 1000,
-      startDelay: 500,
-      loop: true,
-    });
-  }
 });
 </script>
 
@@ -120,7 +106,7 @@ export default {
                   :href="'https://arxiv.org/abs/' + arXiv.arxivId" 
                   class="text-success icon-move-right"
                   >View on arXiv
-                  <i class="fas fa-arrow-right text-sm ms-1"></i>
+                  <font-awesome-icon :icon="['fas', 'fa-arrow-right']"/>
                 </a>
               </div>
             </div>

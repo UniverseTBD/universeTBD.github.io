@@ -17,21 +17,21 @@ defineProps({
     icon: String,
     link: String,
     default: () => [
-      {
-        icon: '<i class="fa fa-smile-o text-lg opacity-8"></i>',
+      /*{
+        icon: "fa-solid fa-smile",
         link: "https://huggingface.co/universeTBD"
-      },
+      },*/
       {
-        icon: '<i class="fab fa-linkedin text-lg opacity-8"></i>',
+        icon: "fab fa-linkedin",
         link: "https://www.linkedin.com/company/universetbd/"
       },
       {
-        icon: '<i class="fab fa-twitter text-lg opacity-8"></i>',
+        icon: "fab fa-twitter",
         link: "https://twitter.com/universe_tbd"
       },
       {
-        icon: '<i class="fab fa-github text-lg opacity-8"></i>',
-        link: "https://github.com/universeTBD/universeTBD.github.io"
+        icon: "fab fa-github",
+        link: "https://github.com/universeTBD"
       },
     ]
   },
@@ -129,10 +129,18 @@ defineProps({
         <div class="col-md-3 mb-4 ms-auto">
           <div>
             <a :href="brand.route">
-              <h6 class="font-weight-bolder mb-4">{{ brand.name }}</h6>
+              <h6 class="font-weight-bolder mb-2">{{ brand.name }}</h6>
             </a>
           </div>
           <div>
+            <div class="nav-item mb-3">
+                <a
+                  class="nav-link"
+                  href="https://huggingface.co/universeTBD"
+                  target="_blank">
+                HuggingFace
+              </a>
+            </div>
             <ul class="d-flex flex-row ms-n3 nav">
               <li
                 class="nav-item"
@@ -143,8 +151,8 @@ defineProps({
                   class="nav-link pe-1"
                   :href="link"
                   target="_blank"
-                  v-html="icon"
                 >
+                <font-awesome-icon :icon="icon" size="xl"/>
                 </a>
               </li>
             </ul>
