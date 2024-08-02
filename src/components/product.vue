@@ -4,7 +4,6 @@ import TransparentBlogCard from "../examples/cards/blogCards/TransparentBlogCard
 
 //Vue Material Kit 2 components
 import astropt from "@/assets/img/product/astropt.png";
-import astrollama from "@/assets/img/product/astrollama.jpeg";
 import hypo from "@/assets/img/product/hypo.jpeg";
 import embed from "@/assets/img/product/embed.jpeg";
 
@@ -24,14 +23,6 @@ import embed from "@/assets/img/product/embed.jpeg";
             title="AstroPT"
             description='AstroPT is a GPT model designed for astronomical applications, trained on millions of galaxy images, with plans to incorporate diverse astronomical data types to create a comprehensive "Large Observation Model" for astronomy.'
             :action="{route: 'https://arxiv.org/abs/2405.14930v1', label: 'View on arXiv', color: 'success'}"
-          />
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <TransparentBlogCard
-            :image="astrollama"
-            title="AstroLLaMA"
-            description="We construct a 7-billion-parameter model fine-tuned from LLaMA-2 using over 300,000 astronomy abstracts from arXiv."
-            :action="{route: 'https://arxiv.org/abs/2309.06126', label: 'View on arXiv', color: 'success'}"
           />
         </div>
         <div class="col-lg-4 col-sm-6">

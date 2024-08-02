@@ -278,24 +278,6 @@ watch(
                       >
                         <span>Products</span>
                       </RouterLink>
-                      <RouterLink
-                        :to="{ name: 'product-AstroLLaMA' }"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>AstroLLaMA</span>
-                      </RouterLink>
-                      <RouterLink
-                        :to="{ name: 'product-HypothesisGeneration' }"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Hypothesis Generation</span>
-                      </RouterLink>
-                      <RouterLink
-                        :to="{ name: 'product-ArxivEmbedding' }"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>arXiv Embedding</span>
-                      </RouterLink>
                     </div>
                   </div>
                 </div>
@@ -311,24 +293,6 @@ watch(
                   class="dropdown-item border-radius-md"
                 >
                   <span>Products</span>
-                </RouterLink>
-                <RouterLink
-                  :to="{ name: 'product-AstroLLaMA' }"
-                  class="dropdown-item border-radius-md"
-                >
-                  <span>AstroLLaMA</span>
-                </RouterLink>
-                <RouterLink
-                  :to="{ name: 'product-HypothesisGeneration' }"
-                  class="dropdown-item border-radius-md"
-                >
-                  <span>Hypothesis Generation</span>
-                </RouterLink>
-                <RouterLink
-                  :to="{ name: 'product-ArxivEmbedding' }"
-                  class="dropdown-item border-radius-md"
-                >
-                  <span>arXiv Embedding</span>
                 </RouterLink>
               </div>
             </div>

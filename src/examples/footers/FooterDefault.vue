@@ -62,18 +62,7 @@ defineProps({
         items: [
           { 
             name: "Product", 
-            route: "/products" },
-          {
-            name: "AstroLLaMA",
-            route: "/products/astrollama/"
-          },
-          {
-            name: "Hypothesis Generation",
-            route: "/product/hypothesis"
-          },
-          {
-            name: "Arxiv Embedding",
-            route: "/product/embedding"
+            route: "/products"
           }
         ]
       },
