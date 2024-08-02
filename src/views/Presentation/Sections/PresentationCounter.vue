@@ -11,9 +11,9 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
             <div class="col-md-4 position-relative">
               <DefaultCounterCard
                 color="success"
-                title="arXiv Papers"
-                description="LLaMA-2 has been fine-tuned using over 300,000 astronomy abstracts from arXiv"
-                :count="300000"
+                title="Research Papers"
+                description="We are actively developing models and benchmarks to explore and harness this vast literature"
+                :count="500000"
                 suffix="+"
                 :duration="3000"
                 divider="vertical"
@@ -23,7 +23,7 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
               <DefaultCounterCard
                 color="success"
                 title="Main Participants"
-                description="A diverse team of over 30 professionals and enthusiasts from around the world"
+                description="A diverse team of over 30 scientists, techies, artists and enthusiasts from around the world"
                 :count="30"
                 suffix="+"
                 :duration="3000"
@@ -35,7 +35,7 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
                 color="success"
                 title="Product"
                 description="We’ve achieved significant advancements and are enthusiastically pushing forward for more"
-                :count="5"
+                :count="8"
                 :duration="3000"
               />
             </div>
