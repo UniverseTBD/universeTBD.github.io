@@ -23,25 +23,6 @@ onUnmounted(() => {
   body.classList.remove("bg-gray-200");
 });
 
-import Typed from "typed.js";
-
-onMounted(() => {
-  if (document.getElementById("typed")) {
-    new Typed("#typed", {
-      stringsElement: "#typed-strings",
-      typeSpeed: 60,
-      startDelay: 300,
-      loop: false,
-      onComplete: function(self) {
-        setTimeout(() => {
-          const cursorElement = document.querySelector('.typed-cursor');
-          if(cursorElement) cursorElement.style.animationIterationCount = '2';
-          setTimeout(() => cursorElement && cursorElement.remove(), 1000);
-        }, 200);
-      }
-    });
-  }
-});
 </script>
 
 <template>
