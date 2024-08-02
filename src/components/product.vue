@@ -22,7 +22,7 @@ import embed from "@/assets/img/product/embed.jpeg";
           <TransparentBlogCard
             :image="astropt"
             title="AstroPT"
-            description="AstroPT is an autoregressive pretrained transformer developed for astronomical use-cases, and V1.0 has been trained on 8.6 million galaxy postage stamp observations from the DESI Legacy Survey DR8."
+            description='AstroPT is a GPT model designed for astronomical applications, trained on millions of galaxy images, with plans to incorporate diverse astronomical data types to create a comprehensive "Large Observation Model" for astronomy.'
             :action="{route: 'https://arxiv.org/abs/2405.14930v1', label: 'View on arXiv', color: 'success'}"
           />
         </div>
