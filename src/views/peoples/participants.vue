@@ -8,9 +8,6 @@ import DefaultFooter from "@/examples/footers/FooterDefault.vue";
 //image
 import background from "@/assets/img/background.png";
 
-//dep
-import Typed from "typed.js";
-
 //sections
 import AboutTeam from "./Sections/AboutTeam.vue";
 
@@ -20,17 +17,6 @@ const body = document.getElementsByTagName("body")[0];
 onMounted(() => {
   body.classList.add("about-us");
   body.classList.add("bg-gray-200");
-
-  if (document.getElementById("typed")) {
-    var typed = new Typed("#typed", {
-      stringsElement: "#typed-strings",
-      typeSpeed: 90,
-      backSpeed: 90,
-      backDelay: 1000,
-      startDelay: 500,
-      loop: true,
-    });
-  }
 });
 </script>
 

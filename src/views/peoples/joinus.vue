@@ -8,25 +8,11 @@ import DefaultFooter from "@/examples/footers/FooterDefault.vue";
 //image
 import background from "@/assets/img/background.png";
 
-//dep
-import Typed from "typed.js";
-
 const body = document.getElementsByTagName("body")[0];
 //hooks
 onMounted(() => {
   body.classList.add("about-us");
   body.classList.add("bg-gray-200");
-
-  if (document.getElementById("typed")) {
-    var typed = new Typed("#typed", {
-      stringsElement: "#typed-strings",
-      typeSpeed: 90,
-      backSpeed: 90,
-      backDelay: 1000,
-      startDelay: 500,
-      loop: true,
-    });
-  }
 });
 </script>
 
@@ -46,12 +32,8 @@ onMounted(() => {
         <div class="row justify-content-center">
           <div class="col-lg-10 text-center mx-auto my-auto">
             <h1 class="text-white">
-              Work with an amazing <span class="text-white" id="typed"></span>
+              Work with an amazing team
             </h1>
-            <div id="typed-strings">
-              <h1>team</h1>
-              <h1>AI</h1>
-            </div>
             <p 
               class="lead text-white px-3 mt-3" 
               :style="{ fontWeight: '500', textShadow: '2px 2px 2px black' }"

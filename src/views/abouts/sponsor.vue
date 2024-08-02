@@ -8,27 +8,7 @@ import DefaultFooter from "@/examples/footers/FooterDefault.vue";
 //image
 import background from "@/assets/img/background.png";
 
-//dep
-import Typed from "typed.js";
-
 const body = document.getElementsByTagName("body")[0];
-onMounted(() => {
-  if (document.getElementById("typed")) {
-    new Typed("#typed", {
-      stringsElement: "#typed-strings",
-      typeSpeed: 60,
-      startDelay: 300,
-      loop: false,
-      onComplete: function(self) {
-        setTimeout(() => {
-          const cursorElement = document.querySelector('.typed-cursor');
-          if(cursorElement) cursorElement.style.animationIterationCount = '2';
-          setTimeout(() => cursorElement && cursorElement.remove(), 1000);
-        }, 200);
-      }
-    });
-  }
-});
 </script>
 
 <template>
@@ -45,12 +25,7 @@ onMounted(() => {
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-9 text-center mx-auto my-auto">
-            <h1 class="text-white">
-              <span class="text-white" id="typed"></span>
-            </h1>
-            <div id="typed-strings">
-              <h1>About Our Sponsors</h1>
-            </div>
+              <h1 class="text-white">About Our Sponsors</h1>
             <p 
               class="lead text-white px-5 mt-3" 
               :style="{ fontWeight: '500', textShadow: '2px 2px 2px black' }"
