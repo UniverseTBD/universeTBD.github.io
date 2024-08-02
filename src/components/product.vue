@@ -3,6 +3,7 @@
 import TransparentBlogCard from "../examples/cards/blogCards/TransparentBlogCard.vue";
 
 //Vue Material Kit 2 components
+import astropt from "@/assets/img/product/astropt.png";
 import astrollama from "@/assets/img/product/astrollama.jpeg";
 import hypo from "@/assets/img/product/hypo.jpeg";
 import embed from "@/assets/img/product/embed.jpeg";
@@ -19,9 +20,17 @@ import embed from "@/assets/img/product/embed.jpeg";
       <div class="row">
         <div class="col-lg-4 col-sm-6">
           <TransparentBlogCard
+            :image="astropt"
+            title="AstroPT"
+            description="AstroPT is an autoregressive pretrained transformer developed for astronomical use-cases, and V1.0 has been trained on 8.6 million galaxy postage stamp observations from the DESI Legacy Survey DR8."
+            :action="{route: 'https://arxiv.org/abs/2405.14930v1', label: 'View on arXiv', color: 'success'}"
+          />
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <TransparentBlogCard
             :image="astrollama"
             title="AstroLLaMA"
-            description="We construct a 7-billion-parameter model fine-tuned from LLaMA-2 using over 300,000 astronomy abstracts from arXiv"
+            description="We construct a 7-billion-parameter model fine-tuned from LLaMA-2 using over 300,000 astronomy abstracts from arXiv."
             :action="{route: 'https://arxiv.org/abs/2309.06126', label: 'View on arXiv', color: 'success'}"
           />
         </div>
