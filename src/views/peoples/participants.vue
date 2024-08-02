@@ -44,59 +44,12 @@ onMounted(() => {
         backgroundAttachment: 'fixed', 
         backgroundPosition: 'center', 
         backgroundSize: 'cover' 
-      }"
-    >
+      }">
       <span class="mask bg-gradient-dark opacity-3"></span>
-      
-      <div class="container">
-        
-        <div 
-          class="row justify-content-center"
-          :style="{ 
-          backgroundPosition: 'center', 
-          }"
-        >
-          <div class="col-lg-10 text-center mx-auto my-12">
-            <h1 class="text-white">
-              Work with an amazing <span class="text-white" id="typed"></span>
-            </h1>
-            <div id="typed-strings">
-              <h1>team</h1>
-              <h1>AI</h1>
-            </div>
-            <p 
-              class="lead text-white px-5 mt-3" 
-              :style="{ fontWeight: '500', textShadow: '2px 2px 2px black' }"
-            >
-              We are a group of scientists, machine learning enthusiasts, engineers, and enthusiasts, eminently human from all over the world, united to achieve our shared vision.
-            </p>
-            <a href="https://discord.gg/PUR2FbFRZ4" class="btn bg-white text-dark" role="button">
-               Join our Discord
-            </a>
-            <h6 class="text-white mb-2 mt-5">Find us on</h6>
-            <div class="d-flex justify-content-center">
-              <a href="https://twitter.com/universe_tbd"
-                ><i class="fab fa-facebook text-lg text-white me-4"></i
-              ></a>
-              <a href="https://twitter.com/universe_tbd"
-                ><i class="fab fa-instagram text-lg text-white me-4"></i
-              ></a>
-              <a href="https://twitter.com/universe_tbd"
-                ><i class="fab fa-twitter text-lg text-white me-4"></i
-              ></a>
-              <a href="https://twitter.com/universe_tbd"
-                ><i class="fab fa-google-plus text-lg text-white"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6" >
+      <div class="container col-lg-10 mx-auto my-12">
+        <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6" >
             <AboutTeam />
-          </div>
-        </div> 
-
+        </div>
       </div>
     </div>
     

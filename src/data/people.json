@@ -21,14 +21,14 @@
     "bio": "Hallo. I'm a NHFP Hubble Fellow at Columbia University. I'm obsessed with understanding how galaxies form stars over time, and work with both observations from telescopes (on the ground and in space) and cosmological simulations to understand the rich diversity of galactic star formation histories. I am also interested in all sorts of astrostatistical problems, and the synergy of machine learning techniques with everything from inference problems to better literature searches and knowledge discovery. In my non-work hours you'll often find me holed up in a bookstore, tinkering with things, or planning homebrew TTRPG campaigns."
   },
   {
-    "name": "Ze-Chang Sun",
+    "name": "Ze-Chang Sun (alumni)",
     "affiliation": "Tsinghua University",
     "imageUrl": "/people/zechang.jpg",
     "websiteUrl": "https://zechangsun.github.io",
     "bio": "Hello, I'm Zechang, a second-year PhD student at Tsinghua University exploring the intersection of astrophysics and data science. I am passionate about leveraging statistical methods to unravel the mysteries of our universe. The emergence of large language models holds promise for catalyzing a paradigm shift in astronomical research. I feel privileged to investigate the vast potential of LLMs in astronomy alongside the esteemed team at UniverseTBD. Ensuring the safe and ethical development of large language models is of great interest to me, as is using them to foster openness and transparency in academia. I really look forward to this journey of discovery."
   },
   {
-    "name": "Josh Nguyen",
+    "name": "Josh Nguyen (alumni)",
     "affiliation": "The University of Pennsylvania",
     "imageUrl": "/people/josh.jpeg",
     "websiteUrl": "https://joshnguyen.net/",
@@ -202,5 +202,12 @@
     "imageUrl": "/people/john.jpg",
     "websiteUrl": "https://www.stsci.edu/stsci-research/research-directory/john-f-wu",
     "bio": "John Wu is an Assistant Astronomer at Space Telescope Science Institute (STScI) who primarily studies galaxies with wide-area imaging surveys and machine learning methods like convolutional neural networks and graph neural networks. At STScI, he has advanced strategic initiatives in artificial intelligence and supported the upcoming Roman Space Telescope mission."
+  },
+  {
+    "name": "Kelly Lockhart",
+    "affiliation": "NASA ADS",
+    "imageUrl": "/people/kelly.jpg",
+    "websiteUrl": "https://pweb.cfa.harvard.edu/people/kelly-lockhart",
+    "bio": "Kelly Lockhart is the technical lead on the Astrophysics Data System/Science Explorer (ADS/SciX) team, where she leads software development and operations. Kelly joined the team as a software developer in 2017, immediately after finishing her PhD in extragalactic observations and data reduction pipeline work at the University of Hawai‘i at Mānoa."
   }
 ]
