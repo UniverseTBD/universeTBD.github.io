@@ -71,9 +71,9 @@ if (isDesktop.value) {
               class="lead text-white px-5 mt-3" 
               :style="{ fontWeight: '500', textShadow: '2px 2px 2px black' }"
             >
-              What if we bridge Astronomy and Large Language Models to build 
-              something truly unique that helps researchers and enthusiasts 
-              think deeper about the great beyond?
+              What if we bridge AI and Science to build something truly unique
+              that helps researchers and enthusiasts think deeper about the great 
+              beyond?
             </p>
           </div>
         </div>
@@ -92,11 +92,11 @@ if (isDesktop.value) {
         </p>
 
         <h4>Vision</h4>
-        <p class="mb-1">Our vision is to revolutionize the way science is done, 
+        <p class="mb-1">Our vision is to revolutionise the way science is done, 
           making the universe of knowledge accessible to all. We aim to be the 
           go-to platform for science benchmarks, data, and reproducible research 
           while fostering a global community of curious minds engaged in groundbreaking 
-          research and outreach..
+          research and outreach.
         </p>
         
         <h4>Values</h4>
@@ -105,25 +105,25 @@ if (isDesktop.value) {
           <li>Excellence with Purpose</li>
           <li>Fearless Experimentation</li>
           <li>Junior Leadership</li>
-          <li>Transparency, Integrity, Grit, Empowerment, Rigour (TIGER)</li>
+          <li>Transparency and Integrity</li>
         </ul>
         
         <h2 class="mb-4 mt-4">How it started</h2>
         <p class="mb-1">
           A fateful conference on data-driven astronomy at the Kavli Institute 
-          for Theoretical Physics in March 2023 saw a bunch of humans (Jo Ciucă,
-          Kartheik Iyer, Yuan-Sen Ting, Josh Peek) come together to talk about 
-          current challenges in astronomy, coming at it from very different 
-          perspectives.
+          for Theoretical Physics in March 2023 saw a bunch of humans (Ioana 
+          Ciucă, Kartheik Iyer, Yuan-Sen Ting, Josh Peek) come together to talk
+          about current challenges in astronomy, coming at it from very 
+          different perspectives.
         </p>
         <p class="mb-1">
-          Amongst all these wonderful folk, Jo became immersed in the currents 
-          of change sweeping across the natural language processing landscape of
-          AI/ML, which has had limited intersection with astronomy. Throughout 
-          the workshop, she convinced several of us of the incredible power 
-          these models held in revolutionising the way we do astronomy across a 
-          range of tasks often thought to be the exclusive domain of trained 
-          astronomers.
+          Amongst all these wonderful folk, Ioana (Jo) became immersed in the 
+          currents of change sweeping across the natural language processing 
+          landscape of AI/ML, which has had limited intersection with astronomy.
+          Throughout the workshop, she convinced several of us of the incredible
+          power these models held in revolutionising the way we do astronomy 
+          across a range of tasks often thought to be the exclusive domain of 
+          trained astronomers.
         </p>
         <p class="mb-1">
           When we all went our separate ways, Jo travelled to San Francisco to 
@@ -159,9 +159,10 @@ if (isDesktop.value) {
           to the team led by Yuan-Sen.
         </p>
         <p class="mb-1">
-          For our next stage, on the funky spaceship steered by Jo, Sandor and 
-          Kartheik, we will focus our efforts on open-source and community-led 
-          projects. Stay fine-tuned for what's to come.
+          For our next stage, on the funky spaceship steered by Jo, Maja, Sandor,
+          Kartheik, Mugdha, Pranav and Gabi, we will focus our efforts on 
+          open-source and community-led projects. Stay fine-tuned for what's to
+          come.
         </p>
 
         <h2 class="mb-4 mt-4">We start with Astronomy</h2>

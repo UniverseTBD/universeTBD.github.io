@@ -49,7 +49,7 @@ onMounted(() => {
               <span class="text-white" id="typed"></span>
             </h1>
             <div id="typed-strings">
-              <h1>About Our Sponsor</h1>
+              <h1>About Our Sponsors</h1>
             </div>
             <p 
               class="lead text-white px-5 mt-3" 
