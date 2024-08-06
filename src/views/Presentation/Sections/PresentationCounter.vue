@@ -33,7 +33,7 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
             <div class="col-md-4">
               <DefaultCounterCard
                 color="success"
-                title="Product"
+                title="Products"
                 description="We’ve achieved significant advancements and are enthusiastically pushing forward for more"
                 :count="8"
                 :duration="3000"

@@ -24,25 +24,6 @@ onUnmounted(() => {
   body.classList.remove("bg-gray-200");
 });
 
-import Typed from "typed.js";
-onMounted(() => {
-  if (document.getElementById("typed")) {
-    new Typed("#typed", {
-      stringsElement: "#typed-strings",
-      typeSpeed: 60,
-      startDelay: 300,
-      loop: false,
-      onComplete: function(self) {
-        setTimeout(() => {
-          const cursorElement = document.querySelector('.typed-cursor');
-          if(cursorElement) cursorElement.style.animationIterationCount = '2';
-          setTimeout(() => cursorElement && cursorElement.remove(), 1000);
-        }, 200);
-      }
-    });
-  }
-});
-
 const isDesktop = ref(window.innerWidth > 1024);
 const updateDeviceType = () => { 
   isDesktop.value = window.innerWidth > 1024;
@@ -80,11 +61,8 @@ if (isDesktop.value) {
         <div class="row">
           <div class="col-lg-9 text-center mx-auto my-auto">
             <h1 class="text-white">
-              <span id="typed"></span>
+            UniverseTBD
             </h1>
-            <div id="typed-strings">
-              <p>UniverseTBD</p>
-            </div>
             <p class="lead text-white px-5 mt-3" :style="{ fontWeight: '500', textShadow: '2px 2px 2px black' }">
               Do not go gentle into that good night.
             </p>
