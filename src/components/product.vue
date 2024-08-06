@@ -3,9 +3,9 @@
 import TransparentBlogCard from "../examples/cards/blogCards/TransparentBlogCard.vue";
 
 //Vue Material Kit 2 components
+import pfdr from "@/assets/img/product/pfdr.png";
 import astropt from "@/assets/img/product/astropt.png";
 import hypo from "@/assets/img/product/hypo.jpeg";
-import embed from "@/assets/img/product/embed.jpeg";
 
 </script>
 <template>
@@ -17,6 +17,14 @@ import embed from "@/assets/img/product/embed.jpeg";
         </div>
       </div>
       <div class="row">
+        <div class="col-lg-4 col-sm-6">
+          <TransparentBlogCard
+            :image="pfdr"
+            title="Pathfinder"
+            description='Pathfinder is an AI framework designed for astronomical literature review and knowledge discovery, using more than 300,000 peer-reviewed papers from the Astrophysics Data System. It incorporates advanced retrieval techniques and large language models to enable semantic searching of astronomy literature.'
+            :action="{route: 'https://pfdr.app', label: 'View on Hugging Face', color: 'success'}"
+          />
+        </div>
         <div class="col-lg-4 col-sm-6">
           <TransparentBlogCard
             :image="astropt"
@@ -31,14 +39,6 @@ import embed from "@/assets/img/product/embed.jpeg";
             title="Hypothesis Generation"
             description="We show that through adversarial prompting, foundation model can benefit from longer context, leading to more robust scientific hypothesis generation."
             :action="{route: 'https://arxiv.org/abs/2306.11648', label: 'View on arXiv', color: 'success'}"
-          />
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <TransparentBlogCard
-            :image="embed"
-            title="Arxiv Embedding"
-            description="We deem this dual-pronged approach to logit reshaping as STEER: Semantic Text Enhancement via Embedding Repositioning."
-            :action="{route: 'https://arxiv.org/abs/2308.07645', label: 'View on arXiv', color: 'success'}"
           />
         </div>
       </div>
