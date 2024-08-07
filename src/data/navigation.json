@@ -16,22 +16,12 @@
     {
         "name": "Products",
         "icon": "extension",
-        "links": [
-            {
-                "name": "Products",
-                "url": "product"
-            }
-        ]
+        "url": "product"
     },
     {
         "name": "Research",
         "icon": "school",
-        "links": [
-            {
-                "name": "Research",
-                "url": "research"
-            }
-        ]
+        "url": "research"
     },
     {
         "name": "People",

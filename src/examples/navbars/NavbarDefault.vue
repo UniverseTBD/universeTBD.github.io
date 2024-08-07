@@ -8,6 +8,7 @@ import ArrDark from "@/assets/img/down-arrow-dark.svg";
 import DownArrWhite from "@/assets/img/down-arrow-white.svg";
 
 import NavbarGroup from './NavbarGroup.vue';
+import NavbarLink from './NavbarLink.vue';
 import navigationGroups from "@/data/navigation.json";
 
 import 'bootstrap'; //Fix mobile navbar. Not sure why we need to include this, something is missing from the material-kit demo forked for this website.
@@ -160,15 +161,25 @@ watch(
         id="navigation"
       >
         <ul class="navbar-nav navbar-nav-hover ms-auto">
-          <NavbarGroup
-            v-for="group in navigationGroups"
-            :key="group.name"
-            :name="group.name"
-            :icon="group.icon"
-            :links="group.links"
-            :get-text-color="getTextColor"
-            :get-arrow-color="getArrowColor"
-          />
+          <!-- Iterate over navigation data. If data contains 'links' array, render a group
+           else, render an individual link -->
+          <template v-for="item in navigationGroups" :key="item.name">
+            <NavbarGroup
+              v-if="item.links"
+              :name="item.name"
+              :icon="item.icon"
+              :links="item.links"
+              :get-text-color="getTextColor"
+              :get-arrow-color="getArrowColor"
+            />
+            <NavbarLink
+              v-else
+              :name="item.name"
+              :icon="item.icon"
+              :url="item.url"
+              :get-text-color="getTextColor"
+            />
+          </template>
         </ul>
       </div>
     </div>
