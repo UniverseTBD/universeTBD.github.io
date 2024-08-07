@@ -1,5 +1,9 @@
 <script setup>
 import logo from "@/assets/img/icon.jpg";
+import navItems from "@/data/navigation.json";
+import FooterGroup from "../footers/FooterGroup.vue";
+import FooterLink from "../footers/FooterLink.vue";
+
 defineProps({
   brand: {
     type: Object,
@@ -17,10 +21,6 @@ defineProps({
     icon: String,
     link: String,
     default: () => [
-      /*{
-        icon: "fa-solid fa-smile",
-        link: "https://huggingface.co/universeTBD"
-      },*/
       {
         icon: "fab fa-linkedin",
         link: "https://www.linkedin.com/company/universetbd/"
@@ -35,62 +35,22 @@ defineProps({
       },
     ]
   },
-  menus: {
-    type: Array,
-    name: String,
-    items: {
-      type: Array,
-      name: String,
-      route: String
-    },
-    default: () => [
-      {
-        name: "About",
-        items: [
-          {
-            name: "About Us",
-            route: "/about/"
-          },
-          {
-            name: "Sponsor",
-            route: "/about/sponsor"
-          },
-        ]
-      },
-      {
-        name: "Products",
-        items: [
-          { 
-            name: "Products", 
-            route: "/products"
-          }
-        ]
-      },
-      {
-        name: "Research",
-        items: [
-          {
-            name: "Research",
-            route: "/research"
-          },
-        ]
-      },
-      {
-        name: "People",
-        items: [
-          {
-            name: "Participants",
-            route: "/people/participants"
-          },
-          {
-            name: "Contact Us",
-            route: "/people/joinus"
-          },
-        ]
-      }
-    ]
-  }
 });
+
+// set text color
+const getTextColor = () => {
+  let color;
+  if (props.transparent && textDark.value) {
+    color = "text-dark";
+  } else if (props.transparent) {
+    color = "text-white";
+  } else {
+    color = "text-dark";
+  }
+
+  return color;
+};
+
 </script>
 <template>
   <footer class="footer pt-1 mt-1">
@@ -147,21 +107,23 @@ defineProps({
             </ul>
           </div>
         </div>
-        <div
-          class="col-md-2 col-sm-6 col-6 mb-4"
-          v-for="{ name, items } of menus"
-          :key="name"
-        >
-          <h6 class="text-sm">{{ name }}</h6>
-          <ul class="flex-column ms-n3 nav">
-            <li class="nav-item" v-for="item of items" :key="item.name">
-              <RouterLink class="nav-link" :to="item.route">
-                {{ item.name }}
-              </RouterLink>
-            </li>
-          </ul>
-        </div>
-
+          <!-- Iterate over navigation data. If data contains 'links' array, render a group
+           else, render an individual link -->
+          <template v-for="item in navItems" :key="item.name">
+            <div class="col-md-2 col-sm-6 col-6 mb-4">
+            <FooterGroup
+              v-if="item.links"
+              :name="item.name"
+              :links="item.links"
+            />
+            <FooterLink
+              v-else
+              :name="item.name"
+              :url="item.url"
+              :isroot="true"
+            />
+            </div>
+          </template>
         <div class="col-12">
           <div class="text-center">
             <p class="text-dark my-4 text-sm font-weight-normal">

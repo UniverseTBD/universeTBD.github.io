@@ -4,11 +4,11 @@
         "icon": "dashboard",
         "links": [
             {
-                "name": "About UniverseTBD",
+                "name": "UniverseTBD",
                 "url": "about"
             },
             {
-                "name": "Sponsors",
+                "name": "Our Sponsors",
                 "url": "about-sponsor"
             }
         ]
