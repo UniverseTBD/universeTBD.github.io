@@ -103,7 +103,7 @@ npm run preview
 ## Adding a link to the navbar
 The navbar uses data from the `navigation.json` file. There are two types of links:
 ### Group links
-Group links will display as dropdown menu's, and are structured as:
+Group links will display as dropdown menus, and are structured as:
 ```
 {
     "name": "About",        # Dropdown Heading
@@ -122,7 +122,7 @@ Group links will display as dropdown menu's, and are structured as:
 ```
 
 ### Individual links
-Display as an individual link without a navbar. Has similar structure:
+Display as an individual link without a navbar. Has following structure:
 ```
 {
     "name": "Research",  # Link Heading
