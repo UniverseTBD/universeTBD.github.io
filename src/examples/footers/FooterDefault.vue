@@ -58,10 +58,10 @@ defineProps({
         ]
       },
       {
-        name: "Product",
+        name: "Products",
         items: [
           { 
-            name: "Product", 
+            name: "Products", 
             route: "/products"
           }
         ]
