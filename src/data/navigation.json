@@ -15,13 +15,17 @@
     },
     {
         "name": "Products",
-        "icon": "extension",
-        "url": "product"
-    },
-    {
-        "name": "Research",
         "icon": "school",
-        "url": "research"
+        "links": [
+            {
+                "name": "Latest",
+                "url": "product"
+            },
+            {
+                "name": "Research",
+                "url": "research"
+            }
+        ]
     },
     {
         "name": "People",
