@@ -99,3 +99,34 @@ which also produces the minified project for distribution. Note that there is a 
 ```bash
 npm run preview
 ```
+
+## Adding a link to the navbar
+The navbar uses data from the `navigation.json` file. There are two types of links:
+### Group links
+Group links will display as dropdown menu's, and are structured as:
+```
+{
+    "name": "About",        # Dropdown Heading
+    "icon": "dashboard",    # Icon name, from [Material Icons](https://fonts.google.com/icons?selected=Material+Icons)
+    "links": [              # A list of links to display in the dropdown
+        {
+            "name": "About UniverseTBD",    # Link text in dropdown
+            "url": "about"                  # Url, matches the name defined in /routes/index.js
+        },
+        {
+            "name": "Sponsors",
+            "url": "about-sponsor"
+        }
+    ]
+}
+```
+
+### Individual links
+Display as an individual link without a navbar. Has similar structure:
+```
+{
+    "name": "Research",  # Link Heading
+    "icon": "school",    # Icon name, from [Material Icons](https://fonts.google.com/icons?selected=Material+Icons)
+    "url": "about"       # Url, matches the name defined in /routes/index.js
+}
+```
