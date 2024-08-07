@@ -1,0 +1,50 @@
+[
+    {
+        "name": "About",
+        "icon": "dashboard",
+        "links": [
+            {
+                "name": "About Us",
+                "url": "about"
+            },
+            {
+                "name": "Sponsors",
+                "url": "about-sponsor"
+            }
+        ]
+    },
+    {
+        "name": "Products",
+        "icon": "extension",
+        "links": [
+            {
+                "name": "Products",
+                "url": "product"
+            }
+        ]
+    },
+    {
+        "name": "Research",
+        "icon": "school",
+        "links": [
+            {
+                "name": "Research",
+                "url": "research"
+            }
+        ]
+    },
+    {
+        "name": "People",
+        "icon": "groups",
+        "links": [
+            {
+                "name": "Participants",
+                "url": "participants"
+            },
+            {
+                "name": "Contact Us",
+                "url": "people-joinus"
+            }
+        ]
+    }
+]
