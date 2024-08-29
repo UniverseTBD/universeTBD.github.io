@@ -216,5 +216,12 @@
     "imageUrl": "/people/Simone.jpg",
     "websiteUrl": "https://www.linkedin.com/in/simone-astarita-4499b11b5",
     "bio": "I am a Master of Logic student at the University of Amsterdam and an intern at the European Space Astronomy Centre, where I am building a chatbot for space mission requirements. I focus on natural language processing and large language models (LLMs) and their science applications. I aim to advance our understanding of LLMs and language by doing what I enjoy: tackling issues linked to text data and developing the tools others need to address them."
-  }    
+  },
+  {
+    "name": "Rishabh Chakrabarty",
+    "affiliation": "Schelling AI",
+    "imageUrl": "/people/Rishabh.jpg",
+    "websiteUrl": "https://notrishabh.fr",
+    "bio": "Rishabh is an interdisciplinary researcher and artist based in Paris with a focus on Symbolic Systems integrating knowledge from diverse fields from Computer Science, Neuroscience, Philosophy, Design, Business and Policy. He is working on Applied Research problems at Schelling AI, previously a Distinguished Research Scientist at Stability AI exploring how Machine Intelligence and Design can be used to solve problems in different domains. He aims to understand the evolving symbiosis between humanity and technology, delving into the complex relationship between mind and machine."
+  }
 ]
