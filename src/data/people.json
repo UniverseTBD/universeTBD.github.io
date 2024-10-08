@@ -223,5 +223,12 @@
     "imageUrl": "/people/Rishabh.jpg",
     "websiteUrl": "https://notrishabh.fr",
     "bio": "Rishabh is an interdisciplinary researcher and artist based in Paris with a focus on Symbolic Systems integrating knowledge from diverse fields from Computer Science, Neuroscience, Philosophy, Design, Business and Policy. He is working on Applied Research problems at Schelling AI, previously a Distinguished Research Scientist at Stability AI exploring how Machine Intelligence and Design can be used to solve problems in different domains. He aims to understand the evolving symbiosis between humanity and technology, delving into the complex relationship between mind and machine."
+  },
+  {
+    "name": "Atilla Kaan Alkan",
+    "affiliation": "Paris-Saclay University",
+    "imageUrl": "photo_atilla.png",
+    "websiteUrl": "",
+    "bio": "Atilla Kaan Alkan is a final year PhD student in Natural Language Processing at Paris-Saclay University, specializing in astrophysical information extraction. His research focuses on tasks such as named entity extraction, coreference resolution, and relation extraction. Atilla's thesis aims to address the lack of annotated astrophysical corpora and explore data augmentation techniques to reduce the reliance on large datasets for training effective information extraction models."
   }
 ]
