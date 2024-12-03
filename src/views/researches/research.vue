@@ -22,6 +22,14 @@ export default {
     return {
       arXivs: [
         {
+          id: 8,
+          title: "The Multimodal Universe: Enabling Large-Scale Machine Learning with 100 TB of Astronomical Scientific Data",
+          date: "Nov 13, 2024",
+          authors: "The Multimodal Universe Collaboration",
+          link: ["OpenReview", "https://openreview.net/forum?id=EWm9zR5Qy1#discussion"],
+          content: "We present the Multimodal Universe, a large-scale multimodal dataset of scientific astronomical data, compiled specifically to facilitate machine learning research. Overall, our dataset contains hundreds of millions of astronomical observations, constituting 100TB of multi-channel and hyper-spectral images, spectra, multivariate time series, as well as a wide variety of associated scientific measurements and metadata. In addition, we include a range of benchmark tasks representative of standard practices for machine learning methods in astrophysics. This massive dataset will enable the development of large multi-modal models specifically targeted towards scientific applications. All codes used to compile the dataset, and a description of how to access the data is available at https://github.com/MultimodalUniverse/MultimodalUniverse"
+        },
+        {
           id: 7,
           title: "AstroPT: Scaling Large Observation Models for Astronomy",
           date: "May 23, 2024",
@@ -115,10 +123,16 @@ export default {
               <div class="card-body mb-0">
                 <ul class="list-unstyled mt-n4 mb-2">
                   <li>{{ arXiv.date }}</li>
-                  <li>ArXiv ID: {{ arXiv.arxivId }}</li>
+                  <li v-if="arXiv.arxivId">ArXiv ID: {{ arXiv.arxivId }}</li>
                 </ul>
-                <p class="text-lg mb-2">{{ arXiv.content }}</p>
-                <a
+                <p class="text-lg mb-2"><b>Abstract:</b> {{ arXiv.content }}</p>
+                <a v-if="arXiv.link"
+                  :href="arXiv.link[1]"
+                  class="text-success icon-move-right"
+                  >View on {{ arXiv.link[0] }}
+                  <font-awesome-icon :icon="['fas', 'fa-arrow-right']"/>
+                </a>
+                <a v-if="arXiv.arxivId"
                   :href="'https://arxiv.org/abs/' + arXiv.arxivId" 
                   class="text-success icon-move-right"
                   >View on arXiv

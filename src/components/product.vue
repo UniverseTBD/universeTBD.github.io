@@ -6,6 +6,7 @@ import TransparentBlogCard from "../examples/cards/blogCards/TransparentBlogCard
 import pfdr from "@/assets/img/product/pfdr.png";
 import astropt from "@/assets/img/product/astropt.png";
 import hypo from "@/assets/img/product/hypo.jpeg";
+import multimodal_universe from "@/assets/img/product/multimodal_universe.png";
 
 </script>
 <template>
@@ -17,6 +18,14 @@ import hypo from "@/assets/img/product/hypo.jpeg";
         </div>
       </div>
       <div class="row">
+        <div class="col-lg-4 col-sm-6">
+          <TransparentBlogCard
+            :image="multimodal_universe"
+            title="Multimodal Universe"
+            description="The Multimodal Universe (MMU) is a huge 100TB dataset bringing together the largest collection of astronomical observations ever assembled to accelerate open AI and astronomy research. Think ImageNet, but for space 🚀."
+            :action="{route: 'https://github.com/MultimodalUniverse/MultimodalUniverse', label: 'View on GitHub', color: 'success'}"
+          />
+        </div>
         <div class="col-lg-4 col-sm-6">
           <TransparentBlogCard
             :image="pfdr"
@@ -31,14 +40,6 @@ import hypo from "@/assets/img/product/hypo.jpeg";
             title="AstroPT"
             description='AstroPT is a GPT model designed for astronomical applications, trained on millions of galaxy images, with plans to incorporate diverse astronomical data types to create a comprehensive "Large Observation Model" for astronomy.'
             :action="{route: 'https://arxiv.org/abs/2405.14930v1', label: 'View on arXiv', color: 'success'}"
-          />
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <TransparentBlogCard
-            :image="hypo"
-            title="Hypothesis Generation"
-            description="We show that through adversarial prompting, foundation model can benefit from longer context, leading to more robust scientific hypothesis generation."
-            :action="{route: 'https://arxiv.org/abs/2306.11648', label: 'View on arXiv', color: 'success'}"
           />
         </div>
       </div>
