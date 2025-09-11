@@ -230,5 +230,13 @@
     "imageUrl": "photo_atilla.png",
     "websiteUrl": "",
     "bio": "Atilla Kaan Alkan is a final year PhD student in Natural Language Processing at Paris-Saclay University, specializing in astrophysical information extraction. His research focuses on tasks such as named entity extraction, coreference resolution, and relation extraction. Atilla's thesis aims to address the lack of annotated astrophysical corpora and explore data augmentation techniques to reduce the reliance on large datasets for training effective information extraction models."
+  },
+  {
+    "name": "Mugdha Polimera",
+    "affiliation": "Center for Astrophysics | Harvard & Smithsonian",
+    "imageUrl": "/people/Mugdha.jpg",
+    "websiteUrl": "www.mugdhapolimera.com",
+    "bio": "Mugdha Polimera is an Astrophysicist who does research on black holes and investigates how they evolve with galaxies. She is also a software engineer working on the NASA Astrophysics Data Systems and Science Explorer platforms. She loves to use her engineering skills to create useful tools to help Earth and Space scientists accelerate their research. She is also deeply passionate about providing service to the larger astronomy community."
   }
+
 ]
