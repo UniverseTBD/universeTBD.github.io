@@ -11,20 +11,22 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
             <div class="col-md-4 position-relative">
               <DefaultCounterCard
                 color="success"
-                title="Research Papers"
-                description="We are actively developing models and benchmarks to explore and harness this vast literature"
-                :count="500000"
+                title="Community"
+                description="Scientists, technologists, and artists co-create UniverseTBD in a bustling marketplace of ideas."
+                :start="150"
+                :count="200"
                 suffix="+"
-                :duration="3000"
+                :duration="2000"
                 divider="vertical"
               />
             </div>
             <div class="col-md-4 position-relative">
               <DefaultCounterCard
                 color="success"
-                title="Main Participants"
-                description="A diverse team of over 30 scientists, techies, artists and enthusiasts from around the world"
-                :count="30"
+                title="Mission"
+                description="Democratizing science as we blueprint the research lab of the future—humans with AI, open by design."
+                :start="2023"
+                :count="2030"
                 suffix="+"
                 :duration="3000"
                 divider="vertical"
@@ -33,9 +35,10 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
             <div class="col-md-4">
               <DefaultCounterCard
                 color="success"
-                title="Products"
-                description="We’ve achieved significant advancements and are enthusiastically pushing forward for more"
-                :count="8"
+                title="Milestones"
+                description="We’ve shipped 10+ AI for Science projects and community tools, each advancing open discovery."
+                :count="10"
+                suffix="+"
                 :duration="3000"
               />
             </div>

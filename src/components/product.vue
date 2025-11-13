@@ -3,10 +3,9 @@
 import TransparentBlogCard from "../examples/cards/blogCards/TransparentBlogCard.vue";
 
 //Vue Material Kit 2 components
-import pfdr from "@/assets/img/product/pfdr.png";
 import astropt from "@/assets/img/product/astropt.png";
-import hypo from "@/assets/img/product/hypo.jpeg";
 import multimodal_universe from "@/assets/img/product/multimodal_universe.png";
+import platonic_universe from "@/assets/img/product/prh_temp.png";
 
 </script>
 <template>
@@ -14,24 +13,28 @@ import multimodal_universe from "@/assets/img/product/multimodal_universe.png";
     <div class="container">
       <div class="row">
         <div class="col-lg-6 mx-auto text-center">
-          <h3 class="mb-5">Our Latest Achievements</h3>
+          <h3 class="mb-5">Our Latest Research</h3>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-4 col-sm-6">
           <TransparentBlogCard
-            :image="multimodal_universe"
-            title="Multimodal Universe"
-            description="The Multimodal Universe (MMU) is a huge 100TB dataset bringing together the largest collection of astronomical observations ever assembled to accelerate open AI and astronomy research. Think ImageNet, but for space 🚀."
-            :action="{route: 'https://github.com/MultimodalUniverse/MultimodalUniverse', label: 'View on GitHub', color: 'success'}"
+            :image="platonic_universe"
+            title="The Platonic Universe"
+            description="The Platonic Representation Hypothesis suggests different models converge toward the same view of reality. Using a 100TB+ Multimodal Universe astronomy dataset, we're proving larger models align into shared embedding spaces, revealing how machines truly learn."
+            :action="{route: 'https://github.com/UniverseTBD/platonic-universe', label: 'View on GitHub', color: 'success'}"
+            :secondary-action="{route: 'https://arxiv.org/abs/2509.19453', label: 'Read the Paper', color: 'success'}"
+            :image-route="{ path: '/research', hash: '#platonic-universe' }"
           />
         </div>
         <div class="col-lg-4 col-sm-6">
           <TransparentBlogCard
-            :image="pfdr"
-            title="Pathfinder"
-            description='Pathfinder is an AI framework designed for astronomical literature review and knowledge discovery, using more than 300,000 peer-reviewed papers from the Astrophysics Data System. It incorporates advanced retrieval techniques and large language models to enable semantic searching of astronomy literature.'
-            :action="{route: 'https://pfdr.app', label: 'View on Hugging Face', color: 'success'}"
+            :image="multimodal_universe"
+            title="Multimodal Universe"
+            description="We present the Multimodal Universe (MMU), a 100 TB collection of hundreds of millions of spectra, hyperspectral images, time series, and scientific metadata with ready-to-run benchmarks so researchers can build and evaluate foundation models using astronomical datasets."
+            :action="{route: 'https://github.com/MultimodalUniverse/MultimodalUniverse', label: 'View on GitHub', color: 'success'}"
+            :secondary-action="{route: 'https://arxiv.org/abs/2412.02527', label: 'Read the Paper', color: 'success'}"
+            :image-route="{ path: '/research', hash: '#multimodal-universe' }"
           />
         </div>
         <div class="col-lg-4 col-sm-6">
@@ -39,7 +42,8 @@ import multimodal_universe from "@/assets/img/product/multimodal_universe.png";
             :image="astropt"
             title="AstroPT"
             description='AstroPT is a GPT model designed for astronomical applications, trained on millions of galaxy images, with plans to incorporate diverse astronomical data types to create a comprehensive "Large Observation Model" for astronomy.'
-            :action="{route: 'https://arxiv.org/abs/2405.14930v1', label: 'View on arXiv', color: 'success'}"
+            :action="{route: 'https://github.com/Smith42/astroPT', label: 'View on GitHub', color: 'success'}"
+            :secondary-action="{route: 'https://arxiv.org/abs/2405.14930v1', label: 'Read the Paper', color: 'success'}"
           />
         </div>
       </div>

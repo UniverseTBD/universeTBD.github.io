@@ -7,6 +7,7 @@ import Product from "../views/products/product.vue";
 import Research from "../views/researches/research.vue";
 import Participants from "../views/peoples/participants.vue";
 import Joinus from "../views/peoples/joinus.vue";
+import OpenCommunity from "../views/peoples/opencommunity.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -45,11 +46,31 @@ const router = createRouter({
       component: Participants,
     },
     {
+      path: "/community/open",
+      name: "open-community",
+      component: OpenCommunity,
+    },
+    {
       path: "/people/joinus",
       name: "people-joinus",
       component: Joinus,
     },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    }
+
+    if (to.hash) {
+      return {
+        el: to.hash,
+        top: 0,
+        behavior: "smooth",
+      };
+    }
+
+    return { top: 0, left: 0 };
+  },
 });
 
 export default router;

@@ -1,6 +1,4 @@
 <script setup>
-import { onMounted, onUnmounted } from "vue";
-
 //example components
 import DefaultNavbar from "@/examples/navbars/NavbarDefault.vue";
 import DefaultFooter from "@/examples/footers/FooterDefault.vue";
@@ -10,14 +8,9 @@ import background from "@/assets/img/background.png";
 
 //sections
 import AboutTeam from "./Sections/AboutTeam.vue";
+import { useBodyClass } from "@/composables/useBodyClass";
 
-const body = document.getElementsByTagName("body")[0];
-
-//hooks
-onMounted(() => {
-  body.classList.add("about-us");
-  body.classList.add("bg-gray-200");
-});
+useBodyClass(["about-us", "bg-gray-200"]);
 </script>
 
 <template>
@@ -42,6 +35,5 @@ onMounted(() => {
   </header>
   <DefaultFooter />
 </template>
-
 
 

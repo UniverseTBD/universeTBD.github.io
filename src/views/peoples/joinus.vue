@@ -1,19 +1,13 @@
 <script setup>
-import { onMounted, onUnmounted } from "vue";
-
 //example components
 import DefaultNavbar from "@/examples/navbars/NavbarDefault.vue";
 import DefaultFooter from "@/examples/footers/FooterDefault.vue";
 
 //image
 import background from "@/assets/img/background.png";
+import { useBodyClass } from "@/composables/useBodyClass";
 
-const body = document.getElementsByTagName("body")[0];
-//hooks
-onMounted(() => {
-  body.classList.add("about-us");
-  body.classList.add("bg-gray-200");
-});
+useBodyClass(["about-us", "bg-gray-200"]);
 </script>
 
 
@@ -38,7 +32,8 @@ onMounted(() => {
               class="lead text-white px-3 mt-3" 
               :style="{ fontWeight: '500', textShadow: '2px 2px 2px black' }"
             >
-              We are a group of scientists, machine learning researchers, engineers, and enthusiasts, eminently human from all over the world, united to achieve our shared vision.
+              We welcome new folks on our Discord, where we encourage everyone to bring their ideas and
+              join a vibrant community of peers and mentors.
             </p>
             <div class="card bg-gray-300 mx-3 pb-3 pt-3">
             <div class="card-body lead">

@@ -23,6 +23,10 @@ defineProps({
       label: "Read more",
     }),
   },
+  secondaryAction: {
+    type: Object,
+    default: null,
+  },
 });
 </script>
 <template>
@@ -46,13 +50,28 @@ defineProps({
       <p>
         {{ description }}
       </p>
-      <a
-        :href="action.route"
-        class="text-sm icon-move-right"
-        :class="`text-${action.color}`"
-        >{{ action.label }}
-        <i class="fas fa-arrow-right text-xs ms-1"></i>
-      </a>
+      <div class="d-flex flex-wrap gap-3">
+        <a
+          :href="action.route"
+          class="text-sm icon-move-right"
+          :class="`text-${action.color}`"
+          >{{ action.label }}
+          <i class="fas fa-arrow-right text-xs ms-1"></i>
+        </a>
+        <a
+          v-if="secondaryAction"
+          :href="secondaryAction.route"
+          class="text-sm icon-move-right"
+          :class="[
+            secondaryAction.color
+              ? `text-${secondaryAction.color}`
+              : `text-${action.color}`,
+          ]"
+        >
+          {{ secondaryAction.label }}
+          <i class="fas fa-arrow-right text-xs ms-1"></i>
+        </a>
+      </div>
     </div>
   </div>
 </template>

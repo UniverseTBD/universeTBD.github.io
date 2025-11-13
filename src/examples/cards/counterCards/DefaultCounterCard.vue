@@ -41,14 +41,34 @@ defineProps({
       return ["vertical", "horizontal"].includes(value);
     },
   },
+  display: {
+    type: String,
+    default: "",
+  },
+  start: {
+    type: Number,
+    default: 0,
+  },
 });
 </script>
+
 <template>
   <div class="text-center">
     <h1 :class="`text-gradient text-${color ?? 'success'}`">
-      <CountTo :start-val="0" :end-val="count" :duration="duration" />{{
-        suffix
-      }}
+      <template v-if="display">
+        {{ display }}
+      </template>
+      <template v-else>
+        <span class="counter-value">
+          <CountTo
+            :start-val="start"
+            :end-val="count"
+            :duration="duration"
+            separator=""
+          />
+          <span v-if="suffix" class="counter-suffix">{{ suffix }}</span>
+        </span>
+      </template>
     </h1>
     <h5 class="mt-3">{{ title }}</h5>
     <p class="text-sm font-weight-normal">
@@ -57,3 +77,16 @@ defineProps({
   </div>
   <hr :class="`${divider ? divider : ''} dark`" />
 </template>
+
+<style scoped>
+.counter-value {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.1em;
+}
+
+.counter-suffix {
+  font-size: 1em;
+  letter-spacing: 0.04em;
+}
+</style>
