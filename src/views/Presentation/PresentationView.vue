@@ -68,15 +68,9 @@ useBodyClass(["presentation-page", "bg-gray-200"]);
 }
 
 .hero-background {
-  background-position: center -20%;
+  background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #05060a;
-}
-
-@media (min-width: 1024px) {
-  .hero-background {
-    background-attachment: fixed;
-  }
 }
 </style>
