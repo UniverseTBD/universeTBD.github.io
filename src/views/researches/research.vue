@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, onUnmounted } from "vue";
+import { computed, onMounted, onUnmounted, ref } from "vue";
 
 // example components
 import DefaultNavbar from "@/examples/navbars/NavbarDefault.vue";
@@ -18,8 +18,27 @@ const labelColorMap = {
 
 const getLabelClass = (label) => labelColorMap[label] || "label-default";
 
-const arXivs = researchProjects;
+const baseTracks = [
+  "Interpretability",
+  "Collaborative AI",
+  "Blue Skies",
+  "Research Tools",
+];
+const trackOrder = researchProjects
+  .map((project) => project.researchLabel)
+  .filter(
+    (label) => label && !baseTracks.includes(label),
+  );
+const trackFilters = ["All", ...baseTracks, ...new Set(trackOrder)];
+const activeTrack = ref(trackFilters[0]);
 
+const filteredProjects = computed(() =>
+  activeTrack.value === "All"
+    ? researchProjects
+    : researchProjects.filter(
+        (project) => project.researchLabel === activeTrack.value,
+      ),
+);
 
 const body = document.getElementsByTagName("body")[0];
 
@@ -50,14 +69,26 @@ onUnmounted(() => {
             class="lead text-white px-3 mt-3"
             :style="{ fontWeight: '500', textShadow: '2px 2px 2px black' }"
           >
-            We do research across the three dimensions of Interpretability, Collaborative AI,
-            and Blue Skies, while releasing Research Tools to support our scientific community.
+            We do research across multiple dimensions, including Interpretability and Blue Skies research.
           </p>
         </div>
 
         <div class="row justify-content-center">
           <div class="container">
-            <div v-for="arXiv in arXivs" :key="arXiv.id" class="card my-4 research-card">
+            <div class="track-filter text-center mb-4">
+              <button
+                v-for="track in trackFilters"
+                :key="track"
+                type="button"
+                class="track-link"
+                :class="{ active: activeTrack === track }"
+                @click="activeTrack = track"
+                :aria-pressed="activeTrack === track"
+              >
+                {{ track }}
+              </button>
+            </div>
+            <div v-for="arXiv in filteredProjects" :key="arXiv.id" class="card my-4 research-card">
               <div
                 class="card-header mb-0 d-flex flex-column flex-md-row align-items-md-center justify-content-between"
               >
@@ -136,6 +167,55 @@ onUnmounted(() => {
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
 }
 
+.track-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+.track-link {
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.track-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -0.35rem;
+  width: 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.9);
+  transition: width 0.2s ease, left 0.2s ease;
+}
+
+.track-link:hover {
+  color: #ffffff;
+}
+
+.track-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.track-link.active {
+  color: #ffffff;
+}
+
+.track-link.active::after {
+  width: 100%;
+  left: 0;
+}
+
 .research-card .card-header {
   background: transparent;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -152,31 +232,29 @@ onUnmounted(() => {
   font-weight: 700;
   letter-spacing: 0.03em;
   border: none;
+  background: transparent;
+  text-transform: uppercase;
+  font-size: 0.85rem;
 }
 
 .label-interpretability {
-  background: #e0cffc;
-  color: #402062;
+  color: #c8abff;
 }
 
 .label-blue-skies {
-  background: #bfdbfe;
-  color: #0f1f3d;
+  color: #8ed7ff;
 }
 
 .label-collaborative-ai {
-  background: #fbe9ec;
-  color: #7a1c2d;
+  color: #ff9fc0;
 }
 
 .label-research-tools {
-  background: #e1f7f0;
-  color: #0c4a36;
+  color: #5ef2cf;
 }
 
 .label-default {
-  background: #e2e8f0;
-  color: #1f2937;
+  color: #f5f7fb;
 }
 
 .research-thumb {

@@ -111,18 +111,14 @@ defineProps({
 }
 
 .title-tags__badge {
-  display: inline-flex;
-  align-items: center;
+  display: inline;
   font-size: 0.64rem;
   letter-spacing: 0.08em;
   font-weight: 600;
   text-transform: uppercase;
-  color: #495057;
-  white-space: nowrap;
-  padding: 0.15rem 0.4rem;
-  border-radius: 999px;
-  border: 1px solid rgba(73, 80, 87, 0.3);
-  background: rgba(248, 249, 250, 0.95);
+  color: #bba7ff;
+  text-shadow: none;
+  white-space: normal;
 }
 
 @media (max-width: 575px) {
