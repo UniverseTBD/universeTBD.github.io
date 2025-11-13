@@ -43,7 +43,7 @@ useBodyClass(["about-us", "bg-gray-200"]);
             <div class="card-body lead">
               <h5>Follow us</h5>
               <a href="https://twitter.com/universe_tbd">
-                <font-awesome-icon :icon="['fab', 'twitter']" size="2xl" />
+                <font-awesome-icon :icon="['fab', 'x-twitter']" size="2xl" />
                 @universe_tbd
               </a>
             </div>
