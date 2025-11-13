@@ -8,6 +8,11 @@ import openaiLogo from "@/assets/img/logo/OpenAI.svg";
 
 const partners = [
   {
+    name: "Hugging Face",
+    program: "Open science infrastructure & hosting",
+    logo: hfLogo,
+  },
+  {
     name: "Microsoft",
     program: "Accelerate Foundation Models Academic Research Initiative",
     logo: msLogo,
@@ -16,11 +21,6 @@ const partners = [
     name: "OpenAI",
     program: "Researcher Access Program",
     logo: openaiLogo,
-  },
-  {
-    name: "Hugging Face",
-    program: "Open science infrastructure & hosting",
-    logo: hfLogo,
   },
 ];
 </script>
