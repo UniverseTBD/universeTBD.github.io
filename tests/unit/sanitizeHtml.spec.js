@@ -19,7 +19,7 @@ describe("sanitizeHtml utility", () => {
     expect(result).not.toContain("onclick");
     expect(result).toContain('rel="noopener noreferrer"');
     expect(result).toContain('target="_blank"');
-  );
+  });
 
   it("removes unsafe urls", () => {
     const result = sanitizeHtml('<a href="javascript:alert(1)">Bad</a>');

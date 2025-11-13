@@ -52,21 +52,14 @@ describe("body class composable integration", () => {
     expect(document.body.classList.contains("bg-gray-200")).toBe(false);
   });
 
-  it("cleans up Presentation view classes and listeners", () => {
-    const addSpy = vi.spyOn(window, "addEventListener");
-    const removeSpy = vi.spyOn(window, "removeEventListener");
-
+  it("cleans up Presentation view classes", () => {
     const wrapper = mountComponent(PresentationView);
-    const resizeCall = addSpy.mock.calls.find(([event]) => event === "resize");
-
     expect(document.body.classList.contains("presentation-page")).toBe(true);
     expect(document.body.classList.contains("bg-gray-200")).toBe(true);
-    expect(resizeCall).toBeTruthy();
 
     wrapper.unmount();
 
     expect(document.body.classList.contains("presentation-page")).toBe(false);
     expect(document.body.classList.contains("bg-gray-200")).toBe(false);
-    expect(removeSpy).toHaveBeenCalledWith("resize", resizeCall[1]);
   });
 });

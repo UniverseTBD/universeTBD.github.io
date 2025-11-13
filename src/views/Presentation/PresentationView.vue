@@ -1,6 +1,4 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from "vue";
-
 // example components
 import DefaultNavbar from "@/examples/navbars/NavbarDefault.vue";
 import DefaultFooter from "@/examples/footers/FooterDefault.vue";
@@ -16,35 +14,6 @@ import Product from "@/components/product.vue";
 import background from "@/assets/img/background.png";
 
 useBodyClass(["presentation-page", "bg-gray-200"]);
-
-const isDesktop = ref(false);
-
-// computed
-const computedStyle = ref({
-  backgroundImage: `url(${background})`,
-  backgroundPosition: "center -10%",
-  backgroundSize: "cover",
-});
-
-const updateDeviceType = () => {
-  if (typeof window === "undefined") return;
-  isDesktop.value = window.innerWidth > 1024;
-
-  if (isDesktop.value) {
-    computedStyle.value.backgroundAttachment = "fixed";
-  } else {
-    delete computedStyle.value.backgroundAttachment;
-  }
-};
-
-onMounted(() => {
-  updateDeviceType();
-  window.addEventListener("resize", updateDeviceType);
-});
-
-onUnmounted(() => {
-  window.removeEventListener("resize", updateDeviceType);
-});
 </script>
 
 <template>
@@ -57,8 +26,8 @@ onUnmounted(() => {
   </div>
   <Header>
     <div
-      class="page-header min-vh-80"
-      :style="computedStyle"
+      class="page-header min-vh-80 hero-background"
+      :style="{ backgroundImage: `url(${background})` }"
       loading="lazy"
     >
       <div class="container">
@@ -96,5 +65,18 @@ onUnmounted(() => {
 .hero-content {
   min-height: 60vh;
   align-items: flex-start;
+}
+
+.hero-background {
+  background-position: center -20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #05060a;
+}
+
+@media (min-width: 1024px) {
+  .hero-background {
+    background-attachment: fixed;
+  }
 }
 </style>

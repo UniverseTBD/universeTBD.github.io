@@ -13,6 +13,8 @@ const DEFAULT_ALLOWED_TAGS = new Set([
   "SPAN",
 ]);
 
+const DROP_TAGS = new Set(["SCRIPT", "STYLE"]);
+
 const ALLOWED_ATTRIBUTES = {
   A: new Set(["href", "target", "rel"]),
 };
@@ -56,8 +58,12 @@ export function sanitizeHtml(dirty = "") {
     children.forEach((child) => {
       const tagName = child.tagName.toUpperCase();
       if (!DEFAULT_ALLOWED_TAGS.has(tagName)) {
-        const textNode = doc.createTextNode(child.textContent || "");
-        child.replaceWith(textNode);
+        if (DROP_TAGS.has(tagName)) {
+          child.remove();
+        } else {
+          const textNode = doc.createTextNode(child.textContent || "");
+          child.replaceWith(textNode);
+        }
         return;
       }
 
