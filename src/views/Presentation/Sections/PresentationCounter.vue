@@ -12,7 +12,7 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
               <DefaultCounterCard
                 color="success"
                 title="Community"
-                description="Scientists, technologists, and artists co-create UniverseTBD in a bustling marketplace of ideas."
+                description="Scientists, technologists, and artists co-create UniverseTBD in a bustling market square of ideas."
                 :start="150"
                 :count="200"
                 suffix="+"
