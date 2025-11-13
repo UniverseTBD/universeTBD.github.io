@@ -17,13 +17,8 @@ useBodyClass(["about-us", "bg-gray-200"]);
   <DefaultNavbar transparent/>
   <header class="bg-gradient-dark">
     <div
-      class="page-header min-vh-100"
-      :style="{ 
-        backgroundImage: `url(${background})`, 
-        backgroundAttachment: 'fixed', 
-        backgroundPosition: 'center', 
-        backgroundSize: 'cover' 
-      }">
+      class="page-header min-vh-100 parallax-bg"
+      :style="{ backgroundImage: `url(${background})` }">
       <span class="mask bg-gradient-dark opacity-3"></span>
       <div class="container col-lg-10 mx-auto my-12">
         <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6" >
@@ -35,5 +30,4 @@ useBodyClass(["about-us", "bg-gray-200"]);
   </header>
   <DefaultFooter />
 </template>
-
 

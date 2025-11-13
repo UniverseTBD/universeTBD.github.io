@@ -15,11 +15,8 @@ useBodyClass(["about-us", "bg-gray-200"]);
   <DefaultNavbar transparent />
   <header class="bg-gradient-dark">
     <div
-      class="page-header min-vh-100"
-      :style="{ 
-        backgroundImage: `url(${background})`, 
-        backgroundPosition: 'center', 
-        backgroundSize: 'cover' }"
+      class="page-header min-vh-100 parallax-bg"
+      :style="{ backgroundImage: `url(${background})` }"
     >
       <span class="mask bg-gradient-dark opacity-3"></span>
       <div class="container">
