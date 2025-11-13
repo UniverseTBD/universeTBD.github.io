@@ -69,7 +69,7 @@ onUnmounted(() => {
             class="lead text-white px-3 mt-3"
             :style="{ fontWeight: '500', textShadow: '2px 2px 2px black' }"
           >
-            We do research across multiple dimensions, including Interpretability and Blue Skies research.
+            We do research across multiple dimensions, including Interpretability and Blue Skies.
           </p>
         </div>
 
