@@ -37,10 +37,10 @@ onUnmounted(() => {
                   </p>
                   <p class="fw-bold text-uppercase text-secondary text-sm mb-2">Current directions</p>
                   <ul class="mb-3 ps-3">
-                    <li><strong>Interpretability</strong> — understanding the inner workings of AI models.</li>
-                    <li><strong>Collaborative AI</strong> — human-centric AI systems that co-discover with researchers.</li>
-                    <li><strong>Blue Skies</strong> — misfit projects that stretch what’s possible.</li>
-                    <li><strong>Research Tools</strong> — infrastructure that supports the scientific community.</li>
+                    <li><strong>Interpretability:</strong> understanding the inner workings of AI models.</li>
+                    <li><strong>Collaborative AI:</strong> human-centric AI systems that co-discover with researchers.</li>
+                    <li><strong>Blue Skies:</strong> misfit projects that stretch what’s possible.</li>
+                    <li><strong>Research Tools:</strong> infrastructure that supports the scientific community.</li>
                   </ul>
                   <div class="mt-1 mb-0">
                     <p>

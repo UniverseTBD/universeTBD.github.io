@@ -27,6 +27,10 @@ defineProps({
     type: Object,
     default: null,
   },
+  tags: {
+    type: Array,
+    default: () => [],
+  },
 });
 </script>
 <template>
@@ -42,11 +46,25 @@ defineProps({
       </a>
     </div>
     <div class="card-body px-0">
-      <h5>
-        <a :href="action.route" class="text-dark font-weight-bold">{{
-          title
-        }}</a>
-      </h5>
+      <div class="card-title-row">
+        <h5 class="mb-0">
+          <a :href="action.route" class="text-dark font-weight-bold">{{
+            title
+          }}</a>
+        </h5>
+        <div
+          v-if="tags && tags.length"
+          class="title-tags"
+        >
+          <span
+            v-for="tag in tags"
+            :key="tag"
+            class="title-tags__badge"
+          >
+            {{ tag }}
+          </span>
+        </div>
+      </div>
       <p>
         {{ description }}
       </p>
@@ -75,3 +93,46 @@ defineProps({
     </div>
   </div>
 </template>
+
+<style scoped>
+.card-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.title-tags {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.15rem;
+}
+
+.title-tags__badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.64rem;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #495057;
+  white-space: nowrap;
+  padding: 0.15rem 0.4rem;
+  border-radius: 999px;
+  border: 1px solid rgba(73, 80, 87, 0.3);
+  background: rgba(248, 249, 250, 0.95);
+}
+
+@media (max-width: 575px) {
+  .card-title-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .title-tags {
+    align-items: flex-start;
+  }
+}
+</style>

@@ -13,7 +13,7 @@ export const researchProjects = [
     image: prhLogo,
     researchLabel: "Interpretability",
     impact: [
-      "NeurIPS 2025 FM4Science Spotlight",
+      "NeurIPS 2025 ML4PS Spotlight",
       "Platonic Representation Hypothesis",
       "Cross-modal alignment",
     ],
@@ -39,7 +39,7 @@ export const researchProjects = [
     authors: "The Multimodal Universe Collaboration",
     image: multimodalUniverseLogo,
     researchLabel: "Interpretability",
-    impact: ["100 TB multimodal data", "NeurIPS B&D 2024", "Open datasets"],
+    impact: ["NeurIPS 2024 B&D", "100 TB multimodal data", "Open datasets"],
     arxivId: "2412.02527",
     content:
       "We present the Multimodal Universe, a NeurIPS 2024 Benchmarks & Datasets paper that assembles 100TB of astronomical observations to accelerate machine learning for the sciences. Hundreds of millions of multi-channel and hyper-spectral images, spectra, time series, and structured metadata are packaged with ready-to-run benchmark tasks that reflect common astrophysics workflows. The scale and diversity of MMU unlock the development of genuinely multimodal foundation models for astronomy, and every script, access recipe, and leaderboard is openly published for the community.",
@@ -59,7 +59,11 @@ export const researchProjects = [
     arxivId: "2405.14930",
     image: astroptLogo,
     researchLabel: "Interpretability",
-    impact: ["2.1B parameters", "8.6M DESI images", "AGPLv3.0 License"],
+    impact: [
+      "ICML 2024 AI for Science Spotlight",
+      "2.1B parameters",
+      "8.6M DESI images",
+    ],
     content:
       "This work presents AstroPT, an autoregressive pretrained transformer developed with astronomical use-cases in mind. The AstroPT models presented here have been pretrained on 8.6 million 512×512 pixel grz-band galaxy postage stamp observations from the DESI Legacy Survey DR8. We train a selection of foundation models of increasing size from 1 million to 2.1 billion parameters, and find that AstroPT follows a similar saturating log-log scaling law to textual models. We also find that the models' performances on downstream tasks as measured by linear probing improves with model size up to the model parameter saturation point. We believe that collaborative community development paves the best route towards realising an open source `Large Observation Model' -- a model trained on data taken from the observational sciences at the scale seen in natural language processing. To this end, we release the source code, weights, and dataset for AstroPT under the AGPLv3.0 license, and invite potential collaborators to join us in collectively building and researching these models.",
     ctas: [

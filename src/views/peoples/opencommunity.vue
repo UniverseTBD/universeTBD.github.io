@@ -43,7 +43,7 @@ onUnmounted(() => {
                   We are a global team, so the server is where we share quick wins, roadmaps, open
                   questions, and spin up new projects between releases. Say hi, drop a link you are
                   excited about, or sit back and listen until you are ready to jump in. Mike Smith
-                  (CfA/Harvard) is our Open Community Lead and he keeps the lights on and moderates for
+                  (CfA/Harvard) is our Open Community Lead—he keeps the lights on and moderates for
                   kindness and clarity.
                 </p>
               </div>
