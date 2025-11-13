@@ -38,9 +38,7 @@ onUnmounted(() => {
                 <section class="mb-4">
                   <h3 class="mb-3">What is UniverseTBD?</h3>
                   <p>
-                    We are a research lab with a mission to democratize Science for everyone, everywhere. Our team consists of
-                    astronomers, AI researchers, technologists, and artists across the globe. We conduct frontier AI research and
-                    reimagine scientific practice so it stays rigorous, creative, and radically open.
+                  We are a research lab democratizing science for everyone on a quest for the next major scientific breakthrough with AI by 2030. Our global team of astronomers, AI researchers, technologists, and artists conducts frontier AI research and reimagines scientific practice to stay rigorous, creative, and radically open.
                   </p>
                   <p class="fw-bold text-uppercase text-secondary text-sm mb-2">Current directions</p>
                   <ul class="mb-3 ps-3">
@@ -51,10 +49,10 @@ onUnmounted(() => {
                   </ul>
                   <div class="mt-1 mb-0">
                     <p>
-                      We envision UTBD will be the blueprint for a new kind of international research lab by 2030: human-first
+                      We envision UTBD will be the blueprint for a new kind of international research lab: human-first
                       and AI-enabled, flexible and democratically governed. We work in autonomous research pods to move fast and
                       stay transparent, and we keep our tools, data, and discoveries open from day one so anyone can participate
-                      in discovery. We are changing how Science gets done and, more importantly, who gets to do it.
+                      in discovery.
                     </p>
                   <p>
                     <strong>Our values:</strong> Openness, Excellence with Purpose, Fearless Experimentation, Junior Leadership,
