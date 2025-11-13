@@ -95,6 +95,20 @@ onUnmounted(() => {
 
 .about-card-body {
   padding: 2.25rem 2.75rem;
+  font-size: 1.1rem;
+  line-height: 1.65;
+}
+
+.about-card-body p,
+.about-card-body ul,
+.about-card-body ol,
+.about-card-body li {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.about-card-body .text-sm {
+  font-size: inherit !important;
 }
 
 @media (min-width: 768px) {
