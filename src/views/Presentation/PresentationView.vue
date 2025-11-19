@@ -34,7 +34,7 @@ useBodyClass(["presentation-page", "bg-gray-200"]);
         <div class="row hero-content">
           <div class="col-lg-9 text-center mx-auto my-auto">
             <h1 class="text-white">
-              <TypewriterText text="UniverseTBD" :speed="110" />
+              <TypewriterText text="UniverseTBD" :speed="135" />
             </h1>
             <p
               class="lead text-white px-5 mt-3 tagline"

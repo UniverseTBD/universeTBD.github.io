@@ -16,7 +16,7 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
                 :start="150"
                 :count="200"
                 suffix="+"
-                :duration="3000"
+                :duration="1500"
                 divider="vertical"
               />
             </div>
@@ -27,7 +27,7 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
                 description="Building the lab of the future where humans and machines unlock the next scientific breakthrough."
                 :start="2023"
                 :count="2030"
-                :duration="3000"
+                :duration="1500"
                 divider="vertical"
               />
             </div>
@@ -38,7 +38,7 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
                 description="From NeurIPS spotlights to open benchmarks, we've shipped projects that actively advance open science."
                 :count="10"
                 suffix="+"
-                :duration="3000"
+                :duration="1500"
               />
             </div>
           </div>
