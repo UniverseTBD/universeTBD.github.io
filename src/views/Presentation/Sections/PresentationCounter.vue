@@ -16,7 +16,7 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
                 :start="150"
                 :count="200"
                 suffix="+"
-                :duration="2000"
+                :duration="3000"
                 divider="vertical"
               />
             </div>

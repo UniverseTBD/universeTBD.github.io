@@ -1,5 +1,5 @@
 <script setup>
-import CountTo from "vue-count-to/src";
+import CountTo from "@/components/ExactCountTo.vue";
 
 defineProps({
   count: {
@@ -64,6 +64,7 @@ defineProps({
             :start-val="start"
             :end-val="count"
             :duration="duration"
+            :use-easing="false"
             separator=""
           />
           <span v-if="suffix" class="counter-suffix">{{ suffix }}</span>
