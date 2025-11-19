@@ -211,6 +211,13 @@
     "bio": "Kelly Lockhart is the technical lead on the Astrophysics Data System/Science Explorer (ADS/SciX) team, where she leads software development and operations. Kelly joined the team as a software developer in 2017, immediately after finishing her PhD in extragalactic observations and data reduction pipeline work at the University of Hawai‘i at Mānoa."
   },
   {
+    "name": "Raghav Jain",
+    "affiliation": "University of California San Diego",
+    "imageUrl": "/people/raghav.jpg",
+    "websiteUrl": "",
+    "bio": "I am Raghav Jain, a rising second-year PhD student in Computer Science at UCSD. My research focuses on understanding the reasoning and emergent behaviors of large language models and AI agents from a safety perspective."
+  },
+  {
     "name": "Simone Astarita",
     "affiliation": "European Space Agency",
     "imageUrl": "/people/Simone.jpg",

@@ -12,7 +12,7 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
               <DefaultCounterCard
                 color="success"
                 title="Community"
-                description="Scientists, technologists, and artists co-create UniverseTBD in a bustling market square of ideas."
+                description="Scientists, AI researchers, and artists co-create UniverseTBD in a global, open-source collective."
                 :start="150"
                 :count="200"
                 suffix="+"
@@ -23,8 +23,8 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
             <div class="col-md-4 position-relative">
               <DefaultCounterCard
                 color="success"
-                title="Mission"
-                description="Democratizing science as we blueprint the research lab of the future—humans with AI, open by design."
+                title="Moonshot"
+                description="Building the lab of the future where humans and machines unlock the next scientific breakthrough."
                 :start="2023"
                 :count="2030"
                 suffix="+"
@@ -36,7 +36,7 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
               <DefaultCounterCard
                 color="success"
                 title="Milestones"
-                description="We’ve shipped 10+ AI for Science projects and community tools, each advancing open discovery."
+                description="From NeurIPS spotlights to open benchmarks, we've shipped projects that actively advance open science."
                 :count="10"
                 suffix="+"
                 :duration="3000"

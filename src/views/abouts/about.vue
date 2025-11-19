@@ -33,15 +33,8 @@ onUnmounted(() => {
                 <section class="mb-4">
                   <h3 class="mb-3">What is UniverseTBD?</h3>
                   <p>
-                  We are a research lab democratizing science for everyone on a quest for the next major scientific breakthrough with AI by 2030. Our global team of astronomers, AI researchers, technologists, and artists conducts frontier AI research and reimagines scientific practice to stay rigorous, creative, and radically open.
+                    We are a global research lab with a bold mission to democratize science for everyone. We are on a quest to unlock the next major scientific breakthrough with Frontier AI by 2030. Our global team of astronomers, scientists across disciplines, AI researchers, technologists, and artists conducts pioneering research and reimagines scientific practice to stay rigorous, creative, and radically open.
                   </p>
-                  <p class="fw-bold text-uppercase text-secondary text-sm mb-2">Current directions</p>
-                  <ul class="mb-3 ps-3">
-                    <li><strong>Interpretability:</strong> understanding the inner workings of AI models.</li>
-                    <li><strong>Collaborative AI:</strong> human-centric AI systems that co-discover with researchers.</li>
-                    <li><strong>Blue Skies:</strong> misfit projects that stretch what’s possible.</li>
-                    <li><strong>Research Tools:</strong> infrastructure that supports the scientific community.</li>
-                  </ul>
                   <div class="mt-1 mb-0">
                     <p>
                       We envision UTBD will be the blueprint for a new kind of international research lab: human-first
@@ -49,6 +42,13 @@ onUnmounted(() => {
                       stay transparent, and we keep our tools, data, and discoveries open from day one so anyone can participate
                       in discovery.
                     </p>
+                    <p class="fw-bold text-uppercase text-secondary text-sm mb-2">Current directions</p>
+                    <ul class="mb-3 ps-3">
+                      <li><strong>Interpretability:</strong> understanding the inner workings of AI models.</li>
+                      <li><strong>Collaborative AI:</strong> human-centric AI systems that co-discover with researchers.</li>
+                      <li><strong>Blue Skies:</strong> misfit projects that stretch what’s possible.</li>
+                      <li><strong>Research Tools:</strong> infrastructure that supports the scientific community.</li>
+                    </ul>
                   <p>
                     <strong>Our values:</strong> Openness, Excellence with Purpose, Fearless Experimentation, Junior Leadership,
                     Transparency & Integrity.

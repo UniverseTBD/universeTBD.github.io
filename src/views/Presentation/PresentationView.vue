@@ -40,7 +40,7 @@ useBodyClass(["presentation-page", "bg-gray-200"]);
               class="lead text-white px-5 mt-3 tagline"
               :style="{ fontWeight: '500', textShadow: '2px 2px 2px black' }"
             >
-              Where the universe goes multiplayer.
+              Democratizing Discovery with Frontier AI
             </p>
           </div>
         </div>
