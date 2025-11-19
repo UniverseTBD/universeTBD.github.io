@@ -27,7 +27,6 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
                 description="Building the lab of the future where humans and machines unlock the next scientific breakthrough."
                 :start="2023"
                 :count="2030"
-                suffix="+"
                 :duration="3000"
                 divider="vertical"
               />
