@@ -39,6 +39,7 @@ const safeDescription = computed(() => sanitizeHtml(props.description));
               class="w-100 border-radius-md shadow-lg"
               :src="image"
               :alt="profile.name"
+              loading="lazy"
             />
           </div>
         </a>

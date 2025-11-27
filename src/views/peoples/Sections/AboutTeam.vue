@@ -21,7 +21,7 @@ let participants_shuf = shuffle(participants);
 
 <template>
 
-  <section class="pb-0 position-relative bg-gradient-dark mx-n1">
+  <section class="pb-0 position-relative bg-gradient-dark">
     <div class="container">
       <div class="row">
         <div class="col-md-8 text-start mb-5 mt-5">

@@ -7,7 +7,6 @@ import DefaultFooter from "@/examples/footers/FooterDefault.vue";
 import { useBodyClass } from "@/composables/useBodyClass";
 
 // assets
-import background from "@/assets/img/background.png";
 import { researchProjects } from "@/data/researchProjects";
 
 const labelColorMap = {
@@ -49,7 +48,7 @@ useBodyClass(["about-us", "bg-gray-200"]);
   <header class="">
     <div
       class="page-header min-vh-100 parallax-bg"
-      :style="{ backgroundImage: `url(${background})` }"
+      :style="{ backgroundImage: 'url(/background.webp)' }"
     >
       <span class="mask bg-gradient-dark opacity-3"></span>
 
@@ -65,7 +64,7 @@ useBodyClass(["about-us", "bg-gray-200"]);
         </div>
 
         <div class="row justify-content-center">
-          <div class="container">
+          <div class="col-12 col-lg-10">
             <div class="track-filter text-center mb-4">
               <button
                 v-for="track in trackFilters"
@@ -106,6 +105,7 @@ useBodyClass(["about-us", "bg-gray-200"]);
                     :src="arXiv.image"
                     :alt="`${arXiv.title} logo`"
                     class="research-thumb"
+                    loading="lazy"
                   />
                   <div>
                     <ul class="list-unstyled mb-3">

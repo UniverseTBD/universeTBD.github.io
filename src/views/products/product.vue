@@ -5,7 +5,6 @@ import DefaultFooter from "@/examples/footers/FooterDefault.vue";
 import { useBodyClass } from "@/composables/useBodyClass";
 
 //image
-import background from "@/assets/img/background.png";
 import Header from "../../examples/Header.vue";
 
 // sections
@@ -20,7 +19,7 @@ useBodyClass(["presentation-page", "bg-gray-200"]);
   <header class="bg-gradient-dark">
     <div
       class="page-header min-vh-100 parallax-bg"
-      :style="{ backgroundImage: `url(${background})` }"
+      :style="{ backgroundImage: 'url(/background.webp)' }"
     >
       <span class="mask bg-gradient-dark opacity-3"></span>
       <div class="card card-body blur shadow-blur mx-3 mx-md-9 mt-7 mb-5">

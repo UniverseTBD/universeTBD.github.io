@@ -62,7 +62,7 @@ useBodyClass(["presentation-page", "bg-gray-200"]);
 
 .hero-background {
   /* Use WebP for 87% smaller file size (237KB vs 1.9MB) */
-  background-image: url("@/assets/img/background.webp");
+  background-image: url("/background.webp");
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;

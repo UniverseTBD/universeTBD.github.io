@@ -2,7 +2,6 @@
 import DefaultNavbar from "@/examples/navbars/NavbarDefault.vue";
 import DefaultFooter from "@/examples/footers/FooterDefault.vue";
 import { useBodyClass } from "@/composables/useBodyClass";
-import background from "@/assets/img/background.png";
 import hfLogo from "@/assets/img/logo/huggingface.svg";
 import msLogo from "@/assets/img/logo/Microsoft.svg";
 import openaiLogo from "@/assets/img/logo/OpenAI.svg";
@@ -33,7 +32,7 @@ const partners = [
   <header class="bg-gradient-dark">
     <div
       class="page-header min-vh-100 parallax-bg"
-      :style="{ backgroundImage: `url(${background})` }"
+      :style="{ backgroundImage: 'url(/background.webp)' }"
     >
       <span class="mask bg-gradient-dark opacity-4"></span>
       <div class="container">
