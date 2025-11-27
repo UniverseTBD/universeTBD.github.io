@@ -28,6 +28,36 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
       rel="stylesheet"
     />
+    <!-- Preload critical hero background image (WebP format, 87% smaller) -->
+    <link
+      rel="preload"
+      as="image"
+      href="/src/assets/img/background.webp"
+      type="image/webp"
+      fetchpriority="high"
+    />
+    <!-- Critical CSS to prevent white flash and layout shift -->
+    <style>
+      /* Prevent flash by applying dark background to html and body immediately */
+      html {
+        background-color: #05060a;
+      }
+
+      body {
+        background-color: #f0f2f5; /* bg-gray-200 - will be overridden by page classes */
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Ensure page header has dark background before image loads */
+      .page-header {
+        min-height: 80vh;
+        background-color: #05060a;
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+    </style>
   </head>
 
   <body>

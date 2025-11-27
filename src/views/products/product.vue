@@ -1,9 +1,8 @@
 <script setup>
-import { onMounted, onUnmounted } from "vue";
-
 //example components
 import DefaultNavbar from "@/examples/navbars/NavbarDefault.vue";
 import DefaultFooter from "@/examples/footers/FooterDefault.vue";
+import { useBodyClass } from "@/composables/useBodyClass";
 
 //image
 import background from "@/assets/img/background.png";
@@ -12,16 +11,7 @@ import Header from "../../examples/Header.vue";
 // sections
 import Product from "@/components/product.vue";
 
-//hooks
-const body = document.getElementsByTagName("body")[0];
-onMounted(() => {
-  body.classList.add("presentation-page");
-  body.classList.add("bg-gray-200");
-});
-onUnmounted(() => {
-  body.classList.remove("presentation-page");
-  body.classList.remove("bg-gray-200");
-});
+useBodyClass(["presentation-page", "bg-gray-200"]);
 
 </script>
 
