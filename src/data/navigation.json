@@ -4,39 +4,43 @@
         "icon": "dashboard",
         "links": [
             {
-                "name": "UniverseTBD",
+                "name": "What is UniverseTBD",
                 "url": "about"
             },
             {
-                "name": "Our Sponsors",
+                "name": "Partners",
                 "url": "about-sponsor"
             }
         ]
     },
     {
-        "name": "Products",
+        "name": "Our Research",
         "icon": "school",
         "links": [
             {
-                "name": "Latest",
+                "name": "Recent Work",
                 "url": "product"
             },
             {
-                "name": "Research",
+                "name": "Our Projects",
                 "url": "research"
             }
         ]
     },
     {
-        "name": "People",
+        "name": "Community",
         "icon": "groups",
         "links": [
             {
-                "name": "Participants",
+                "name": "Team Members",
                 "url": "participants"
             },
             {
-                "name": "Contact Us",
+                "name": "Our Discord",
+                "url": "open-community"
+            },
+            {
+                "name": "Join us",
                 "url": "people-joinus"
             }
         ]

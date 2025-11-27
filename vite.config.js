@@ -23,4 +23,9 @@ export default defineConfig({
     outDir: './docs',
     emptyOutDir: true,
   },
+  test: {
+    globals: true,
+    environment: "jsdom",
+    setupFiles: "./tests/setupTests.js",
+  },
 });

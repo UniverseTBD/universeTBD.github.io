@@ -25,9 +25,6 @@ let participants_shuf = shuffle(participants);
     <div class="container">
       <div class="row">
         <div class="col-md-8 text-start mb-5 mt-5">
-          <h3 class="text-white z-index-1 position-relative">
-            Main Participants
-          </h3>
           <p class="text-white opacity-9 mb-0 font-italic">
             Alone we can do so little; together we can do so much.
           </p>

@@ -1,186 +1,120 @@
 <script setup>
-import { ref, onMounted } from "vue";
-
-//example components
+import { onMounted, onUnmounted } from "vue";
 import DefaultNavbar from "@/examples/navbars/NavbarDefault.vue";
 import DefaultFooter from "@/examples/footers/FooterDefault.vue";
-
-//image
 import background from "@/assets/img/background.png";
 
 const body = document.getElementsByTagName("body")[0];
 
-const isDesktop = ref(window.innerWidth > 1024);  // Initialize with the current viewport width
-
-const updateDeviceType = () => {  
-  isDesktop.value = window.innerWidth > 1024;
-};
-
 onMounted(() => {
-  window.addEventListener('resize', updateDeviceType);  // Add the event listener to check viewport width changes
+  body.classList.add("about-us");
+  body.classList.add("bg-gray-200");
 });
 
-// Dynamically compute the style based on isDesktop ref
-const computedStyle = ref({
-  backgroundImage: `url(${background})`,
-  backgroundPosition: 'center',
-  backgroundSize: 'cover'
+onUnmounted(() => {
+  body.classList.remove("about-us");
+  body.classList.remove("bg-gray-200");
 });
-if (isDesktop.value) {
-  computedStyle.value.backgroundAttachment = 'fixed';
-}
 </script>
 
-
 <template>
-  <DefaultNavbar transparent/>
+  <DefaultNavbar transparent />
   <header class="bg-gradient-dark">
     <div
-      class="page-header min-vh-80"
-      :style="computedStyle"
+      class="page-header min-vh-100 parallax-bg"
+      :style="{ backgroundImage: `url(${background})` }"
     >
+      <span class="mask bg-gradient-dark opacity-3"></span>
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-10 text-center mx-auto my-auto">
-            <h1 class="text-white">What is UniverseTBD</h1>
-            <p 
-              class="lead text-white px-5 mt-3" 
-              :style="{ fontWeight: '500', textShadow: '2px 2px 2px black' }"
-            >
-              What if we bridge AI and Science to build something truly unique
-              that helps researchers and enthusiasts think deeper about the great 
-              beyond?
-            </p>
+        <div class="row justify-content-center align-items-center mt-6">
+          <div class="col-12 col-lg-10 text-center mx-auto my-auto">
+            <div class="card about-card blur shadow-blur mx-3 mx-md-5 my-4 my-md-5 text-dark text-start">
+              <div class="card-body about-card-body">
+                <section class="mb-4">
+                  <h3 class="mb-3">What is UniverseTBD?</h3>
+                  <p>
+                    We are a global research lab with a bold mission to democratize science for <strong><em>everyone</em></strong>. We are on a quest to unlock the next major scientific breakthrough with Frontier AI by 2030. Our global team of astronomers, cross-disciplinary scientists, AI researchers, technologists, and artists conducts pioneering research and reimagines scientific practice to stay rigorous, creative, and radically open.
+                  </p>
+                  <div class="mt-1 mb-0">
+                    <p>
+                      We envision UTBD will be the blueprint for a new kind of international research lab: human-first
+                      and AI-enabled, flexible, and democratically governed. We work in autonomous research pods to move fast and
+                      stay transparent, and we keep our tools, data, and discoveries open from day one so anyone can participate
+                      in discovery.
+                    </p>
+                    <p class="fw-bold text-uppercase text-secondary text-sm mb-2">Current directions</p>
+                    <ul class="mb-3 ps-3">
+                      <li><strong>Interpretability:</strong> understanding the inner workings of AI models.</li>
+                      <li><strong>Collaborative AI:</strong> human-centric AI systems that co-discover with researchers.</li>
+                      <li><strong>Blue Skies:</strong> misfit projects that stretch what’s possible.</li>
+                      <li><strong>Research Tools:</strong> infrastructure that supports the scientific community.</li>
+                    </ul>
+                  <p>
+                    <strong>Our values:</strong> Openness, Excellence with Purpose, Fearless Experimentation, Junior Leadership,
+                    Transparency & Integrity.
+                  </p>
+                    <p class="mb-0">
+                      <strong>Leadership:</strong> Ioana (Jo) Ciucă (Stanford University), Maja Jablonska (Australian National
+                      University), Mugdha Polimera (NASA ADS), Mike Smith (Harvard / Center for Astrophysics), Pranav Khetarpal
+                      (IIT Delhi), Sandor Kruk (European Space Agency), Gabi Marchidan (FeelIT), and Kartheik Iyer (Flatiron CCA)
+                      keep the spaceship healthy and aligned with open-source, community-led projects.
+                    </p>
+                    <p class="mt-2 mb-1">
+                      <strong>Our Story:</strong> In March 2023, a conference on data-driven astronomy at the Kavli Institute for
+                      Theoretical Physics brought together researchers with diverse perspectives, including founders Ioana Ciucă
+                      and Kartheik Iyer. Jo dove into the fast-moving frontier of large language models, visiting San Francisco
+                      to meet model developers and explore how these tools could reshape scientific work.
+                    </p>
+                    <p>
+                      Weeks later, over late-morning coffee at the Center for Computational Astrophysics (Flatiron Institute), Jo
+                      and Kartheik committed to building a community that develops foundational models and methods to help humans
+                      learn, explore, and generate new ideas—augmented by AI. Kartheik named it <strong>UniverseTBD</strong> to
+                      reflect a universe shaped by change. UTBD launched in April 2023.
+                    </p>
+                    <p class="mb-0">
+                      We thank <strong>Ze-chang Sun (Tsinghua University)</strong>, the original creator and designer of this
+                      website.
+                    </p>
+                  </div>
+                </section>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </header>
-
-  <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
-    <div class="row">
-      <div class="col-12 col-md-8 offset-md-2">
-
-        <h2 class="mb-4 mt-4">Mission, Vision and Values</h2>
-        <h4>Mission</h4>
-        <p class="mb-1">UniverseTBD is a diverse community of scientists, AI researchers, 
-          and enthusiasts united by our mission to democratise science for everyone.
-        </p>
-
-        <h4>Vision</h4>
-        <p class="mb-1">Our vision is to revolutionise the way science is done, 
-          making the universe of knowledge accessible to all. We aim to be the 
-          go-to platform for science benchmarks, data, and reproducible research 
-          while fostering a global community of curious minds engaged in groundbreaking 
-          research and outreach.
-        </p>
-        
-        <h4>Values</h4>
-        <ul class="mb-1">
-          <li>Openness</li>
-          <li>Excellence with Purpose</li>
-          <li>Fearless Experimentation</li>
-          <li>Junior Leadership</li>
-          <li>Transparency and Integrity</li>
-        </ul>
-        
-        <h2 class="mb-4 mt-4">How it started</h2>
-        <p class="mb-1">
-          A fateful conference on data-driven astronomy at the Kavli Institute 
-          for Theoretical Physics in March 2023 saw a bunch of humans (Ioana 
-          Ciucă, Kartheik Iyer, Yuan-Sen Ting, Josh Peek) come together to talk
-          about current challenges in astronomy, coming at it from very 
-          different perspectives.
-        </p>
-        <p class="mb-1">
-          Amongst all these wonderful folk, Ioana (Jo) became immersed in the 
-          currents of change sweeping across the natural language processing 
-          landscape of AI/ML, which has had limited intersection with astronomy.
-          Throughout the workshop, she convinced several of us of the incredible
-          power these models held in revolutionising the way we do astronomy 
-          across a range of tasks often thought to be the exclusive domain of 
-          trained astronomers.
-        </p>
-        <p class="mb-1">
-          When we all went our separate ways, Jo travelled to San Francisco to 
-          meet the developers of these models and dive deep into the currents of
-          what was becoming known as large language models and explore their 
-          possibilities.
-        </p>
-        <p class="mb-1">
-          While talking over some late morning coffee at the Center for 
-          Computational Astrophysics of the Flatiron Institute a few weeks 
-          later, Kartheik and Jo decided to go all in and start an organisation 
-          to pull together all the diverse people who had expressed an interest 
-          in developing these foundational models and methodologies to learn, 
-          explore, and synthesise knowledge beyond what individuals were capable
-          of, assisted and augmented by Foundation Models.
-        </p>
-        <p class="mb-1">
-          Kartheik had the brilliant insight to name the organisation 
-          "UniverseTBD" to denote a universe to be decided by these 
-          transformative changes. We knew of the possibilities but not what form
-          it would ultimately take. Thus, UniverseTBD came to be in April 2023.
-        </p>
-        <p class="mb-1">
-          In the early stages of UniverseTBD, Yuan-Sen led the team effort of 
-          AstroLLaMA-1, the first specialised large language model for 
-          astronomical research developed by Josh Nguyen. Together with Ernest 
-          Perkowski, Rui Pan and Sandor Kruk, the team further developed the 
-          chat version, AstroLLaMA-Chat, available at 
-          <a href="https://huggingface.co/spaces/universeTBD/astrollama-7b-chat-alpha">
-            huggingface.co
-          </a>. 
-          As of February 2024, we spun off the development of AstroLLaMA+ models
-          to the team led by Yuan-Sen.
-        </p>
-        <p class="mb-1">
-          For our next stage, on the funky spaceship steered by Jo, Maja, Sandor,
-          Kartheik, Mugdha, Pranav and Gabi, we will focus our efforts on 
-          open-source and community-led projects. Stay fine-tuned for what's to
-          come.
-        </p>
-
-        <h2 class="mb-4 mt-4">We start with Astronomy</h2>
-        <p class="mb-1">
-          Large language models (LLMs) powered by artificial intelligence are 
-          emerging as promising tools to accelerate astronomical research. 
-          Recent advances in natural language processing have produced LLMs 
-          capable of comprehending scientific texts, summarising findings, and
-          even formulating novel hypotheses.
-        </p>
-        <p class="mb-1">
-          This research explores the potential of modern LLMs like GPT-4+ to 
-          enhance astronomers' workflows through automating tedious tasks. We 
-          investigate applying LLMs for literature reviews, surfacing insights
-          from data, recognizing patterns in images, and generating 
-          hypotheses.
-        </p>
-        <p class="mb-1">
-          Early experiments suggest LLMs can extract key information from 
-          papers, analyse data to reveal new findings, and propose directions 
-          to explore. However, challenges remain in effectively prompting the 
-          models and validating their outputs.
-        </p>
-        <p class="mb-1">
-          Our research aims to develop best practices for integrating LLMs 
-          into scientists’ toolkits to increase productivity and spur new 
-          discoveries. Rather than replacing human experts, LLMs can remove 
-          drudgery from tasks like reading papers and data analysis.
-        </p>
-        <p class="mb-1">
-          This allows astronomers to focus their skills on higher-level 
-          recognition and ideation to advance the frontiers of knowledge. With
-          refined techniques for prompting and evaluating LLMs, these AI 
-          systems show promise as collaborators in the astronomical research 
-          process.
-        </p>
-        <h6 class="mb-4 mt-4">The UniverseTBD team would like to thank Ze-chang
-          Sun, Tsinghua University, who is the original creator and designer of
-          this website.
-        </h6>
-      </div>
-    </div>
-  </div>
   <DefaultFooter />
 </template>
+
+<style scoped>
+.about-card {
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.about-card-body {
+  padding: 2.25rem 2.75rem;
+  font-size: 1.1rem;
+  line-height: 1.65;
+}
+
+.about-card-body p,
+.about-card-body ul,
+.about-card-body ol,
+.about-card-body li {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.about-card-body .text-sm {
+  font-size: inherit !important;
+}
+
+@media (min-width: 768px) {
+  .about-card-body {
+    padding: 2.75rem 4rem;
+  }
+}
+
+</style>

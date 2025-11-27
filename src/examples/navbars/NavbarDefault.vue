@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink } from "vue-router";
-import { ref, watch } from "vue";
+import { ref, watch, computed } from "vue";
 import { useWindowsWidth } from "../../assets/js/useWindowsWidth";
 
 // images
@@ -16,14 +16,7 @@ import 'bootstrap'; //Fix mobile navbar. Not sure why we need to include this, s
 const props = defineProps({
   action: {
     type: Object,
-    route: String,
-    color: String,
-    label: String,
-    default: () => ({
-      route: "https://universetbd.org/",
-      color: "bg-gradient-success",
-      label: "UniverseTBD"
-    })
+    default: null
   },
   transparent: {
     type: Boolean,
@@ -92,6 +85,13 @@ watch(
       textDark.value = false;
     }
   }
+);
+
+const hasAction = computed(
+  () => !!(props.action && props.action.route && props.action.label)
+);
+const actionIsExternal = computed(
+  () => hasAction.value && /^https?:\/\//.test(props.action.route)
 );
 </script>
 <template>
@@ -181,6 +181,29 @@ watch(
             />
           </template>
         </ul>
+        <div
+          v-if="hasAction"
+          class="d-flex align-items-center justify-content-start justify-content-lg-end ms-lg-4 mt-3 mt-lg-0"
+        >
+          <a
+            v-if="actionIsExternal"
+            :href="props.action.route"
+            class="btn btn-sm mb-0"
+            :class="props.action.color || 'bg-gradient-success'"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ props.action.label }}
+          </a>
+          <RouterLink
+            v-else
+            :to="props.action.route"
+            class="btn btn-sm mb-0"
+            :class="props.action.color || 'bg-gradient-success'"
+          >
+            {{ props.action.label }}
+          </RouterLink>
+        </div>
       </div>
     </div>
   </nav>

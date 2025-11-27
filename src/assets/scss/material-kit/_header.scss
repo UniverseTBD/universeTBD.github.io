@@ -23,3 +23,15 @@
     transform: $header-video-min-transform;
   }
 }
+
+.page-header.parallax-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 1024px) {
+  .page-header.parallax-bg {
+    background-attachment: fixed;
+  }
+}

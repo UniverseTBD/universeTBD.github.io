@@ -1,151 +1,306 @@
 <script setup>
-import { onMounted, onUnmounted } from "vue";
+import { computed, onMounted, onUnmounted, ref } from "vue";
 
-//example components
+// example components
 import DefaultNavbar from "@/examples/navbars/NavbarDefault.vue";
 import DefaultFooter from "@/examples/footers/FooterDefault.vue";
 
-//image
+// assets
 import background from "@/assets/img/background.png";
+import { researchProjects } from "@/data/researchProjects";
+
+const labelColorMap = {
+  Interpretability: "label-interpretability",
+  "Blue Skies": "label-blue-skies",
+  "Collaborative AI": "label-collaborative-ai",
+  "Research Tools": "label-research-tools",
+};
+
+const getLabelClass = (label) => labelColorMap[label] || "label-default";
+
+const baseTracks = [
+  "Interpretability",
+  "Collaborative AI",
+  "Blue Skies",
+  "Research Tools",
+];
+const trackOrder = researchProjects
+  .map((project) => project.researchLabel)
+  .filter(
+    (label) => label && !baseTracks.includes(label),
+  );
+const trackFilters = ["All", ...baseTracks, ...new Set(trackOrder)];
+const activeTrack = ref(trackFilters[0]);
+
+const filteredProjects = computed(() =>
+  activeTrack.value === "All"
+    ? researchProjects
+    : researchProjects.filter(
+        (project) => project.researchLabel === activeTrack.value,
+      ),
+);
 
 const body = document.getElementsByTagName("body")[0];
-//hooks
+
 onMounted(() => {
   body.classList.add("about-us");
   body.classList.add("bg-gray-200");
 });
-</script>
 
-<script>
-export default {
-  data() {
-    return {
-      arXivs: [
-        {
-          id: 8,
-          title: "The Multimodal Universe: Enabling Large-Scale Machine Learning with 100 TB of Astronomical Scientific Data",
-          date: "Nov 13, 2024",
-          authors: "The Multimodal Universe Collaboration",
-          link: ["OpenReview", "https://openreview.net/forum?id=EWm9zR5Qy1#discussion"],
-          content: "We present the Multimodal Universe, a large-scale multimodal dataset of scientific astronomical data, compiled specifically to facilitate machine learning research. Overall, our dataset contains hundreds of millions of astronomical observations, constituting 100TB of multi-channel and hyper-spectral images, spectra, multivariate time series, as well as a wide variety of associated scientific measurements and metadata. In addition, we include a range of benchmark tasks representative of standard practices for machine learning methods in astrophysics. This massive dataset will enable the development of large multi-modal models specifically targeted towards scientific applications. All codes used to compile the dataset, and a description of how to access the data is available at https://github.com/MultimodalUniverse/MultimodalUniverse"
-        },
-        {
-          id: 7,
-          title: "AstroPT: Scaling Large Observation Models for Astronomy",
-          date: "May 23, 2024",
-          authors: "Michael J. Smith, et al.",
-          arxivId: "2405.14930",
-          content: "This work presents AstroPT, an autoregressive pretrained transformer developed with astronomical use-cases in mind. The AstroPT models presented here have been pretrained on 8.6 million 512×512 pixel grz-band galaxy postage stamp observations from the DESI Legacy Survey DR8. We train a selection of foundation models of increasing size from 1 million to 2.1 billion parameters, and find that AstroPT follows a similar saturating log-log scaling law to textual models. We also find that the models' performances on downstream tasks as measured by linear probing improves with model size up to the model parameter saturation point. We believe that collaborative community development paves the best route towards realising an open source `Large Observation Model' -- a model trained on data taken from the observational sciences at the scale seen in natural language processing. To this end, we release the source code, weights, and dataset for AstroPT under the MIT license, and invite potential collaborators to join us in collectively building and researching these models."
-        },
-        {
-          id: 6,
-          title: "AstroLLaMA-Chat: Scaling AstroLLaMA with Conversational and Diverse Datasets",
-          date: "Jan 3, 2024",
-          authors: "Ernest Perkowski, et al.",
-          arxivId: "2401.01916",
-          content: "We explore the potential of enhancing LLM performance in astronomy-focused question-answering through targeted, continual pre-training. By employing a compact 7B-parameter LLaMA-2 model and focusing exclusively on a curated set of astronomy corpora -- comprising abstracts, introductions, and conclusions -- we achieve notable improvements in specialized topic comprehension. While general LLMs like GPT-4 excel in broader question-answering scenarios due to superior reasoning capabilities, our findings suggest that continual pre-training with limited resources can still enhance model performance on specialized topics. Additionally, we present an extension of AstroLLaMA: the fine-tuning of the 7B LLaMA model on a domain-specific conversational dataset, culminating in the release of the chat-enabled AstroLLaMA for community use. Comprehensive quantitative benchmarking is currently in progress and will be detailed in an upcoming full paper. The model, AstroLLaMA-Chat, is now available at this https URL, providing the first open-source conversational AI tool tailored for the astronomy community."
-        },
-        {
-          id: 5,
-          title: 'AstroLLaMA: Towards Specialized Foundation Models in Astronomy',
-          date: 'Sep 12, 2023',
-          authors: 'Tuan Dung Nguyen, et al.',
-          arxivId: '2309.06126',
-          content: 'Large language models excel in many human-language tasks but often falter in highly specialized domains like scholarly astronomy. To bridge this gap, we introduce AstroLLaMA, a 7-billion-parameter model fine-tuned from LLaMA-2 using over 300,000 astronomy abstracts from arXiv. Optimized for traditional causal language modeling, AstroLLaMA achieves a 30% lower perplexity than Llama-2, showing marked domain adaptation. Our model generates more insightful and scientifically relevant text completions and embedding extraction than state-of-the-arts foundation models despite having significantly fewer parameters. AstroLLaMA serves as a robust, domain-specific model with broad fine-tuning potential. Its public release aims to spur astronomy-focused research, including automatic paper summarization and conversational agent development.',
-        },
-        {
-          id: 4,
-          title: 'Adversarial Fine-Tuning of Language Models: An Iterative Optimisation Approach for the Generation and Detection of Problematic Content',
-          date: 'Aug 26, 2023',
-          authors: 'Charles O\'Neill, et al.',
-          arxivId: '2308.13768',
-          content: 'In this paper, we tackle the emerging challenge of unintended harmful content generation in Large Language Models (LLMs) with a novel dual-stage optimisation technique using adversarial fine-tuning. Our two-pronged approach employs an adversarial model, fine-tuned to generate potentially harmful prompts, and a judge model, iteratively optimised to discern these prompts. In this adversarial cycle, the two models seek to outperform each other in the prompting phase, generating a dataset of rich examples which are then used for fine-tuning. This iterative application of prompting and fine-tuning allows continuous refinement and improved performance. The performance of our approach is evaluated through classification accuracy on a dataset consisting of problematic prompts not detected by GPT-4, as well as a selection of contentious but unproblematic prompts. We show considerable increase in classification accuracy of the judge model on this challenging dataset as it undergoes the optimisation process. Furthermore, we show that a rudimentary model \texttt{ada} can achieve 13% higher accuracy on the hold-out test set than GPT-4 after only a few rounds of this process, and that this fine-tuning improves performance in parallel tasks such as toxic comment identification.',
-        },
-        {
-          id: 3,
-          title: 'Steering Language Generation: Harnessing Contrastive Expert Guidance and Negative Prompting for Coherent and Diverse Synthetic Data Generation',
-          date: 'Aug 15, 2023',
-          authors: 'Charles O\'Neill, et al.',
-          arxivId: '2308.07645',
-          content: 'Large Language Models (LLMs) hold immense potential to generate synthetic data of high quality and utility, which has numerous applications from downstream model training to practical data utilisation. However, contemporary models, despite their impressive capacities, consistently struggle to produce both coherent and diverse data. To address the coherency issue, we introduce contrastive expert guidance, where the difference between the logit distributions of fine-tuned and base language models is emphasised to ensure domain adherence. In order to ensure diversity, we utilise existing real and synthetic examples as negative prompts to the model. We deem this dual-pronged approach to logit reshaping as STEER: Semantic Text Enhancement via Embedding Repositioning. STEER operates at inference-time and systematically guides the LLMs to strike a balance between adherence to the data distribution (ensuring semantic fidelity) and deviation from prior synthetic examples or existing real datasets (ensuring diversity and authenticity). This delicate balancing act is achieved by dynamically moving towards or away from chosen representations in the latent space. STEER demonstrates improved performance over previous synthetic data generation techniques, exhibiting better balance between data diversity and coherency across three distinct tasks: hypothesis generation, toxic and non-toxic comment generation, and commonsense reasoning task generation. We demonstrate how STEER allows for fine-tuned control over the diversity-coherency trade-off via its hyperparameters, highlighting its versatility.',
-        },
-        {
-          id: 2,
-          title: 'Harnessing the Power of Adversarial Prompting and Large Language Models for Robust Hypothesis Generation in Astronomy',
-          date: 'Jun 20, 2023',
-          authors: 'Ioana Ciucă, et al.',
-          arxivId: '2306.11648',
-          content: 'This study investigates the application of Large Language Models (LLMs), specifically GPT-4, within Astronomy. We employ in-context prompting, supplying the model with up to 1000 papers from the NASA Astrophysics Data System, to explore the extent to which performance can be improved by immersing the model in domain-specific literature. Our findings point towards a substantial boost in hypothesis generation when using in-context prompting, a benefit that is further accentuated by adversarial prompting. We illustrate how adversarial prompting empowers GPT-4 to extract essential details from a vast knowledge base to produce meaningful hypotheses, signaling an innovative step towards employing LLMs for scientific research in Astronomy.',
-        },
-        {
-          id: 1,
-          title: 'Galactic ChitChat: Using Large Language Models to Converse with Astronomy Literature',
-          date: 'Apr 12, 2023',
-          authors: 'Ioana Ciucă, et al.',
-          arxivId: '2304.05406',
-          content: "We demonstrate the potential of the state-of-the-art OpenAI GPT-4 large language model to engage in meaningful interactions with Astronomy papers using in-context prompting. To optimize for efficiency, we employ a distillation technique that effectively reduces the size of the original input paper by 50\%, while maintaining the paragraph structure and overall semantic integrity. We then explore the model's responses using a multi-document context (ten distilled documents). Our findings indicate that GPT-4 excels in the multi-document domain, providing detailed answers contextualized within the framework of related research findings. Our results showcase the potential of large language models for the astronomical community, offering a promising avenue for further exploration, particularly the possibility of utilizing the models for hypothesis generation.",
-        }
-      ],
-    };
-  },
-};
+onUnmounted(() => {
+  body.classList.remove("about-us");
+  body.classList.remove("bg-gray-200");
+});
 </script>
 
 <template>
-  <DefaultNavbar transparent/>
+  <DefaultNavbar transparent />
   <header class="">
     <div
-      class="page-header min-vh-100"
-      :style="{ 
-        backgroundImage: `url(${background})`, 
-        backgroundAttachment: 'fixed', 
-        backgroundPosition: 'center', 
-        backgroundSize: 'cover' }"
+      class="page-header min-vh-100 parallax-bg"
+      :style="{ backgroundImage: `url(${background})` }"
     >
       <span class="mask bg-gradient-dark opacity-3"></span>
-      
+
       <div class="container">
-        
-        <!-- Section 1: Header Text and Icons -->
-        <div>
-          <div class="col-lg-9 text-center mx-auto mt-8 mb-3">
-            <h2 class="text-white">Our Research</h2>
-          </div>
+        <div class="col-lg-9 text-center mx-auto mt-8 mb-4">
+          <h2 class="text-white">Our Projects</h2>
+          <p
+            class="lead text-white px-3 mt-3"
+            :style="{ fontWeight: '500', textShadow: '2px 2px 2px black' }"
+          >
+            We are building the open foundation models, human-centric AI agents, and collaborative infrastructure necessary to power the Lab of the Future.
+          </p>
         </div>
 
         <div class="row justify-content-center">
           <div class="container">
-            <div v-for="arXiv in arXivs" :key="arXiv.id" class="card my-4" >
-              <div class="card-header mb-0">
-                <h4>{{ arXiv.title }}</h4>
-                <span class="h6">{{ arXiv.authors }}</span>
+            <div class="track-filter text-center mb-4">
+              <button
+                v-for="track in trackFilters"
+                :key="track"
+                type="button"
+                class="track-link"
+                :class="{ active: activeTrack === track }"
+                @click="activeTrack = track"
+                :aria-pressed="activeTrack === track"
+              >
+                {{ track }}
+              </button>
+            </div>
+            <div v-for="arXiv in filteredProjects" :key="arXiv.id" class="card my-4 research-card">
+              <div
+                class="card-header mb-0 d-flex flex-column flex-md-row align-items-md-center justify-content-between"
+              >
+                <div>
+                  <h4 class="mb-1">{{ arXiv.title }}</h4>
+                  <span class="h6 text-muted">{{ arXiv.authors }}</span>
+                </div>
+                <div
+                  v-if="arXiv.researchLabel"
+                  class="header-badges mt-3 mt-md-0"
+                >
+                  <span
+                    class="badge research-label"
+                    :class="getLabelClass(arXiv.researchLabel)"
+                  >
+                    {{ arXiv.researchLabel }}
+                  </span>
+                </div>
               </div>
               <div class="card-body mb-0">
-                <ul class="list-unstyled mt-n4 mb-2">
-                  <li>{{ arXiv.date }}</li>
-                  <li v-if="arXiv.arxivId">ArXiv ID: {{ arXiv.arxivId }}</li>
-                </ul>
-                <p class="text-lg mb-2"><b>Abstract:</b> {{ arXiv.content }}</p>
-                <a v-if="arXiv.link"
-                  :href="arXiv.link[1]"
-                  class="text-success icon-move-right"
-                  >View on {{ arXiv.link[0] }}
-                  <font-awesome-icon :icon="['fas', 'fa-arrow-right']"/>
-                </a>
-                <a v-if="arXiv.arxivId"
-                  :href="'https://arxiv.org/abs/' + arXiv.arxivId" 
-                  class="text-success icon-move-right"
-                  >View on arXiv
-                  <font-awesome-icon :icon="['fas', 'fa-arrow-right']"/>
-                </a>
+                <div class="d-flex flex-column flex-md-row gap-3">
+                  <img
+                    v-if="arXiv.image"
+                    :src="arXiv.image"
+                    :alt="`${arXiv.title} logo`"
+                    class="research-thumb"
+                  />
+                  <div>
+                    <ul class="list-unstyled mb-3">
+                      <li v-if="arXiv.arxivId" class="text-sm text-muted">
+                        ArXiv ID: {{ arXiv.arxivId }}
+                      </li>
+                    </ul>
+                    <div v-if="arXiv.impact" class="impact-chips mb-3">
+                      <span v-for="chip in arXiv.impact" :key="chip" class="impact-chip">
+                        {{ chip }}
+                      </span>
+                    </div>
+                    <p class="text-lg mb-3">
+                      <b>{{ arXiv.summaryLabel || "Abstract" }}:</b> {{ arXiv.content }}
+                    </p>
+                    <div
+                      v-if="arXiv.date"
+                      class="release-date text-sm text-muted mb-2"
+                    >
+                      Released: {{ arXiv.date }}
+                    </div>
+                    <div class="cta-group" v-if="arXiv.ctas && arXiv.ctas.length">
+                      <a
+                        v-for="cta in arXiv.ctas"
+                        :key="cta.route"
+                        :href="cta.route"
+                        class="btn btn-sm btn-success"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        {{ cta.label }}
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-      </div> <!-- End of .container -->
-    </div> <!-- End of .page-header -->
-    
+      </div>
+    </div>
   </header>
   <DefaultFooter />
 </template>
+
+<style scoped>
+.research-card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.25rem;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+
+.track-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+.track-link {
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.track-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -0.35rem;
+  width: 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.9);
+  transition: width 0.2s ease, left 0.2s ease;
+}
+
+.track-link:hover {
+  color: #ffffff;
+}
+
+.track-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.track-link.active {
+  color: #ffffff;
+}
+
+.track-link.active::after {
+  width: 100%;
+  left: 0;
+}
+
+.research-card .card-header {
+  background: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.header-badges {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.research-label {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border: none;
+  background: transparent;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.label-interpretability {
+  color: #c8abff;
+}
+
+.label-blue-skies {
+  color: #8ed7ff;
+}
+
+.label-collaborative-ai {
+  color: #ff9fc0;
+}
+
+.label-research-tools {
+  color: #5ef2cf;
+}
+
+.label-default {
+  color: #f5f7fb;
+}
+
+.research-thumb {
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
+  border-radius: 1rem;
+  background: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.impact-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.impact-chip {
+  background: rgba(25, 135, 84, 0.12);
+  color: #198754;
+  border-radius: 999px;
+  padding: 0.25rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.release-date {
+  font-style: italic;
+}
+
+.cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.cta-group .btn {
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  color: #111827;
+  font-weight: 600;
+}
+
+.cta-group .btn:hover {
+  background: rgba(15, 23, 42, 0.05);
+  color: #111827;
+}
+</style>
