@@ -1,7 +1,6 @@
 <script setup>
 import { RouterLink, useRouter } from "vue-router";
-import { ref, watch, computed, onMounted } from "vue";
-import { useWindowsWidth } from "../../assets/js/useWindowsWidth";
+import { ref, computed, onMounted, onUnmounted } from "vue";
 
 // images
 import ArrDark from "@/assets/img/down-arrow-dark.svg";
@@ -14,10 +13,11 @@ import navItems from "@/data/navigation.json";
 import 'bootstrap'; //Fix mobile navbar. Not sure why we need to include this, something is missing from the material-kit demo forked for this website.
 
 const router = useRouter();
+let removeAfterEach;
 
 // Close mobile menu on navigation
 onMounted(() => {
-  router.afterEach(() => {
+  removeAfterEach = router.afterEach(() => {
     const navbarCollapse = document.getElementById('navigation');
     const navbarToggler = document.querySelector('.navbar-toggler');
 
@@ -31,6 +31,12 @@ onMounted(() => {
       }
     }
   });
+});
+
+onUnmounted(() => {
+  if (typeof removeAfterEach === "function") {
+    removeAfterEach();
+  }
 });
 
 const props = defineProps({
@@ -88,24 +94,6 @@ const getTextColor = () => {
 // set nav color on mobile && desktop
 
 let textDark = ref(props.darkText);
-const { type } = useWindowsWidth();
-
-if (type.value === "mobile") {
-  textDark.value = true;
-} else if (type.value === "desktop" && textDark.value == false) {
-  textDark.value = false;
-}
-
-watch(
-  () => type.value,
-  (newValue) => {
-    if (newValue === "mobile") {
-      textDark.value = true;
-    } else {
-      textDark.value = false;
-    }
-  }
-);
 
 const hasAction = computed(
   () => !!(props.action && props.action.route && props.action.label)
