@@ -1,21 +1,10 @@
 <script setup>
-import { onMounted, onUnmounted } from "vue";
-
 import DefaultNavbar from "@/examples/navbars/NavbarDefault.vue";
 import DefaultFooter from "@/examples/footers/FooterDefault.vue";
+import { useBodyClass } from "@/composables/useBodyClass";
 import background from "@/assets/img/background.png";
 
-const body = document.getElementsByTagName("body")[0];
-
-onMounted(() => {
-  body.classList.add("about-us");
-  body.classList.add("bg-gray-200");
-});
-
-onUnmounted(() => {
-  body.classList.remove("about-us");
-  body.classList.remove("bg-gray-200");
-});
+useBodyClass(["about-us", "bg-gray-200"]);
 </script>
 
 <template>

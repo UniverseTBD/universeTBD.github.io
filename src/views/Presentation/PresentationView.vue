@@ -10,9 +10,6 @@ import { useBodyClass } from "@/composables/useBodyClass";
 import PresentationCounter from "./Sections/PresentationCounter.vue";
 import Product from "@/components/product.vue";
 
-// image
-import background from "@/assets/img/background.png";
-
 useBodyClass(["presentation-page", "bg-gray-200"]);
 </script>
 
@@ -25,11 +22,7 @@ useBodyClass(["presentation-page", "bg-gray-200"]);
     </div>
   </div>
   <Header>
-    <div
-      class="page-header min-vh-80 hero-background"
-      :style="{ backgroundImage: `url(${background})` }"
-      loading="lazy"
-    >
+    <div class="page-header min-vh-80 hero-background">
       <div class="container">
         <div class="row hero-content">
           <div class="col-lg-9 text-center mx-auto my-auto">
@@ -68,6 +61,8 @@ useBodyClass(["presentation-page", "bg-gray-200"]);
 }
 
 .hero-background {
+  /* Use WebP for 87% smaller file size (237KB vs 1.9MB) */
+  background-image: url("@/assets/img/background.webp");
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;

@@ -1,10 +1,13 @@
 <script setup>
 import DefaultNavbar from "@/examples/navbars/NavbarDefault.vue";
 import DefaultFooter from "@/examples/footers/FooterDefault.vue";
+import { useBodyClass } from "@/composables/useBodyClass";
 import background from "@/assets/img/background.png";
 import hfLogo from "@/assets/img/logo/huggingface.svg";
 import msLogo from "@/assets/img/logo/Microsoft.svg";
 import openaiLogo from "@/assets/img/logo/OpenAI.svg";
+
+useBodyClass(["about-us", "bg-gray-200"]);
 
 const partners = [
   {

@@ -1,6 +1,6 @@
 <script setup>
-import { RouterLink } from "vue-router";
-import { ref, watch, computed } from "vue";
+import { RouterLink, useRouter } from "vue-router";
+import { ref, watch, computed, onMounted } from "vue";
 import { useWindowsWidth } from "../../assets/js/useWindowsWidth";
 
 // images
@@ -12,6 +12,26 @@ import NavbarLink from './NavbarLink.vue';
 import navItems from "@/data/navigation.json";
 
 import 'bootstrap'; //Fix mobile navbar. Not sure why we need to include this, something is missing from the material-kit demo forked for this website.
+
+const router = useRouter();
+
+// Close mobile menu on navigation
+onMounted(() => {
+  router.afterEach(() => {
+    const navbarCollapse = document.getElementById('navigation');
+    const navbarToggler = document.querySelector('.navbar-toggler');
+
+    if (navbarCollapse && navbarToggler) {
+      // Check if menu is open (has 'show' class)
+      if (navbarCollapse.classList.contains('show')) {
+        // Close the menu by removing the show class
+        navbarCollapse.classList.remove('show');
+        // Update aria-expanded attribute
+        navbarToggler.setAttribute('aria-expanded', 'false');
+      }
+    }
+  });
+});
 
 const props = defineProps({
   action: {
