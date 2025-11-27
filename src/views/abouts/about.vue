@@ -33,12 +33,12 @@ onUnmounted(() => {
                 <section class="mb-4">
                   <h3 class="mb-3">What is UniverseTBD?</h3>
                   <p>
-                    We are a global research lab with a bold mission to democratize science for everyone. We are on a quest to unlock the next major scientific breakthrough with Frontier AI by 2030. Our global team of astronomers, scientists across disciplines, AI researchers, technologists, and artists conducts pioneering research and reimagines scientific practice to stay rigorous, creative, and radically open.
+                    We are a global research lab with a bold mission to democratize science for <strong><em>everyone</em></strong>. We are on a quest to unlock the next major scientific breakthrough with Frontier AI by 2030. Our global team of astronomers, cross-disciplinary scientists, AI researchers, technologists, and artists conducts pioneering research and reimagines scientific practice to stay rigorous, creative, and radically open.
                   </p>
                   <div class="mt-1 mb-0">
                     <p>
                       We envision UTBD will be the blueprint for a new kind of international research lab: human-first
-                      and AI-enabled, flexible and democratically governed. We work in autonomous research pods to move fast and
+                      and AI-enabled, flexible, and democratically governed. We work in autonomous research pods to move fast and
                       stay transparent, and we keep our tools, data, and discoveries open from day one so anyone can participate
                       in discovery.
                     </p>

@@ -32,7 +32,7 @@
         "icon": "groups",
         "links": [
             {
-                "name": "Participants",
+                "name": "Team Members",
                 "url": "participants"
             },
             {
