@@ -97,6 +97,7 @@ const partners = [
 }
 
 .partner-logo {
+  max-width: 100%;
   max-height: 56px;
   object-fit: contain;
   filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.35));

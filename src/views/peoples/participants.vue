@@ -19,13 +19,13 @@ useBodyClass(["about-us", "bg-gray-200"]);
       class="page-header min-vh-100 parallax-bg"
       :style="{ backgroundImage: 'url(/background.webp)' }">
       <span class="mask bg-gradient-dark opacity-3"></span>
-      <div class="container col-lg-10 mx-auto my-12">
-        <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6" >
+      <div class="container col-lg-10 mx-auto my-4 my-lg-12">
+        <div class="card card-body shadow-xl mx-3 mx-md-4 mt-0 mt-lg-n6" >
             <AboutTeam />
         </div>
       </div>
     </div>
-    
+
   </header>
   <DefaultFooter />
 </template>

@@ -47,13 +47,13 @@ useBodyClass(["about-us", "bg-gray-200"]);
   <DefaultNavbar transparent />
   <header class="">
     <div
-      class="page-header min-vh-100 parallax-bg"
+      class="page-header min-vh-100 parallax-bg bg-gray-900"
       :style="{ backgroundImage: 'url(/background.webp)' }"
     >
       <span class="mask bg-gradient-dark opacity-3"></span>
 
       <div class="container">
-        <div class="col-lg-9 text-center mx-auto mt-8 mb-4">
+        <div class="col-lg-9 text-center mx-auto mt-4 mt-lg-8 mb-4">
           <h2 class="text-white">Our Projects</h2>
           <p
             class="lead text-white px-3 mt-3"
