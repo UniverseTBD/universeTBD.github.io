@@ -18,7 +18,7 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
                 suffix="+"
                 :duration="1500"
                 divider="vertical"
-                customColor="#3949AB"
+                customColor="#1976D2"
               />
             </div>
             <div class="col-md-4 position-relative">
@@ -30,7 +30,7 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
                 :count="2030"
                 :duration="1500"
                 divider="vertical"
-                customColor="#3949AB"
+                customColor="#1976D2"
               />
             </div>
             <div class="col-md-4">
@@ -41,7 +41,7 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
                 :count="10"
                 suffix="+"
                 :duration="1500"
-                customColor="#3949AB"
+                customColor="#1976D2"
               />
             </div>
           </div>
