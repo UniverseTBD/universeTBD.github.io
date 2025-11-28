@@ -16,17 +16,14 @@ useBodyClass(["presentation-page", "bg-gray-200"]);
 
 <template>
   <DefaultNavbar transparent />
-  <header class="bg-gradient-dark">
-    <div
-      class="page-header min-vh-100 parallax-bg"
-      :style="{ backgroundImage: 'url(/background.webp)' }"
-    >
-      <span class="mask bg-gradient-dark opacity-3"></span>
-      <div class="card card-body blur shadow-blur mx-3 mx-md-9 mt-4 mt-md-7 mb-5">
-        <Product />
-      </div>
+  <div
+    class="page-header min-vh-100 parallax-bg"
+    :style="{ backgroundImage: 'url(/background.webp)' }"
+  >
+    <span class="mask bg-gradient-dark opacity-3"></span>
+    <div class="card card-body blur shadow-blur mx-3 mx-md-9 mt-4 mt-md-7 mb-5">
+      <Product />
     </div>
-
-  </header>
+  </div>
   <DefaultFooter />
 </template>

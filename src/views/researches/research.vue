@@ -54,29 +54,28 @@ useBodyClass(["about-us", "bg-gray-200"]);
 
       <div class="container">
         <div class="col-lg-9 text-center mx-auto mt-4 mt-lg-8 mb-4">
-          <h2 class="text-white">Our Projects</h2>
-          <p
-            class="lead text-white px-3 mt-3"
-            :style="{ fontWeight: '500', textShadow: '2px 2px 2px black' }"
-          >
-            We are building the open foundation models, human-centric AI agents, and collaborative infrastructure necessary to power the Lab of the Future.
-          </p>
+
+
         </div>
 
         <div class="row justify-content-center">
           <div class="col-12 col-lg-10">
-            <div class="track-filter text-center mb-4">
-              <button
-                v-for="track in trackFilters"
-                :key="track"
-                type="button"
-                class="track-link"
-                :class="{ active: activeTrack === track }"
-                @click="activeTrack = track"
-                :aria-pressed="activeTrack === track"
-              >
-                {{ track }}
-              </button>
+            <div class="d-flex justify-content-center mb-4">
+              <div class="card filter-card py-2 px-4">
+                <div class="track-filter text-center">
+                  <button
+                    v-for="track in trackFilters"
+                    :key="track"
+                    type="button"
+                    class="track-link"
+                    :class="{ active: activeTrack === track }"
+                    @click="activeTrack = track"
+                    :aria-pressed="activeTrack === track"
+                  >
+                    {{ track }}
+                  </button>
+                </div>
+              </div>
             </div>
             <div v-for="arXiv in filteredProjects" :key="arXiv.id" class="card my-4 research-card">
               <div
@@ -156,6 +155,14 @@ useBodyClass(["about-us", "bg-gray-200"]);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 1.25rem;
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+
+.filter-card {
+  background: rgba(17, 24, 39, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  display: inline-block;
 }
 
 .track-filter {

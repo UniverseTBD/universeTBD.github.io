@@ -25,11 +25,10 @@ let participants_shuf = shuffle(participants);
     <div class="container">
       <div class="row">
         <div class="col-md-8 text-start mb-5 mt-5">
-          <p class="text-white opacity-9 mb-0 font-italic">
-            Alone we can do so little; together we can do so much.
-          </p>
+          <h1 class="text-white">Meet our team</h1>
         </div>
       </div>
+
 
 
       <div v-for="(participant, index) in participants_shuf">
@@ -47,5 +46,5 @@ let participants_shuf = shuffle(participants);
       </div>
     </div>
   </section>
-  
+
 </template>

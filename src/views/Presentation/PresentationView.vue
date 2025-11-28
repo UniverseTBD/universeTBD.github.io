@@ -28,6 +28,7 @@ useBodyClass(["presentation-page", "bg-gray-200"]);
       :style="{ backgroundImage: 'url(/background.webp)' }"
       loading="lazy"
     >
+      <span class="mask bg-gradient-dark" style="opacity: 0.25"></span>
       <div class="container">
         <div class="row hero-content">
           <div class="col-lg-9 text-center mx-auto my-auto">

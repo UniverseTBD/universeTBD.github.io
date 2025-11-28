@@ -38,17 +38,16 @@ const partners = [
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-10 text-center mx-auto my-auto">
-            <h1 class="text-white">Partners</h1>
-            <p
-              class="lead text-white px-4 mt-3"
-              :style="{ fontWeight: '500', textShadow: '2px 2px 2px black' }"
-            >
-              UniverseTBD is powered by collaborators who believe science should be open, rigorous,
-              and multiplayer. Together we ship new tools, keep compute accessible, and welcome more
-              people into discovery.
-            </p>
-            <div class="card bg-gray-300 mx-3 pb-3 pt-3">
-              <div class="card-body lead text-dark text-start">
+
+
+            <div class="card bg-gray-300 mx-3">
+              <div class="card-body sponsor-text text-dark text-start">
+                <h1 class="text-dark mb-4">The Universe goes multiplayer</h1>
+                <p>
+                  UniverseTBD is powered by collaborators who believe science should be open, rigorous,
+                  and multiplayer. Together we ship new tools, keep compute accessible, and welcome more
+                  people into discovery.
+                </p>
                 <p>
                   Credits, cloud time, and direct feedback from partners let our research pods build
                   benchmarks, share datasets the day they are ready, and mentor junior researchers
@@ -107,5 +106,26 @@ const partners = [
   border-radius: 0.85rem;
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.sponsor-text {
+  padding: 2.25rem 2.75rem;
+  font-size: 1.1rem;
+  line-height: 1.65;
+}
+
+.sponsor-text p,
+.sponsor-text ul,
+.sponsor-text ol,
+.sponsor-text li,
+.sponsor-text a {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+@media (min-width: 768px) {
+  .sponsor-text {
+    padding: 2.75rem 4rem;
+  }
 }
 </style>

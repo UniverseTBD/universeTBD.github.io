@@ -20,7 +20,7 @@ useBodyClass(["about-us", "bg-gray-200"]);
             <div class="card about-card blur shadow-blur mx-3 mx-md-5 my-4 my-md-5 text-dark text-start">
               <div class="card-body about-card-body">
                 <section class="mb-4">
-                  <h3 class="mb-3">What is UniverseTBD?</h3>
+                  <h1 class="text-dark mb-4">What is UniverseTBD?</h1>
                   <p>
                     We are a global research lab with a bold mission to democratize science for <strong><em>everyone</em></strong>. We are on a quest to unlock the next major scientific breakthrough with Frontier AI by 2030. Our global team of astronomers, cross-disciplinary scientists, AI researchers, technologists, and artists conducts pioneering research and reimagines scientific practice to stay rigorous, creative, and radically open.
                   </p>

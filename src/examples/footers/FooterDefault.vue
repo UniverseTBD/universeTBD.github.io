@@ -70,14 +70,14 @@ const getTextColor = () => {
           </div>
         </div>
         <div class="row align-items-center justify-content-center">
-          <div class="col-lg-3 mt-3 text-center support-logo">
-            <img class="w-75" src="@/assets/img/logo/huggingface.svg" alt="Hugging Face logo" />
+          <div class="col-4 col-lg-3 mt-3 text-center support-logo">
+            <img class="w-100" src="@/assets/img/logo/huggingface.svg" alt="Hugging Face logo" />
           </div>
-          <div class="col-lg-3 mt-3 text-center support-logo">
-            <img class="w-85" src="@/assets/img/logo/Microsoft.svg" alt="Microsoft logo" />
+          <div class="col-4 col-lg-3 mt-3 text-center support-logo">
+            <img class="w-100" src="@/assets/img/logo/Microsoft.svg" alt="Microsoft logo" />
           </div>
-          <div class="col-lg-3 mt-3 text-center support-logo">
-            <img class="w-75" src="@/assets/img/logo/OpenAI.svg" alt="OpenAI logo" />
+          <div class="col-4 col-lg-3 mt-3 text-center support-logo">
+            <img class="w-100" src="@/assets/img/logo/OpenAI.svg" alt="OpenAI logo" />
           </div>
         </div>
       </div>
