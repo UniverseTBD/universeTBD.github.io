@@ -49,12 +49,19 @@ defineProps({
     type: Number,
     default: 0,
   },
+  customColor: {
+    type: String,
+    default: "",
+  },
 });
 </script>
 
 <template>
   <div class="text-center">
-    <h1 :class="`text-gradient text-${color ?? 'success'}`">
+    <h1
+      :class="customColor ? '' : `text-gradient text-${color ?? 'success'}`"
+      :style="customColor ? { color: customColor } : {}"
+    >
       <template v-if="display">
         {{ display }}
       </template>
