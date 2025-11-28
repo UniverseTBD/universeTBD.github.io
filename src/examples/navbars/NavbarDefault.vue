@@ -217,3 +217,28 @@ const actionIsExternal = computed(
   </nav>
   <!-- End Navbar -->
 </template>
+
+<style scoped>
+/* Robust fix for mobile navbar visibility */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #ffffff !important;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    margin-top: 1rem;
+  }
+
+  /* Force text color to be dark in mobile menu regardless of transparent prop */
+  :deep(.nav-link),
+  :deep(.dropdown-item),
+  :deep(.dropdown-header) {
+    color: #344767 !important;
+  }
+
+  :deep(.nav-link:hover),
+  :deep(.dropdown-item:hover) {
+    background-color: #f8f9fa;
+  }
+}
+</style>

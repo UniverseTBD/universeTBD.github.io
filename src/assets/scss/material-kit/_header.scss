@@ -28,9 +28,31 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  /* Robust fix for mobile background rendering */
+  background-attachment: scroll;
+
+  @media (max-width: 991px) {
+    /* Phase 5: Standardized "Wallpaper" Look */
+    /* Use the mobile-specific image */
+    background-image: url("/utbd_mobile1.webp") !important;
+
+    /* Lock width to 100% of screen, let height scale naturally */
+    /* This ensures consistent zoom level across all pages */
+    background-size: 100% auto !important;
+    background-repeat: no-repeat !important;
+    background-position: center top !important;
+
+    /* Fill the rest of the page (if content is long) with dark blue */
+    background-color: #151729 !important;
+
+    /* Restore padding to prevent content from going under the navbar */
+    /* Navbar is approx 80-100px, so 8rem (128px) is safe */
+    padding-top: 8rem !important;
+    padding-bottom: 2rem !important;
+  }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .page-header.parallax-bg {
     background-attachment: fixed;
   }

@@ -24,8 +24,8 @@ useBodyClass(["about-us", "bg-gray-200"]);
             <h1 class="text-white">
               Work with an amazing team
             </h1>
-            <p 
-              class="lead text-white px-3 mt-3" 
+            <p
+              class="lead text-white px-3 mt-3"
               :style="{ fontWeight: '500', textShadow: '2px 2px 2px black' }"
             >
               We welcome new folks on our Discord, where we encourage everyone to bring their ideas and

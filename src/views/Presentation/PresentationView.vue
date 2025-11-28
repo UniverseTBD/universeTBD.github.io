@@ -7,6 +7,7 @@ import TypewriterText from "@/components/TypewriterText.vue";
 import { useBodyClass } from "@/composables/useBodyClass";
 
 // sections
+// sections
 import PresentationCounter from "./Sections/PresentationCounter.vue";
 import Product from "@/components/product.vue";
 
@@ -22,7 +23,11 @@ useBodyClass(["presentation-page", "bg-gray-200"]);
     </div>
   </div>
   <Header>
-    <div class="page-header min-vh-80 hero-background">
+    <div
+      class="page-header min-vh-80 hero-background"
+      :style="{ backgroundImage: 'url(/background.webp)' }"
+      loading="lazy"
+    >
       <div class="container">
         <div class="row hero-content">
           <div class="col-lg-9 text-center mx-auto my-auto">
@@ -61,8 +66,6 @@ useBodyClass(["presentation-page", "bg-gray-200"]);
 }
 
 .hero-background {
-  /* Use WebP for 87% smaller file size (237KB vs 1.9MB) */
-  background-image: url("/background.webp");
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;

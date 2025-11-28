@@ -22,7 +22,7 @@ useBodyClass(["presentation-page", "bg-gray-200"]);
       :style="{ backgroundImage: 'url(/background.webp)' }"
     >
       <span class="mask bg-gradient-dark opacity-3"></span>
-      <div class="card card-body blur shadow-blur mx-3 mx-md-9 mt-7 mb-5">
+      <div class="card card-body blur shadow-blur mx-3 mx-md-9 mt-4 mt-md-7 mb-5">
         <Product />
       </div>
     </div>

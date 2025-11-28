@@ -15,7 +15,7 @@ useBodyClass(["about-us", "bg-gray-200"]);
     >
       <span class="mask bg-gradient-dark opacity-3"></span>
       <div class="container">
-        <div class="row justify-content-center align-items-center mt-6">
+        <div class="row justify-content-center align-items-center mt-4 mt-lg-6">
           <div class="col-12 col-lg-10 text-center mx-auto my-auto">
             <div class="card about-card blur shadow-blur mx-3 mx-md-5 my-4 my-md-5 text-dark text-start">
               <div class="card-body about-card-body">
