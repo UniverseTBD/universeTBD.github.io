@@ -251,6 +251,13 @@
     "imageUrl": "/people/whuang.JPG",
     "websiteUrl": "https://www.linkedin.com/in/william-huang",
     "bio": "William is an undergraduate student at the University of Illinois Urbana-Champaign (UIUC) focused on building the next generation of AI systems for scientific discovery. He previously interned at Oak Ridge National Laboratory (ORNL), where he worked on research-grade tooling that bridges large-scale computing with real-world science workflows."
+  },
+  {
+    "name": "Tirthankar Ghosal",
+    "affiliation": "Oak Ridge National Laboratory",
+    "imageUrl": "/people/tghosal.png",
+    "websiteUrl": "https://www.tirthankarghosal.com/",
+    "bio": "Dr. Tirthankar Ghosal is a Staff Scientist in Artificial Intelligence and Natural Language Processing at Oak Ridge National Laboratory (ORNL), U.S. Department of Energy, where he serves as project lead of Agentic Software within the Quantum Science Center. He also leads AI for Laboratory Operations research at ORNL, focusing on deploying AI solutions to enhance operational safety and scientific workflows."
   }
 
 ]
