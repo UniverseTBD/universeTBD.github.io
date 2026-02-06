@@ -258,6 +258,13 @@
     "imageUrl": "/people/tghosal.png",
     "websiteUrl": "https://www.tirthankarghosal.com/",
     "bio": "Dr. Tirthankar Ghosal is a Staff Scientist in Artificial Intelligence and Natural Language Processing at Oak Ridge National Laboratory (ORNL), U.S. Department of Energy, where he serves as project lead of Agentic Software within the Quantum Science Center. He also leads AI for Laboratory Operations research at ORNL, focusing on deploying AI solutions to enhance operational safety and scientific workflows. His current investigations include impactful AI for Science projects, including initiatives in Astro/MatSci foundation model training, scientific hypothesis generation, and engineering diagram parsing. Dr. Ghosal holds key organizational roles, serving as the Diversity & Inclusion Chair for several ACL conferences and organizing workshop series, including SDP, WASP, and AutoMin. He is also a member of the program committee and an area chair for major AI conferences, including AAAI, ICLR, NeurIPS, NAACL, EMNLP, and ACL."
+  },
+  {
+    "name": "Shashwat Sourav",
+    "affiliation": "Washington University in St. Louis",
+    "imageUrl": "/people/ssourav.png",
+    "websiteUrl": "",
+    "bio": "Shashwat is a second-year physics PhD student at Washington University in St. Louis. Over the years, his research philosophy has taken a lot of U-turns, but currently he focuses on making foundation models interpretable for astronomers to understand their working mechanism and connecting them to physics, helping these models do physics learning rather than data learning (his personal definition of AI4Science). In his bachelor's he focused on privacy (machine unlearning) but in the last year his research has moved to AI4Astronomy and mechanistic interpretability. He believes AI safety and privacy are two sides of the same coin. Astronomy adds more flavor to his research—not just because galaxies intrigue him, but because it shows the same reality through different modalities and has ground truths which are essential for doing rigorous interpretability as well as helping understand models better."
   }
 
 ]
