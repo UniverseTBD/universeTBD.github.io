@@ -29,7 +29,7 @@ import platonic_universe from "@/assets/img/product/prh_temp.png";
             :image="multimodal_universe"
             title="Multimodal Universe"
             description="We present the Multimodal Universe (MMU), a 100 TB collection of hundreds of millions of spectra, hyperspectral images, time series, and scientific metadata with ready-to-run benchmarks so researchers can build and evaluate foundation models using astronomical datasets."
-            :tags="['NeurIPS 2024 B&D']"
+            :tags="['NeurIPS 2024 D&B']"
             :action="{route: 'https://github.com/MultimodalUniverse/MultimodalUniverse', label: 'View on GitHub', color: 'success'}"
             :secondary-action="{route: 'https://arxiv.org/abs/2412.02527', label: 'Read the Paper', color: 'success'}"
             :image-route="{ path: '/research', hash: '#multimodal-universe' }"
