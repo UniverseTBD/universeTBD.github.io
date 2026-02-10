@@ -39,7 +39,7 @@ export const researchProjects = [
     authors: "The Multimodal Universe Collaboration",
     image: multimodalUniverseLogo,
     researchLabel: "Blue Skies",
-    impact: ["NeurIPS 2024 B&D", "100 TB multimodal data", "Open datasets"],
+    impact: ["NeurIPS 2024 D&B", "100 TB multimodal data", "Open datasets"],
     arxivId: "2412.02527",
     content:
       "We present the Multimodal Universe, a NeurIPS 2024 Benchmarks & Datasets paper that assembles 100TB of astronomical observations to accelerate machine learning for the sciences. Hundreds of millions of multi-channel and hyper-spectral images, spectra, time series, and structured metadata are packaged with ready-to-run benchmark tasks that reflect common astrophysics workflows. The scale and diversity of MMU unlock the development of genuinely multimodal foundation models for astronomy, and every script, access recipe, and leaderboard is openly published for the community.",
