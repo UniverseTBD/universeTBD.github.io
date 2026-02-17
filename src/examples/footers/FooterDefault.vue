@@ -43,6 +43,10 @@ defineProps({
       },
     ]
   },
+  showSupportRow: {
+    type: Boolean,
+    default: true,
+  },
 });
 
 // set text color
@@ -62,7 +66,7 @@ const getTextColor = () => {
 </script>
 <template>
   <footer class="footer pt-1 mt-1">
-    <div class="py-5">
+    <div v-if="showSupportRow" class="py-5">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center mb-3">
@@ -70,8 +74,14 @@ const getTextColor = () => {
           </div>
         </div>
         <div class="row align-items-center justify-content-center">
+          <div class="col-4 col-lg-3 mt-3 text-center support-logo support-logo--contrast">
+            <img class="w-100" src="@/assets/img/logo/eleutherai.webp" alt="EleutherAI logo" />
+          </div>
           <div class="col-4 col-lg-3 mt-3 text-center support-logo">
             <img class="w-100" src="@/assets/img/logo/huggingface.svg" alt="Hugging Face logo" />
+          </div>
+          <div class="col-4 col-lg-3 mt-3 text-center support-logo support-logo--white">
+            <img class="w-100" src="@/assets/img/logo/google3.png" alt="Google Research logo" />
           </div>
           <div class="col-4 col-lg-3 mt-3 text-center support-logo">
             <img class="w-100" src="@/assets/img/logo/Microsoft.svg" alt="Microsoft logo" />
@@ -147,5 +157,22 @@ const getTextColor = () => {
 .footer-nav-column,
 .footer-connect {
   text-align: center;
+}
+
+.support-logo img {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.85), rgba(241, 245, 249, 0.7));
+  padding: 0.35rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.14);
+  max-height: 56px;
+  object-fit: contain;
+}
+
+.support-logo--contrast img {
+  background: linear-gradient(145deg, rgba(3, 7, 18, 0.9), rgba(15, 23, 42, 0.7));
+}
+
+.support-logo--white img {
+  background: #ffffff;
 }
 </style>
