@@ -1,0 +1,29 @@
+.page-card {
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.page-card-body {
+  padding: 2.25rem 2.75rem;
+  font-size: 1.1rem;
+  line-height: 1.65;
+}
+
+.page-card-body p,
+.page-card-body ul,
+.page-card-body ol,
+.page-card-body li,
+.page-card-body a {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.page-card-body .text-sm {
+  font-size: inherit !important;
+}
+
+@media (min-width: 768px) {
+  .page-card-body {
+    padding: 2.75rem 4rem;
+  }
+}

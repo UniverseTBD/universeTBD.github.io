@@ -17,8 +17,8 @@ useBodyClass(["about-us", "bg-gray-200"]);
       <div class="container">
         <div class="row justify-content-center align-items-center mt-4 mt-lg-6">
           <div class="col-12 col-lg-10 text-center mx-auto my-auto">
-            <div class="card about-card blur shadow-blur mx-3 mx-md-5 my-4 my-md-5 text-dark text-start">
-              <div class="card-body about-card-body">
+            <div class="card page-card blur shadow-blur mx-3 mx-md-5 my-4 my-md-5 text-dark text-start">
+              <div class="card-body page-card-body">
                 <section class="mb-4">
                   <h1 class="text-dark mb-4">What is UniverseTBD?</h1>
                   <p>
@@ -75,35 +75,3 @@ useBodyClass(["about-us", "bg-gray-200"]);
   </header>
   <DefaultFooter />
 </template>
-
-<style scoped>
-.about-card {
-  border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.92);
-}
-
-.about-card-body {
-  padding: 2.25rem 2.75rem;
-  font-size: 1.1rem;
-  line-height: 1.65;
-}
-
-.about-card-body p,
-.about-card-body ul,
-.about-card-body ol,
-.about-card-body li {
-  font-size: inherit;
-  line-height: inherit;
-}
-
-.about-card-body .text-sm {
-  font-size: inherit !important;
-}
-
-@media (min-width: 768px) {
-  .about-card-body {
-    padding: 2.75rem 4rem;
-  }
-}
-
-</style>

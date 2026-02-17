@@ -15,10 +15,10 @@ useBodyClass(["about-us", "bg-gray-200"]);
     >
       <span class="mask bg-gradient-dark opacity-3"></span>
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center align-items-center mt-4 mt-lg-6">
           <div class="col-lg-10 text-center mx-auto my-auto">
-            <div class="card bg-gray-300 mx-3">
-              <div class="card-body sponsor-text text-dark text-start">
+            <div class="card page-card blur shadow-blur mx-3 mx-md-5 my-4 my-md-5 text-dark text-start">
+              <div class="card-body page-card-body">
                 <h1 class="text-dark mb-4">Our community is open</h1>
                 <p>
                   We encourage new folks to bring their ideas and join a vibrant community of peers and mentors. We keep things lightweight: just one welcome thread, our project channels, and a set of clear rules so you can plug into UniverseTBD without navigating a maze of rooms.
@@ -30,16 +30,16 @@ useBodyClass(["about-us", "bg-gray-200"]);
                   (CfA/Harvard) is our Open Community Lead—he keeps the lights on and moderates for
                   kindness and clarity.
                 </p>
-              </div>
-              <div class="card-body pt-0">
-                <a
-                  class="btn btn-dark px-4"
-                  href="https://discord.gg/CcPfhePkmT"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Join Our Discord
-                </a>
+                <div class="mt-4">
+                  <a
+                    class="btn btn-dark px-4"
+                    href="https://discord.gg/CcPfhePkmT"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Join Our Discord
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -49,26 +49,3 @@ useBodyClass(["about-us", "bg-gray-200"]);
   </header>
   <DefaultFooter />
 </template>
-
-<style scoped>
-.sponsor-text {
-  padding: 2.25rem 2.75rem;
-  font-size: 1.1rem;
-  line-height: 1.65;
-}
-
-.sponsor-text p,
-.sponsor-text ul,
-.sponsor-text ol,
-.sponsor-text li,
-.sponsor-text a {
-  font-size: inherit;
-  line-height: inherit;
-}
-
-@media (min-width: 768px) {
-  .sponsor-text {
-    padding: 2.75rem 4rem;
-  }
-}
-</style>
