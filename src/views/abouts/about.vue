@@ -73,5 +73,5 @@ useBodyClass(["about-us", "bg-gray-200"]);
       </div>
     </div>
   </header>
-  <DefaultFooter />
+  <DefaultFooter :show-support-row="false" />
 </template>
